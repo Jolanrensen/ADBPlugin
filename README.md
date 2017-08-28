@@ -3,6 +3,7 @@ Tasker Plugin to send ADB Shell commands
 https://play.google.com/store/apps/details?id=com.ADBPlugin
 
 Most of the actual "plugin" stuff can be found at https://github.com/Jolanrensen/ADBPlugin/tree/master/app/src/main/java/com/ADBPlugin. The rest consists of libraries and the necessary locale/tasker-api stuff.
+The latest (debug) build of the app can be found at https://github.com/Jolanrensen/ADBPlugin/blob/master/app/build/outputs/apk/app-debug.apk
 
 This Tasker plugin allows you to send a (series of) ADB Shell command(s) to a remote device (or the device itself) that has ADB over WiFi enabled. This app does need Tasker to work! (https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm, this is a paid app with a 7 days free trial)
 
