@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="default"><source path="C:\android apps\ADBPlugin1\locale_api\build\intermediates\bundles\default\assets"/></dataSet><dataSet config="main"><source path="C:\android apps\ADBPlugin1\app\src\main\assets"/><source path="C:\android apps\ADBPlugin1\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="C:\android apps\ADBPlugin1\app\src\debug\assets"/></dataSet></merger>

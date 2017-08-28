@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v14\\twofortyfouram_locale_ic_menu_save.png",
+        "source": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v14\\twofortyfouram_locale_ic_menu_save.png"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v14\\twofortyfouram_locale_ic_menu_help.png",
+        "source": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v14\\twofortyfouram_locale_ic_menu_help.png"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\res\\merged\\androidTest\\debug\\drawable-hdpi-v14\\twofortyfouram_locale_ic_menu_dontsave.png",
+        "source": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\drawable-hdpi-v14\\twofortyfouram_locale_ic_menu_dontsave.png"
+    }
+]

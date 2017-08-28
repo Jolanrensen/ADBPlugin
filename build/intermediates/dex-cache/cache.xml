@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\android apps\ADBPlugin1\locale_api\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="a93a69c1a2045ba5ed3ce62e5abb24260ade4d6e">
+        <dex dex="C:\android apps\ADBPlugin1\app\build\intermediates\pre-dexed\debug\classes_f4ba640fb7f5d0d6eb21540fae8b0eba216da420.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\android apps\ADBPlugin1\libraries\commons-codec-1.10-rep.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d2aee2c62eff588696bca88105b310931ed02130">
+        <dex dex="C:\android apps\ADBPlugin1\app\build\intermediates\pre-dexed\debug\commons-codec-1.10-rep_fda3a571879814e25a183ae1d5419ac213dd1f9e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\android apps\ADBPlugin1\libraries\AdbLib.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4593e1cb83ef002fb13f8503c4c093f374612687">
+        <dex dex="C:\android apps\ADBPlugin1\app\build\intermediates\pre-dexed\debug\AdbLib_59e884200550491f98883ea92746f43866c404fe.jar" />
+    </item>
+
+</items>

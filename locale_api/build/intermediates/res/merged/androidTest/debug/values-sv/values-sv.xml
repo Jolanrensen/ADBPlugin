@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="twofortyfouram_locale_breadcrumb_format">%1$s%2$s%3$s</string>
+    <string name="twofortyfouram_locale_breadcrumb_separator">\u0020>\u0020</string>
+    <string name="twofortyfouram_locale_menu_dontsave">Avbryt</string>
+    <string name="twofortyfouram_locale_menu_help">Hjälp</string>
+    <string name="twofortyfouram_locale_menu_save">Klar</string>
+</resources>

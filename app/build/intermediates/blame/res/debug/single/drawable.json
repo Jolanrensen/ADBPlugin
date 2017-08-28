@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\funtieafbeelding.png",
+        "source": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\drawable\\funtieafbeelding.png"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\twofortyfouram_locale_ic_menu_dontsave.xml",
+        "source": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\drawable\\twofortyfouram_locale_ic_menu_dontsave.xml"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\twofortyfouram_locale_ic_menu_help.xml",
+        "source": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\drawable\\twofortyfouram_locale_ic_menu_help.xml"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon.png",
+        "source": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\drawable\\icon.png"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\twofortyfouram_locale_ic_menu_save.xml",
+        "source": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\drawable\\twofortyfouram_locale_ic_menu_save.xml"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\icon512.png",
+        "source": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\drawable\\icon512.png"
+    }
+]

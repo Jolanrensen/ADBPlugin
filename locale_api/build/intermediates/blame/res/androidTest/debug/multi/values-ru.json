@@ -1,0 +1,102 @@
+[
+    {
+        "outputFile": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-ru\\values-ru.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 80,
+                    "endOffset": 131
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 80,
+                        "endOffset": 131
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 136,
+                    "endColumn": 84,
+                    "endOffset": 216
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 136,
+                        "endColumn": 84,
+                        "endOffset": 216
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 221,
+                    "endColumn": 70,
+                    "endOffset": 287
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 221,
+                        "endColumn": 70,
+                        "endOffset": 287
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 292,
+                    "endColumn": 66,
+                    "endOffset": 354
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 292,
+                        "endColumn": 66,
+                        "endOffset": 354
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 359,
+                    "endColumn": 66,
+                    "endOffset": 421
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\values-ru\\values-ru.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 359,
+                        "endColumn": 66,
+                        "endOffset": 421
+                    }
+                }
+            }
+        ]
+    }
+]

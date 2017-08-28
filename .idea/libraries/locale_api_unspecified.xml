@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="locale_api-unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res" />
+      <root url="jar://$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

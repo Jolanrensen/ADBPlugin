@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 104,
+                    "endOffset": 200
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\debug\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 104,
+                        "endOffset": 200
+                    }
+                }
+            }
+        ]
+    }
+]

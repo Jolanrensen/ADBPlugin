@@ -1,0 +1,24 @@
+apply plugin: 'com.android.application'
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.ADBPlugin"
+        minSdkVersion 8
+        targetSdkVersion 17
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile files('C:/android apps/ADBPlugin1/libraries/AdbLib.jar')
+    compile files('C:/android apps/ADBPlugin1/libraries/commons-codec-1.10-rep.jar')
+    compile project(':locale_api')
+}

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_locale_plugin.png",
+        "source": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\drawable-hdpi\\ic_locale_plugin.png"
+    },
+    {
+        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ic_launcher.png",
+        "source": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+    }
+]
