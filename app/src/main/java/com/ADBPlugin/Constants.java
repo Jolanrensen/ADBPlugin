@@ -21,7 +21,7 @@ public final class Constants {
     /**
      * Log tag for logcat messages.
      */
-    // TODO: Change this to your application's own log tag.
+
     public static final String LOG_TAG = "com.ADBPlugin"; //$NON-NLS-1$
 
     /**

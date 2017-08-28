@@ -65,10 +65,11 @@ public final class EditActivity extends AbstractPluginActivity {
     @Override
     public void finish() {
         if (!isCanceled()) {
-
             String ipAddress = ((EditText) findViewById(R.id.text1)).getText().toString();
             String port = ((EditText) findViewById(R.id.text2)).getText().toString();
             String command = ((EditText) findViewById(R.id.text3)).getText().toString();
+            //I know, it's messy. but it works XD can be improved upon of course
+            //TODO
             String result = ipAddress + "§" + port + "§" + command;
 
             if (ipAddress.length() > 0 && port.length() > 0 && command.length() > 0) {

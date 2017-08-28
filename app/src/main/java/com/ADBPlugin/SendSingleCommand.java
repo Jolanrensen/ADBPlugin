@@ -41,7 +41,6 @@ public class SendSingleCommand {
             public String encodeToString(byte[] arg0) {
                 return encodeBase64String(arg0);
             }
-
         };
     }
 
@@ -93,7 +92,6 @@ public class SendSingleCommand {
      */
     public void SendSingleCommand(Context context, String ip, int port, String command)
             throws IOException {
-        //Scanner in = new Scanner(System.in);
         this.ip = ip;
         this.port = port;
         this.command = command;

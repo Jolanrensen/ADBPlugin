@@ -69,27 +69,28 @@ public final class FireReceiver extends BroadcastReceiver {
         if (PluginBundleManager.isBundleValid(bundle)) {
             message = bundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE);
 
-
             final String[] messageSplit = message.split("§");
-            /*for (String part: messageSplit) {
-                Toast.makeText(context, part, Toast.LENGTH_LONG).show();
-            }*/
 
             thread = new Thread(new Runnable() {
                 @Override
                 public void run() {
                     try {
-                        //run the program with all the given variables
+                        //Run the program with all the given variables
                         SendSingleCommand sendSingleCommand = new SendSingleCommand();
                         sendSingleCommand.SendSingleCommand(context, messageSplit[0], Integer.parseInt(messageSplit[1]), messageSplit[2]);
+
                         //Log the result and signal Tasker
                         Log.d(Constants.LOG_TAG, "Executed single command");
+
+                        //Gathering responses
                         ArrayList<String> responses = sendSingleCommand.getSplitResponses();
                         Bundle responseBundle = new Bundle();
                         responseBundle.putStringArrayList("%output", responses);
                         TaskerPlugin.addVariableBundle(getResultExtras(true), responseBundle);
+
+                        //Tell Takser I'm done
                         TaskerPlugin.Setting.signalFinish(context, intent, TaskerPlugin.Setting.RESULT_CODE_OK, responseBundle);
-                    } catch (IOException e) { //if couldn't read/write key files
+                    } catch (IOException e) { // if couldn't read/write key files
                         displayError(e, context, intent);
                     }
                 }
@@ -99,13 +100,12 @@ public final class FireReceiver extends BroadcastReceiver {
             //Tell Tasker I'm not done yet, since the thread is still running
             if (isOrderedBroadcast()) {
                 setResultCode(TaskerPlugin.Setting.RESULT_CODE_PENDING);
-                //Log.d(Constants.LOG_TAG, "Told Tasker to wait for a bit");
             }
         }
     }
 
     /**
-     * Simple method to inform Tasker and the system of the error that has occured.
+     * Simple method to inform Tasker and the system of the error that has occurred.
      *
      * @param e
      * @param context

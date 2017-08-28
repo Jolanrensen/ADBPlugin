@@ -26,14 +26,14 @@ import java.util.Locale;
 
 /**
  * If the user tries to launch the plug-in via the "Open" button in Google Play, this will redirect the user
- * to Locale.
+ * to Tasker.
  */
 public final class InfoActivity extends Activity {
     /**
      * URI to Locale in the native version of the Google Play.
      */
     private static final String APP_STORE_URI =
-            "market://details?id=%s&referrer=utm_source=%s&utm_medium=app&utm_campaign=plugin"; //$NON-NLS-1$
+            "https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm"; //$NON-NLS-1$
 
     @Override
     public void onCreate(final Bundle savedInstanceState) {
