@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Aug 29 00:09:28 CEST 2017
+#Tue Aug 29 00:41:05 CEST 2017
 14.set=JAVA_RESOURCE
 180.file=C\:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\transforms\\mergeJavaRes\\debug\\jars\\2\\1f\\main.jar\\doc\\index-files\\index-12.html
 118.set=JAVA_RESOURCE
