@@ -116,7 +116,7 @@ public class SendSingleCommand {
         }
 
         // Connect the socket to the remote host
-        Log.i(Constants.LOG_TAG, "Socket connecting...");
+        Log.i(Constants.LOG_TAG, "Socket connecting at " + ip + ":" + port);
         try {
             sock = new Socket(ip, port);
         } catch (UnknownHostException e) {
@@ -195,7 +195,7 @@ public class SendSingleCommand {
             e.printStackTrace();
         }*/
 
-        ArrayList<String> responses = new ArrayList<>();
+        String responses = "";
         boolean done = false;
         while (!done) {
             try {
@@ -204,9 +204,10 @@ public class SendSingleCommand {
                 if (response.substring(response.length() - 2).equals("$ ") ||
                         response.substring(response.length() - 2).equals("# ")) {
                     done = true;
-                    responses.add(response);
+                    responses += response;
+                    break;
                 } else {
-                    responses.add(response);
+                    responses += response;
                 }
             } catch (InterruptedException e) {
                 Log.e(Constants.LOG_TAG, e.getMessage());
@@ -217,16 +218,14 @@ public class SendSingleCommand {
             }
         }
 
+        Log.d(Constants.LOG_TAG, "response: " + responses);
+
+        // Trying to split the response on newlines, not waterproof
         splitResponses = new ArrayList<>();
-        for (String response : responses) {
-            for (String item : response.split("\\n")) {
+            for (String item : responses.split("\\n")) {
                 splitResponses.add(item.trim());
             }
-        }
 
-        for (String splitResponse : splitResponses) {
-            Log.d(Constants.LOG_TAG, "response: " + splitResponse);
-        }
 
         Log.d(Constants.LOG_TAG, "Sending exit command and waiting for stream to close");
         try {
@@ -245,7 +244,7 @@ public class SendSingleCommand {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (IOException e) {
-                e.printStackTrace();
+                //e.printStackTrace();
             }
         }
 
