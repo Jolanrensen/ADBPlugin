@@ -97,6 +97,5 @@
     <orderEntry type="library" exported="" name="commons-codec-1.10-rep" level="project" />
     <orderEntry type="library" exported="" name="AdbLib" level="project" />
     <orderEntry type="module" module-name="locale_api" exported="" />
-    <orderEntry type="library" exported="" name="locale_api-unspecified" level="project" />
   </component>
 </module>

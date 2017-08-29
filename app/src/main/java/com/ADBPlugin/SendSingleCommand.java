@@ -188,13 +188,6 @@ public class SendSingleCommand {
 
         Log.d(Constants.LOG_TAG, "Command sent, getting responses");
 
-        /*
-        try {
-            stream.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }*/
-
         String responses = "";
         boolean done = false;
         while (!done) {
@@ -227,25 +220,16 @@ public class SendSingleCommand {
             }
 
 
-        Log.d(Constants.LOG_TAG, "Sending exit command and waiting for stream to close");
+        Log.d(Constants.LOG_TAG, "Sending close command and waiting for stream to close");
         try {
-            stream.write(" exit" + '\n');
+            stream.close();
         } catch (IOException e) {
-            e.printStackTrace();
-            return;
-        } catch (InterruptedException e) {
             e.printStackTrace();
             return;
         }
 
         while (!stream.isClosed()) {
-            try {
-                Log.d(Constants.LOG_TAG, "response after exit: " + new String(stream.read(), "US-ASCII"));
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                //e.printStackTrace();
-            }
+            Log.d(Constants.LOG_TAG, "Closing stream...");
         }
 
         Log.d(Constants.LOG_TAG, "Stream closed, closing Adb...");
@@ -254,9 +238,11 @@ public class SendSingleCommand {
             adb.close();
         } catch (IOException e) {
             e.printStackTrace();
+            throw new IOException("Couldn't close ADB connection/socket");
         }
 
         Log.d(Constants.LOG_TAG, "ADB Closed");
+
     }
 
     public ArrayList<String> getSplitResponses() {
