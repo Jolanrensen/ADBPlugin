@@ -21,12 +21,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="C:\android apps\ADBPlugin1\libraries\AdbLib.jar"
+        jar="C:\Users\s154563\.gradle\caches\modules-2\files-2.1\com.tananaev\adblib\1.2\1026920c6fb8a4b84da0151f5da1ccb58f151fe1\adblib-1.2.jar"
         jumboMode="false"
         optimize="true"
         revision="25.0.3"
-        sha1="4593e1cb83ef002fb13f8503c4c093f374612687">
-        <dex dex="C:\android apps\ADBPlugin1\app\build\intermediates\pre-dexed\debug\AdbLib_59e884200550491f98883ea92746f43866c404fe.jar" />
+        sha1="1026920c6fb8a4b84da0151f5da1ccb58f151fe1">
+        <dex dex="C:\android apps\ADBPlugin1\app\build\intermediates\pre-dexed\debug\adblib-1.2_fe209ac2bc48bf9c6f5daf02a62b09e6cd722f06.jar" />
     </item>
 
 </items>

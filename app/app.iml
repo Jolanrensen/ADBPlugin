@@ -94,8 +94,8 @@
     </content>
     <orderEntry type="jdk" jdkName="Android API 25 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" exported="" name="adblib-1.2" level="project" />
     <orderEntry type="library" exported="" name="commons-codec-1.10-rep" level="project" />
-    <orderEntry type="library" exported="" name="AdbLib" level="project" />
     <orderEntry type="module" module-name="locale_api" exported="" />
   </component>
 </module>
