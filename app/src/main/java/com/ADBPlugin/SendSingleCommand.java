@@ -4,10 +4,10 @@ import android.content.Context;
 import android.os.Environment;
 import android.util.Log;
 
-import com.cgutman.adblib.AdbBase64;
-import com.cgutman.adblib.AdbConnection;
-import com.cgutman.adblib.AdbCrypto;
-import com.cgutman.adblib.AdbStream;
+import com.tananaev.adblib.AdbBase64;
+import com.tananaev.adblib.AdbConnection;
+import com.tananaev.adblib.AdbCrypto;
+import com.tananaev.adblib.AdbStream;
 
 import java.io.File;
 import java.io.IOException;

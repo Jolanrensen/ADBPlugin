@@ -18,7 +18,8 @@ android {
 }
 
 dependencies {
-    compile files('C:/android apps/ADBPlugin1/libraries/AdbLib.jar')
+    //compile files('C:/android apps/ADBPlugin1/libraries/AdbLib.jar')
+    compile 'com.tananaev:adblib:1.2'
     compile files('C:/android apps/ADBPlugin1/libraries/commons-codec-1.10-rep.jar')
     compile project(':locale_api')
 }
