@@ -25,6 +25,8 @@
 
     <string name="port">Port</string>
 
-    <string name="command">ADB Shell Command</string>
+    <string name="command">ADB Command</string>
+
+    <string name="protocol">ADB Protocol</string>
 
 </resources>

@@ -77,7 +77,7 @@ public final class FireReceiver extends BroadcastReceiver {
                     try {
                         //Run the program with all the given variables
                         SendSingleCommand sendSingleCommand = new SendSingleCommand();
-                        sendSingleCommand.SendSingleCommand(context, messageSplit[0], Integer.parseInt(messageSplit[1]), messageSplit[2]);
+                        sendSingleCommand.SendSingleCommand(context, messageSplit[0], Integer.parseInt(messageSplit[1]), messageSplit[2], messageSplit[3]);
 
                         //Log the result and signal Tasker
                         Log.d(Constants.LOG_TAG, "Executed single command");

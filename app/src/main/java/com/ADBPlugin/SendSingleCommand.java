@@ -90,7 +90,7 @@ public class SendSingleCommand {
      * @param port    Port of the device with given {@code ip} to connect to
      * @param command The command to be executed on {@code ip:port}
      */
-    public void SendSingleCommand(Context context, String ip, int port, String command)
+    public void SendSingleCommand(Context context, String ip, int port, String command, String protocol)
             throws IOException {
         this.ip = ip;
         this.port = port;
@@ -156,13 +156,12 @@ public class SendSingleCommand {
             e.printStackTrace();
             return;
         }
-        Log.d(Constants.LOG_TAG, "ADB connected, opening shell stream...");
+        Log.d(Constants.LOG_TAG, "ADB connected, opening " + protocol + " stream...");
 
-
-        // Open the shell stream of ADB
+        // Open the stream of ADB
         final AdbStream stream;
         try {
-            stream = adb.open("shell:");
+            stream = adb.open(protocol + ':');
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
             return;
@@ -190,7 +189,7 @@ public class SendSingleCommand {
 
         String responses = "";
         boolean done = false;
-        while (!done) {
+        while (!done && !stream.isClosed()) {
             try {
                 byte[] responseBytes = stream.read();
                 String response = new String(responseBytes, "US-ASCII");

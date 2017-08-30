@@ -11,14 +11,7 @@
                     "endOffset": 160
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 100,
-                        "endColumn": 64,
-                        "endOffset": 160
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
@@ -30,14 +23,7 @@
                     "endOffset": 221
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 165,
-                        "endColumn": 60,
-                        "endOffset": 221
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
@@ -49,14 +35,7 @@
                     "endOffset": 282
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 226,
-                        "endColumn": 60,
-                        "endOffset": 282
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
@@ -68,14 +47,7 @@
                     "endOffset": 358
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 16,
-                        "startColumn": 4,
-                        "startOffset": 710,
-                        "endColumn": 75,
-                        "endOffset": 781
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -83,8 +55,8 @@
                     "startLine": 6,
                     "startColumn": 4,
                     "startOffset": 363,
-                    "endColumn": 53,
-                    "endOffset": 412
+                    "endColumn": 47,
+                    "endOffset": 406
                 },
                 "from": {
                     "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml",
@@ -92,8 +64,8 @@
                         "startLine": 27,
                         "startColumn": 4,
                         "startOffset": 1046,
-                        "endColumn": 53,
-                        "endOffset": 1095
+                        "endColumn": 47,
+                        "endOffset": 1089
                     }
                 }
             },
@@ -101,75 +73,54 @@
                 "to": {
                     "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 417,
+                    "startOffset": 411,
                     "endColumn": 49,
-                    "endOffset": 462
+                    "endOffset": 456
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 23,
-                        "startColumn": 4,
-                        "startOffset": 956,
-                        "endColumn": 49,
-                        "endOffset": 1001
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 467,
+                    "startOffset": 461,
                     "endColumn": 64,
-                    "endOffset": 527
+                    "endOffset": 521
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 19,
-                        "startColumn": 4,
-                        "startOffset": 843,
-                        "endColumn": 64,
-                        "endOffset": 903
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 532,
+                    "startOffset": 526,
                     "endColumn": 37,
-                    "endOffset": 565
+                    "endOffset": 559
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 25,
-                        "startColumn": 4,
-                        "startOffset": 1007,
-                        "endColumn": 37,
-                        "endOffset": 1040
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 570,
-                    "endColumn": 109,
-                    "endOffset": 675
+                    "startOffset": 564,
+                    "endColumn": 49,
+                    "endOffset": 609
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
+                    "file": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\values\\strings.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 29,
                         "startColumn": 4,
-                        "startOffset": 287,
-                        "endColumn": 109,
-                        "endOffset": 392
+                        "startOffset": 1095,
+                        "endColumn": 49,
+                        "endOffset": 1140
                     }
                 }
             },
@@ -177,133 +128,96 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 680,
-                    "endColumn": 113,
-                    "endOffset": 789
+                    "startOffset": 614,
+                    "endColumn": 109,
+                    "endOffset": 719
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 397,
-                        "endColumn": 113,
-                        "endOffset": 506
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 794,
-                    "endColumn": 70,
-                    "endOffset": 860
+                    "startOffset": 724,
+                    "endColumn": 113,
+                    "endOffset": 833
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 511,
-                        "endColumn": 70,
-                        "endOffset": 577
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 865,
-                    "endColumn": 64,
-                    "endOffset": 925
+                    "startOffset": 838,
+                    "endColumn": 70,
+                    "endOffset": 904
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 582,
-                        "endColumn": 64,
-                        "endOffset": 642
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 930,
+                    "startOffset": 909,
                     "endColumn": 64,
-                    "endOffset": 990
+                    "endOffset": 969
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 9,
-                        "startColumn": 4,
-                        "startOffset": 647,
-                        "endColumn": 64,
-                        "endOffset": 707
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 995,
-                    "endColumn": 60,
-                    "endOffset": 1051
+                    "startOffset": 974,
+                    "endColumn": 64,
+                    "endOffset": 1034
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 10,
-                        "startColumn": 4,
-                        "startOffset": 712,
-                        "endColumn": 60,
-                        "endOffset": 768
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1056,
-                    "endColumn": 92,
-                    "endOffset": 1144
+                    "startOffset": 1039,
+                    "endColumn": 60,
+                    "endOffset": 1095
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 11,
-                        "startColumn": 4,
-                        "startOffset": 773,
-                        "endColumn": 92,
-                        "endOffset": 861
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1149,
-                    "endColumn": 67,
-                    "endOffset": 1212
+                    "startOffset": 1100,
+                    "endColumn": 92,
+                    "endOffset": 1188
                 },
                 "from": {
-                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 866,
-                        "endColumn": 67,
-                        "endOffset": 929
-                    }
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1193,
+                    "endColumn": 67,
+                    "endOffset": 1256
+                },
+                "from": {
+                    "file": "C:\\android apps\\ADBPlugin1\\locale_api\\build\\intermediates\\bundles\\default\\res\\values\\values.xml"
                 }
             }
         ]

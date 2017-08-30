@@ -23,10 +23,12 @@ public final class R {
     public static final class id {
         public static final int text1=0x7f070003;
         public static final int text2=0x7f070005;
-        public static final int text3=0x7f070007;
+        public static final int text3=0x7f070009;
+        public static final int text4=0x7f070007;
         public static final int textView=0x7f070004;
         public static final int textView2=0x7f070006;
-        public static final int textView3=0x7f070008;
+        public static final int textView3=0x7f07000a;
+        public static final int textView4=0x7f070008;
         public static final int twofortyfouram_locale_menu_dontsave=0x7f070000;
         public static final int twofortyfouram_locale_menu_help=0x7f070001;
         public static final int twofortyfouram_locale_menu_save=0x7f070002;
@@ -46,6 +48,7 @@ public final class R {
         public static final int ip_address=0x7f040007;
         public static final int plugin_name=0x7f040008;
         public static final int port=0x7f040009;
+        public static final int protocol=0x7f04000a;
         public static final int twofortyfouram_locale_breadcrumb_format=0x7f040000;
         public static final int twofortyfouram_locale_breadcrumb_separator=0x7f040001;
         public static final int twofortyfouram_locale_menu_dontsave=0x7f040002;

@@ -8,10 +8,12 @@ int drawable twofortyfouram_locale_ic_menu_help 0x7f020006
 int drawable twofortyfouram_locale_ic_menu_save 0x7f020007
 int id text1 0x7f070003
 int id text2 0x7f070005
-int id text3 0x7f070007
+int id text3 0x7f070009
+int id text4 0x7f070007
 int id textView 0x7f070004
 int id textView2 0x7f070006
-int id textView3 0x7f070008
+int id textView3 0x7f07000a
+int id textView4 0x7f070008
 int id twofortyfouram_locale_menu_dontsave 0x7f070000
 int id twofortyfouram_locale_menu_help 0x7f070001
 int id twofortyfouram_locale_menu_save 0x7f070002
@@ -23,6 +25,7 @@ int string command 0x7f040006
 int string ip_address 0x7f040007
 int string plugin_name 0x7f040008
 int string port 0x7f040009
+int string protocol 0x7f04000a
 int string twofortyfouram_locale_breadcrumb_format 0x7f040000
 int string twofortyfouram_locale_breadcrumb_separator 0x7f040001
 int string twofortyfouram_locale_menu_dontsave 0x7f040002

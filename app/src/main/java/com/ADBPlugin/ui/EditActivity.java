@@ -58,6 +58,7 @@ public final class EditActivity extends AbstractPluginActivity {
                 ((EditText) findViewById(R.id.text1)).setText(splitMessage[0]);
                 ((EditText) findViewById(R.id.text2)).setText(splitMessage[1]);
                 ((EditText) findViewById(R.id.text3)).setText(splitMessage[2]);
+                ((EditText) findViewById(R.id.text4)).setText(splitMessage[3]);
             }
         }
     }
@@ -68,9 +69,10 @@ public final class EditActivity extends AbstractPluginActivity {
             String ipAddress = ((EditText) findViewById(R.id.text1)).getText().toString();
             String port = ((EditText) findViewById(R.id.text2)).getText().toString();
             String command = ((EditText) findViewById(R.id.text3)).getText().toString();
+            String protocol = ((EditText) findViewById(R.id.text4)).getText().toString();
             //I know, it's messy. but it works XD can be improved upon of course
             //TODO
-            String result = ipAddress + "§" + port + "§" + command;
+            String result = ipAddress + "§" + port + "§" + command + "§" + protocol;
 
             if (ipAddress.length() > 0 && port.length() > 0 && command.length() > 0) {
                 final Intent resultIntent = new Intent();
@@ -104,7 +106,7 @@ public final class EditActivity extends AbstractPluginActivity {
                 /*
                  * The blurb is concise status text to be displayed in the host's UI.
                  */
-                final String blurb = generateBlurb(getApplicationContext(), ipAddress + ":" + port + "\n" + command);
+                final String blurb = generateBlurb(getApplicationContext(), ipAddress + ":" + port + "\n" + protocol + "\n" + command);
                 resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_STRING_BLURB, blurb);
                 setResult(RESULT_OK, resultIntent);
             }

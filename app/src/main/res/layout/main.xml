@@ -53,6 +53,24 @@
         android:id="@+id/textView2" />
 
     <EditText
+        android:id="@+id/text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="8dip"
+        android:hint="@string/protocol" />
+
+    <TextView
+        android:text='Hint: Use "shell" for normal commands or "reboot", "push", "pull" etc.'
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="8dip"
+        android:id="@+id/textView4" />
+
+    <EditText
         android:id="@+id/text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,7 +80,7 @@
         android:hint="@string/command" />
 
     <TextView
-        android:text='Hint: For example "input keyevent POWER", this will emulate a powerkey press'
+        android:text='Hint: For example "input keyevent POWER", this will emulate a powerkey press if using "shell" as the protocol'
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="6dip"

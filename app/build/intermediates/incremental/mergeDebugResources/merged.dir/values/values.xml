@@ -4,10 +4,11 @@
     <item name="twofortyfouram_locale_menu_help" type="id"/>
     <item name="twofortyfouram_locale_menu_save" type="id"/>
     <string name="app_name">Remote ADB Shell Command Tasker Plugin</string>
-    <string name="command">ADB Shell Command</string>
+    <string name="command">ADB Command</string>
     <string name="ip_address">IP Address</string>
     <string name="plugin_name">Remote ADB Shell Command</string>
     <string name="port">Port</string>
+    <string name="protocol">ADB Protocol</string>
     <string name="twofortyfouram_locale_breadcrumb_format" ns1:ignore="UnusedResources">%1$s%2$s%3$s</string>
     <string name="twofortyfouram_locale_breadcrumb_separator" ns1:ignore="UnusedResources">\u0020>\u0020</string>
     <string name="twofortyfouram_locale_menu_dontsave">Cancel</string>
