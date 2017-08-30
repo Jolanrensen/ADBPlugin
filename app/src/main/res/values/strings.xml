@@ -14,10 +14,10 @@
 <resources>
 
     <!-- App name -->
-    <string name="app_name">Remote ADB Shell Command Tasker Plugin</string>
+    <string name="app_name">ADB Shell Command Tasker Plugin</string>
 
     <!-- Name of the plug-in that appears in Locale -->
-    <string name="plugin_name">Remote ADB Shell Command</string>
+    <string name="plugin_name">ADB Shell Command</string>
 
     <!-- Hint text in the toast edit text -->
 
