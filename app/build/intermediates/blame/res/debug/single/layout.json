@@ -1,6 +1,10 @@
 [
     {
-        "merged": "C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
-        "source": "C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\layout\\main.xml"
+        "merged": "/mnt/HardDisk/android apps/ADBPlugin1/C:\\android apps\\ADBPlugin1\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "/mnt/HardDisk/android apps/ADBPlugin1/C:\\android apps\\ADBPlugin1\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "/mnt/HardDisk/android apps/ADBPlugin1/app/build/intermediates/res/merged/debug/layout/main.xml",
+        "source": "/mnt/HardDisk/android apps/ADBPlugin1/app/src/main/res/layout/main.xml"
     }
 ]
