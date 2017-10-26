@@ -35,6 +35,8 @@ public class SendSingleCommand {
     private String command;
     private Context context;
     private ArrayList<String> splitResponses = null;
+    AdbStream stream;
+    AdbConnection adb;
 
     // This implements the AdbBase64 interface required for AdbCrypto
     public static AdbBase64 getBase64Impl() {
@@ -99,7 +101,7 @@ public class SendSingleCommand {
         this.command = command;
         this.context = context;
 
-        AdbConnection adb;
+
         Socket sock;
         AdbCrypto crypto;
 
@@ -161,43 +163,20 @@ public class SendSingleCommand {
         Log.d(Constants.LOG_TAG, "ADB connected, opening shell stream...");
 
 
-        // Open the shell stream of ADB
-        final AdbStream stream;
-        try {
-            stream = adb.open("shell:");
-        } catch (UnsupportedEncodingException e) {
-            e.printStackTrace();
-            return;
-        } catch (IOException e) {
-            e.printStackTrace();
-            return;
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            return;
-        }
-
-
-        Log.d(Constants.LOG_TAG, "Opened, writing command: " + this.command);
-        try {
-            stream.write(this.command + '\n');
-        } catch (IOException e) {
-            e.printStackTrace();
-            return;
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-            return;
-        }
+        openAndTryToSend();
 
         Log.d(Constants.LOG_TAG, "Command sent, getting responses");
 
         String responses = "";
         boolean done = false;
-        while (!done) {
+        while (!done && !stream.isClosed()) {
             try {
                 byte[] responseBytes = stream.read();
                 String response = new String(responseBytes, "US-ASCII");
                 if (response.substring(response.length() - 2).equals("$ ") ||
-                        response.substring(response.length() - 2).equals("# ")) {
+                        response.substring(response.length() - 2).equals("# ") ||
+                        response.substring(response.length() - 1).equals("$") ||
+                        response.substring(response.length() - 1).equals("#")) {
                     done = true;
                     responses += response;
                     break;
@@ -208,6 +187,9 @@ public class SendSingleCommand {
                 Log.e(Constants.LOG_TAG, e.getMessage());
                 e.printStackTrace();
             } catch (IOException e) {
+                Log.e(Constants.LOG_TAG, e.getMessage());
+                e.printStackTrace();
+            } catch (IndexOutOfBoundsException e) {
                 Log.e(Constants.LOG_TAG, e.getMessage());
                 e.printStackTrace();
             }
@@ -238,6 +220,7 @@ public class SendSingleCommand {
 
         try {
             adb.close();
+            sock.close();
         } catch (IOException e) {
             e.printStackTrace();
             throw new IOException("Couldn't close ADB connection/socket");
@@ -245,6 +228,35 @@ public class SendSingleCommand {
 
         Log.d(Constants.LOG_TAG, "ADB Closed");
 
+    }
+
+    void openAndTryToSend() {
+        // Open the shell stream of ADB
+        try {
+            stream = adb.open("shell:");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+            return;
+        } catch (IOException e) {
+            e.printStackTrace();
+            return;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return;
+        }
+
+        Log.d(Constants.LOG_TAG, "Writing command: " + this.command);
+        try {
+            stream.write(new byte[]{0x03});
+            stream.write(this.command + '\n');
+        } catch (IOException e) {
+            e.printStackTrace();
+            openAndTryToSend();
+            return;
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+            return;
+        }
     }
 
     public ArrayList<String> getSplitResponses() {

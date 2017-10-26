@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="adblib-1.2">
+  <library name="com.tananaev:adblib:1.2@jar">
     <CLASSES>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/1026920c6fb8a4b84da0151f5da1ccb58f151fe1/adblib-1.2.jar!/" />
     </CLASSES>

@@ -17,7 +17,7 @@
         android:name="android.hardware.touchscreen"
         android:required="false" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
