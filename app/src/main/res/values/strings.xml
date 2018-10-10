@@ -26,5 +26,10 @@
     <string name="port">Port</string>
 
     <string name="command">ADB Shell Command</string>
-
+    <string name="ip_hint">For example \"192.168.178.15\" or \"localhost\" to connect to this device</string>
+    <string name="port_hint">By default android uses port \"5555\"</string>
+    <string name="command_hint">For example \"input keyevent POWER\", this will emulate a powerkey press</string>
+    <string name="additional">Additional Settings</string>
+    <string name="ctrl_c">Emulate Ctrl+C before sending command (needed for some devices).</string>
+    <string name="variables">variables</string>
 </resources>

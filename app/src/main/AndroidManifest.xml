@@ -22,13 +22,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ADBPlugin"
     android:installLocation="internalOnly"
-    android:versionCode="5000"
-    android:versionName="5.0">
+    android:versionCode="5900"
+    android:versionName="6.0-b1">
 
     <!-- Locale 4.x supports API 8 or greater. -->
-    <uses-sdk
-        android:minSdkVersion="8"
-        android:targetSdkVersion="17" />
 
     <!-- This allows the plug-in to appear on non-touchscreen devices like Google TV.  Be sure to test that the app works without a touchscreen. -->
     <uses-feature
@@ -105,7 +102,6 @@
         <receiver
             android:name="com.ADBPlugin.receiver.FireReceiver"
             android:exported="true"
-            android:process=":background"
             tools:ignore="ExportedReceiver">
 
             <!-- this Intent filter allows the plug-in to discovered by Locale -->

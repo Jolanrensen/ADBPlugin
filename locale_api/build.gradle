@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
 
 android {
-    compileSdkVersion 17
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
 
     defaultConfig {
-        minSdkVersion 3
-        targetSdkVersion 17
+        minSdkVersion 19
+        targetSdkVersion 28
     }
 
     buildTypes {
@@ -15,4 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
         }
     }
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
