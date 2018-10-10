@@ -83,7 +83,7 @@ class EditActivity : AbstractPluginActivity() {
                     } else {
                         val jsonObject = JSONObject(message)
                         input_ip.setText(jsonObject["ip"] as String)
-                        input_port.setText((jsonObject["port"] as Int).toString())
+                        input_port.setText(jsonObject["port"] as String)
                         input_command.setText(jsonObject["command"] as String)
                         ctrl_c_switch.isChecked = jsonObject["ctrl_c"] as Boolean
                     }
@@ -154,7 +154,7 @@ class EditActivity : AbstractPluginActivity() {
 
             val result = jsonObjectOf(
                     "ip"        to ipAddress,
-                    "port"      to port.toInt(),
+                    "port"      to port,
                     "command"   to command,
                     "ctrl_c"    to ctrlC
             )

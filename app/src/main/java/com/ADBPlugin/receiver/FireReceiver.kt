@@ -78,7 +78,7 @@ class FireReceiver : BroadcastReceiver() {
                         val split = message!!.split("§".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
                         jsonObjectOf(
                                 "ip"        to split[0],
-                                "port"      to split[1].toInt(),
+                                "port"      to split[1],
                                 "command"   to split[2],
                                 "ctrl_c"    to false
                         )
@@ -88,7 +88,7 @@ class FireReceiver : BroadcastReceiver() {
             Thread(Runnable {
                 try {
                     //Run the program with all the given variables
-                    val sendSingleCommand = SendSingleCommand(context, values["ip"] as String, values["port"] as Int, values["command"] as String, values["ctrl_c"] as Boolean)
+                    val sendSingleCommand = SendSingleCommand(context, values["ip"] as String, (values["port"] as String).toInt(), values["command"] as String, values["ctrl_c"] as Boolean)
 
                     //Log the result and signal Tasker
                     Log.d(Constants.LOG_TAG, "Executed single command")
