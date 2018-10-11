@@ -32,4 +32,6 @@
     <string name="additional">Additional Settings</string>
     <string name="ctrl_c">Emulate Ctrl+C before sending command (needed for some devices).</string>
     <string name="variables">variables</string>
+    <string name="timeout">ADB timeout in ms</string>
+    <string name="timeout_hint">For example: \"50\". Lower numbers make it faster but less reliable.</string>
 </resources>

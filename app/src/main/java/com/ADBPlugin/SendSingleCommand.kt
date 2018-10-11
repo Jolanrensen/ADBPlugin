@@ -1,14 +1,15 @@
 package com.ADBPlugin
 
-import android.content.Context
-import android.os.Environment
-import android.util.Log
 
+import android.content.Context
+import android.org.apache.commons.codec.binary.Base64.encodeBase64String
+import android.util.Log
 import com.tananaev.adblib.AdbBase64
 import com.tananaev.adblib.AdbConnection
 import com.tananaev.adblib.AdbCrypto
 import com.tananaev.adblib.AdbStream
-
+import kotlinx.coroutines.experimental.delay
+import kotlinx.coroutines.experimental.launch
 import java.io.File
 import java.io.IOException
 import java.io.UnsupportedEncodingException
@@ -18,16 +19,9 @@ import java.net.Socket
 import java.net.UnknownHostException
 import java.security.NoSuchAlgorithmException
 import java.security.spec.InvalidKeySpecException
-import java.util.ArrayList
-
-
-import android.org.apache.commons.codec.binary.Base64.encodeBase64String
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
-import java.lang.Exception
-import java.lang.UnsupportedOperationException
-import java.nio.charset.Charset
+import java.util.*
 import java.util.concurrent.TimeUnit
+import kotlin.collections.ArrayList
 
 
 /**
@@ -46,21 +40,26 @@ class SendSingleCommand
  * @param command The command to be executed on `ip:port`
  */
 @Throws(IOException::class, Exception::class)
-constructor(private val context: Context,
+constructor(private val logs: ArrayList<String>,
+            private val context: Context,
             private val ip: String,
             private val port: Int,
             private val command: String,
-            private val ctrlC: Boolean) {
+            private val timeout: Int,
+            ctrlC: Boolean,
+            private val callBack: (ArrayList<String>?) -> Unit) {
 
-    var splitResponses: ArrayList<String>? = null
-        private set
+    private var splitResponses: ArrayList<String>? = null
+
+    val pub = File(context.filesDir, "pub.key")
+    val priv = File(context.filesDir, "priv.key")
 
     var stream: AdbStream
     var adb: AdbConnection
 
     // This implements the AdbBase64 interface required for AdbCrypto
     val base64Impl: AdbBase64
-        get() = AdbBase64 { arg0 -> encodeBase64String(arg0) }
+        get() = AdbBase64 { encodeBase64String(it) }
 
     init {
         val sock: Socket
@@ -68,13 +67,13 @@ constructor(private val context: Context,
 
         // Setup the crypto object required for the AdbConnection
         try {
-            crypto = setupCrypto("pub.key", "priv.key")
+            crypto = setupCrypto()
         } catch (e: IOException) {
-            throw IOException("Couldn't read/write keys from /sdcard/ADBPlugin/pub.key and /sdcard/ADBPlugin/priv.key, make sure you gave storage read/write permission.", e)
+            throw IOException("Couldn't read/write keys from ${pub.path} and ${priv.path}, make sure you gave storage read/write permission.", e)
         }
 
         // Connect the socket to the remote host
-        Log.i(Constants.LOG_TAG, "Socket connecting at $ip:$port")
+        logI("Socket connecting at $ip:$port")
         try {
             sock = Socket(ip, port)
         } catch (e: UnknownHostException) {
@@ -85,23 +84,23 @@ constructor(private val context: Context,
             throw Exception("Couldn't find adb device at $ip:$port", e)
         }
 
-        Log.i(Constants.LOG_TAG, "Socket connected, creating AdbConnection...")
+        logI("Socket connected, creating AdbConnection...")
 
         // Construct the AdbConnection object
         adb = AdbConnection.create(sock, crypto)
 
         // Start the application layer connection process
-        Log.d(Constants.LOG_TAG, "Created, ADB connecting...")
+        logD("Created, ADB connecting...")
         try {
             adb.connect()
         } catch (e: IllegalStateException) {
-            Log.e(Constants.LOG_TAG, "ADB already connected...", e)
+            logE("ADB already connected...", e)
         } catch (e: InterruptedException) {
             throw Exception("unable to wait for the connection to finish", e)
         } catch (e: IOException) {
             throw IOException("the socket fails while connecting", e)
         }
-        Log.d(Constants.LOG_TAG, "ADB connected, opening shell stream...")
+        logD("ADB connected, opening shell stream...")
 
         // sending...
         try {
@@ -114,82 +113,81 @@ constructor(private val context: Context,
             throw Exception("unable to wait for the connection to finish", e)
         }
 
-        // wait until stream is opened
-        Log.d(Constants.LOG_TAG, "Writing command: $command")
+        logD("Writing command: $command")
 
-        //var commandSent = false
-        //while (!commandSent) {
-            try {
-                if (ctrlC) stream.write(byteArrayOf(0x03))
-                stream.write(command + '\n')
-         //       commandSent = true
-            } catch (e: IOException) {
-                throw IOException("Couldn't write command, stream fails while sending data, try without CTRL+C", e)
-            } catch (e: InterruptedException) {
-                throw Exception("Couldn't write command, unable to wait to send data", e)
-            }
-       // }
+        try {
+            if (ctrlC) stream.write(byteArrayOf(0x03))
+            stream.write(command + '\n')
+        } catch (e: IOException) {
+            throw IOException("Couldn't write command, stream fails while sending data, try without CTRL+C", e)
+        } catch (e: InterruptedException) {
+            throw Exception("Couldn't write command, unable to wait to send data", e)
+        }
 
-        Log.d(Constants.LOG_TAG, "Command sent, getting responses")
+        logD("Command sent")
 
         var responses = ""
         var done = false
-        while (!done && !stream.isClosed) {
-            try {
-                val responseBytes = stream.read()
-                val response = String(responseBytes, charset("US-ASCII"))
-                if (response.substring(response.length - 2) == "$ " ||
-                        response.substring(response.length - 2) == "# " ||
-                        response.substring(response.length - 1) == "$" ||
-                        response.substring(response.length - 1) == "#") {
-                    done = true
+        var timer = 0
+
+        logD("Getting responses...")
+        launch {
+            while (!done) {
+                try {
+                    timer = 0
+                    val responseBytes = stream.read()
+                    val response = String(responseBytes, charset("US-ASCII"))
                     responses += response
-                    break
-                } else {
-                    responses += response
+                } catch (e: InterruptedException) {
+                    throw Exception("Couldn't get response, unable to wait for data", e)
+                } catch (e: IOException) {
+                    logD("Stream stopped")
                 }
-            } catch (e: InterruptedException) {
-                throw Exception("Couldn't get response, unable to wait for data", e)
-            } catch (e: IOException) {
-                throw Exception("Couldn't get response, stream fails while waiting or stream closed", e)
-            } catch (e: IndexOutOfBoundsException) {
-                throw Exception("Couldn't parse response", e)
             }
         }
 
-        Log.d(Constants.LOG_TAG, "response:\n$responses")
-
-        // Trying to split the response on newlines, not waterproof
-        splitResponses = ArrayList()
-        for (item in responses.split("\\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()) {
-            splitResponses!!.add(item.trim { it <= ' ' })
-        }
-
-        Log.d(Constants.LOG_TAG, "Sending close command and waiting for stream to close")
-        stream.close()
         launch {
-            delay(10, TimeUnit.SECONDS)
-            if (!stream.isClosed)
-                throw Exception("Stream didn't close after 10 seconds waiting")
-        }
-        launch {
-            Log.d(Constants.LOG_TAG, "Closing stream...")
-            while (!stream.isClosed) {}
-            Log.d(Constants.LOG_TAG, "Stream closed, closing Adb...")
-
-            try {
-                adb.close()
-            } catch (e: IOException) {
-                throw IOException("Couldn't close ADB connection socket", e)
+            // the timer resets on each response and when it reached the limit, it stops reading and continues with the rest
+            while (!done) {
+                delay(1, TimeUnit.MILLISECONDS)
+                timer++
+                if (timer == timeout) done = true
             }
+
+            logD("response:\n$responses")
+
+            // Trying to split the response on newlines, not waterproof
+            splitResponses = ArrayList()
+            for (item in responses.split("\\n".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()) {
+                splitResponses!!.add(item.trim { it <= ' ' })
+            }
+
+            logD("Sending close command and waiting for stream to close")
+            stream.close()
             launch {
                 delay(10, TimeUnit.SECONDS)
-                if (!sock.isClosed)
-                    throw Exception("ADB connection socket didn't close after 10 seconds waiting")
+                if (!stream.isClosed)
+                    throw Exception("Stream didn't close after 10 seconds waiting")
             }
             launch {
-                while (!sock.isClosed) {}
-                Log.d(Constants.LOG_TAG, "ADB connection socket closed")
+                while (!stream.isClosed) {}
+                logD("Stream closed, closing Adb...")
+
+                try {
+                    adb.close()
+                } catch (e: IOException) {
+                    throw IOException("Couldn't close ADB connection socket", e)
+                }
+                launch {
+                    delay(10, TimeUnit.SECONDS)
+                    if (!sock.isClosed)
+                        throw Exception("ADB connection socket didn't close after 10 seconds waiting")
+                }
+                launch {
+                    while (!sock.isClosed) {}
+                    logD("ADB connection socket closed")
+                    callBack(splitResponses)
+                }
             }
         }
     }
@@ -197,10 +195,8 @@ constructor(private val context: Context,
     // This function loads a keypair from the specified files if one exists, and if not,
     // it creates a new keypair and saves it in the specified files
     @Throws(NoSuchAlgorithmException::class, InvalidKeySpecException::class, IOException::class)
-    private fun setupCrypto(pubKeyFile: String, privKeyFile: String): AdbCrypto {
-        val pub = File(context.filesDir, pubKeyFile)
-        val priv = File(context.filesDir, privKeyFile)
-        Log.d(Constants.LOG_TAG, "keyfiles paths: ${pub.path}, ${priv.path}")
+    private fun setupCrypto(): AdbCrypto {
+        logD("keyfiles paths: ${pub.path}, ${priv.path}")
         var c: AdbCrypto? = null
 
         // Try to load a key pair from the files
@@ -225,11 +221,26 @@ constructor(private val context: Context,
 
             // Save it
             c!!.saveAdbKeyPair(priv, pub)
-            Log.i(Constants.LOG_TAG, "Generated new keypair")
+            logI("Generated new keypair")
         } else {
-            Log.i(Constants.LOG_TAG, "Loaded existing keypair")
+            logI("Loaded existing keypair")
         }
 
         return c
+    }
+
+    private fun logD(message: String) {
+        Log.d(Constants.LOG_TAG, message)
+        logs.add(message)
+    }
+
+    private fun logI(message: String) {
+        Log.i(Constants.LOG_TAG, message)
+        logs.add(message)
+    }
+
+    private fun logE(message: String, exception: java.lang.Exception) {
+        Log.e(Constants.LOG_TAG, message, exception)
+        logs.add(message)
     }
 }

@@ -13,6 +13,7 @@
 package com.ADBPlugin.ui
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.content.Intent
@@ -53,6 +54,7 @@ import com.ADBPlugin.Constants
  */
 class EditActivity : AbstractPluginActivity() {
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -79,12 +81,14 @@ class EditActivity : AbstractPluginActivity() {
                         input_ip.setText(splitMessage[0])
                         input_port.setText(splitMessage[1])
                         input_command.setText(splitMessage[2])
-                        ctrl_c_switch.isEnabled = false
+                        input_timeout.setText("50")
+                        ctrl_c_switch.isChecked = false
                     } else {
                         val jsonObject = JSONObject(message)
                         input_ip.setText(jsonObject["ip"] as String)
                         input_port.setText(jsonObject["port"] as String)
                         input_command.setText(jsonObject["command"] as String)
+                        input_timeout.setText(jsonObject["timeout"] as String)
                         ctrl_c_switch.isChecked = jsonObject["ctrl_c"] as Boolean
                     }
                 }
@@ -141,6 +145,19 @@ class EditActivity : AbstractPluginActivity() {
                 }
             }
 
+            dropdown_timeout.apply {
+                adapter = arrayAdapter
+                onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+                    override fun onNothingSelected(parent: AdapterView<*>?) {}
+                    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                        if (position != 0) {
+                            input_timeout.text.append(passedNames[position])
+                            setSelection(0)
+                        }
+                    }
+                }
+            }
+
 
         }
     }
@@ -150,21 +167,22 @@ class EditActivity : AbstractPluginActivity() {
             val ipAddress = input_ip.text.toString()
             val port = input_port.text.toString()
             val command = input_command.text.toString()
+            val timeout = input_timeout.text.toString()
             val ctrlC = ctrl_c_switch.isChecked
 
             val result = jsonObjectOf(
                     "ip"        to ipAddress,
                     "port"      to port,
                     "command"   to command,
+                    "timeout"   to timeout,
                     "ctrl_c"    to ctrlC
             )
 
-            if (ipAddress.isNotEmpty() && port.isNotEmpty() && command.isNotEmpty()) {
+            if (ipAddress.isNotEmpty() && port.isNotEmpty() && command.isNotEmpty() && timeout.isNotEmpty()) {
                 val resultIntent = Intent()
 
                 if (TaskerPlugin.Setting.hostSupportsSynchronousExecution(intent.extras))
                     TaskerPlugin.Setting.requestTimeoutMS(resultIntent, 60000)
-
 
                 /*
                  * This extra is the data to ourselves: either for the Activity or the BroadcastReceiver. Note
@@ -181,9 +199,16 @@ class EditActivity : AbstractPluginActivity() {
                     TaskerPlugin.Setting.setVariableReplaceKeys(resultBundle, arrayOf(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE))
 
                 if (TaskerPlugin.hostSupportsRelevantVariables(intent.extras))
-                    TaskerPlugin.addRelevantVariableList(resultIntent, arrayOf("%output()\nRaw console output\nAll the output given by the console after executing your command. " +
-                            "Replace '()' with the index of the output, so, %output1, %output2 and so on." +
-                            "You can also iterate over the output with For by putting %output() in Items."))
+                    TaskerPlugin.addRelevantVariableList(resultIntent, arrayOf(
+                            """%output()
+                                Raw terminal output.
+                                All the output given by the console after executing your command.
+                                Replace '()' with the index of the output, so, %output1, %output2 and so on.
+                                You can also iterate over the output with For by putting %output() in Items.""".trimIndent(),
+                            """%errors
+                                Stacktrace of errors if they occur.
+                                'Continue Task After Error' must be enabled to use this result.
+                                Comparable to logcat""".trimIndent()))
 
                 /*
                  * The blurb is concise status text to be displayed in the host's UI.
@@ -191,13 +216,17 @@ class EditActivity : AbstractPluginActivity() {
                 val blurb = generateBlurb(applicationContext,
                         "$ipAddress:$port\n" +
                                 "$command\n"+
+                                "$timeout ms\n" +
                                 if (ctrlC) "Ctrl+c" else "".trimMargin())
                 resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_STRING_BLURB, blurb)
                 setResult(Activity.RESULT_OK, resultIntent)
+                super.finish()
+            } else {
+                Toast.makeText(applicationContext, "Fill in all the fields!", Toast.LENGTH_SHORT).show()
             }
+        } else {
+            super.finish()
         }
-
-        super.finish()
     }
 
     companion object {

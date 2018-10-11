@@ -8,468 +8,23 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="com.ADBPlugin" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7206059d-9188-4cb7-a7fd-6b94af8f4f68" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle____local_aars____mnt_HardDisk_android_apps_ADBPlugin1_libraries_commons_codec_1_10_rep_jar_unspecified_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_tananaev_adblib_1_2_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_annotations_13_0_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_71_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_71_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_71_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/Constants.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/AbstractPluginActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="7206059d-9188-4cb7-a7fd-6b94af8f4f68" name="Default" comment="quick fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADBPlugin1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADBPlugin1.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/androidTest/debug/com/ADBPlugin/test/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/ADBPlugin/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/ADBPlugin/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/ADBPlugin/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/generated/source/r/debug/com/twofortyfouram/locale/api/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-cs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-de.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-es.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-fr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-hdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-it.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-ja.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-ko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-ldpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-mdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-nb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-nl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-pt-rBR.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-ru.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-v11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-v9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values-vi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/multi/values.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-hdpi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-ldpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-ldpi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-mdpi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable-xhdpi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/drawable.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/layout.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/blame/res/debug/single/menu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/androidTest/debug/com/ADBPlugin/test/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/PluginApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$layout.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/SendSingleCommand$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/SendSingleCommand.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin$Condition.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin$Encoding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin$Event.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin$Host.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin$Setting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/TaskerPlugin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/bundle/BundleScrubber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/bundle/PluginBundleManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/receiver/FireReceiver$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/receiver/FireReceiver.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/ui/AbstractPluginActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/ui/EditActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/ADBPlugin/ui/InfoActivity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-safeguard/androidTest/debug/tag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental-safeguard/debug/tag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/dex-renamer-state.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/packageDebug/file-input-save-data.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/manifests/full/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug-androidTest.ap_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/res/resources-debug.ap_" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbols/debug/R.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/transforms/dex/debug/folders/1000/1f/main/classes.dex" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/apk/app-debug.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbBase64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbConnection$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbCrypto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbProtocol$AdbMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbProtocol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/AdbStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/AdbLib.jar_epuafwl6tnr947a0e0nips9dw/com/cgutman/adblib/package-info.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbBase64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbConnection$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbConnection.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbCrypto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbProtocol$AdbMessage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbProtocol.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/adblib-1.2.jar_46ayfcg2l8nf0an2lwz0rwyne/com/tananaev/adblib/AdbStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_alr68weu3muooq3lqgawgv7fe/com/twofortyfouram/locale/BreadCrumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_alr68weu3muooq3lqgawgv7fe/com/twofortyfouram/locale/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_alr68weu3muooq3lqgawgv7fe/com/twofortyfouram/locale/Intent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_alr68weu3muooq3lqgawgv7fe/com/twofortyfouram/locale/PackageUtilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/classes.jar_alr68weu3muooq3lqgawgv7fe/com/twofortyfouram/locale/api/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/BinaryDecoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/BinaryEncoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/CharEncoding.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/Charsets.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/Decoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/DecoderException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/Encoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/EncoderException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/StringDecoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/StringEncoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/StringEncoderComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Base32.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Base32InputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Base32OutputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Base64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Base64InputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Base64OutputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/BaseNCodec$Context.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/BaseNCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/BaseNCodecInputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/BaseNCodecOutputStream.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/BinaryCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/CharSequenceUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/Hex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/binary/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/B64.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/Crypt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/DigestUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/HmacAlgorithms.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/HmacUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/Md5Crypt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/MessageDigestAlgorithms.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/Sha2Crypt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/digest/UnixCrypt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/AbstractCaverphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/Caverphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/Caverphone1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/Caverphone2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/ColognePhonetic$CologneBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/ColognePhonetic$CologneInputBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/ColognePhonetic$CologneOutputBuffer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/ColognePhonetic.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/DaitchMokotoffSoundex$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/DaitchMokotoffSoundex$Branch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/DaitchMokotoffSoundex$Rule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/DaitchMokotoffSoundex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/DoubleMetaphone$DoubleMetaphoneResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/DoubleMetaphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/MatchRatingApproachEncoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/Metaphone.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/Nysiis.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/RefinedSoundex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/Soundex.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/SoundexUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/BeiderMorseEncoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Lang$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Lang$LangRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Lang.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Languages$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Languages$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Languages$LanguageSet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Languages$SomeLanguages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Languages.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/NameType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/PhoneticEngine$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/PhoneticEngine$PhonemeBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/PhoneticEngine$RulesApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/PhoneticEngine.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/ResourceConstants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$Phoneme$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$Phoneme.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$PhonemeExpr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$PhonemeList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule$RPattern.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/Rule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/language/bm/RuleType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/net/BCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/net/QCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/net/QuotedPrintableCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/net/RFC1522Codec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/net/URLCodec.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/tmp/expandedArchives/commons-codec-1.10-rep.jar_ed49ea8v6fe0lko2d77qudu2g/android/org/apache/commons/codec/net/Utils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/PluginApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/PluginApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/BundleScrubber.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/BundleScrubber.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/AbstractPluginActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/InfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/InfoActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/generated/source/buildConfig/androidTest/debug/com/twofortyfouram/locale/api/test/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/generated/source/buildConfig/release/com/twofortyfouram/locale/api/BuildConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/generated/source/r/androidTest/debug/com/twofortyfouram/locale/api/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/generated/source/r/androidTest/debug/com/twofortyfouram/locale/api/test/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/generated/source/r/debug/com/twofortyfouram/locale/api/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/generated/source/r/release/com/twofortyfouram/locale/api/R.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-cs.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-de.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-es.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-fr.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-hdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-it.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-ja.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-ko.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-ldpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-mdpi-v4.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-nb.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-nl.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-pt-rBR.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-ru.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-sv.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-v11.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-v9.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values-vi.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/multi/values.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/single/drawable-hdpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/single/drawable-ldpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/single/drawable-mdpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/single/drawable-xhdpi-v14.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/single/drawable.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/blame/res/androidTest/debug/single/menu.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-hdpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-hdpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-hdpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-ldpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-ldpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-ldpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-mdpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-mdpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-mdpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-xhdpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-xhdpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable-xhdpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable/twofortyfouram_locale_ic_menu_dontsave.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable/twofortyfouram_locale_ic_menu_help.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/drawable/twofortyfouram_locale_ic_menu_save.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/menu/twofortyfouram_locale_help_save_dontsave.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-ldpi-v4/values-ldpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-mdpi-v4/values-mdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-v11/values-v11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-v14/values-v14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-v9/values-v9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/debug/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/classes.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-hdpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-hdpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-hdpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-ldpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-ldpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-ldpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-mdpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-mdpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-mdpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-xhdpi-v14/twofortyfouram_locale_ic_menu_dontsave.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-xhdpi-v14/twofortyfouram_locale_ic_menu_help.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable-xhdpi-v14/twofortyfouram_locale_ic_menu_save.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable/twofortyfouram_locale_ic_menu_dontsave.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable/twofortyfouram_locale_ic_menu_help.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/drawable/twofortyfouram_locale_ic_menu_save.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/menu/twofortyfouram_locale_help_save_dontsave.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-ldpi-v4/values-ldpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-mdpi-v4/values-mdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-v11/values-v11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-v14/values-v14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-v9/values-v9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/bundles/default/res/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R$menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/androidTest/debug/com/twofortyfouram/locale/api/test/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/BreadCrumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/Intent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/PackageUtilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/debug/com/twofortyfouram/locale/api/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/BreadCrumber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/Constants.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/Intent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/PackageUtilities.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/BuildConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$attr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$drawable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$id.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$integer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$menu.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$string.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R$style.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/classes/release/com/twofortyfouram/locale/api/R.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental-safeguard/androidTest/debug/tag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental-safeguard/debug/tag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental-safeguard/release/tag.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/compileDebugAidl/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/compileDebugAndroidTestAidl/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/compileReleaseAidl/dependency.store" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/compile-file-map.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ldpi-v4/values-ldpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-mdpi-v4/values-mdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v14/values-v14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v9/values-v9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAndroidTestResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugJniLibFolders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugShaders/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeDebugShaders/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeReleaseAssets/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeReleaseJniLibFolders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/mergeReleaseShaders/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageDebugResources/merger.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/compile-file-map.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-cs/values-cs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-de/values-de.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-es/values-es.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-fr/values-fr.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-hdpi-v4/values-hdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-it/values-it.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-ja/values-ja.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-ko/values-ko.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-ldpi-v4/values-ldpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-mdpi-v4/values-mdpi-v4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-nb/values-nb.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-nl/values-nl.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-pt-rBR/values-pt-rBR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-ru/values-ru.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-sv/values-sv.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v11/values-v11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v14/values-v14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-v9/values-v9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values-vi/values-vi.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merged.dir/values/values.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageReleaseResources/merger.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/manifest/androidTest/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/manifests/aapt/debug/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/manifests/aapt/release/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/res/resources-debug-androidTest.ap_" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/symbols/androidTest/debug/R.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/outputs/aar/locale_api-debug.aar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/build/outputs/aar/locale_api-release.aar" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/locale_api/locale_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/locale_api.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/locale_api/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <ignored path="ADBPlugin.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -481,38 +36,6 @@
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="594">
-                    <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-                <provider editor-type-id="android-designer2" />
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="143">
-                    <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
-                    <folding>
-                      <element signature="e#1678#1695#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -571,40 +94,42 @@
     <session id="1823316673">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="7" />
-          <entry key="java" value="19" />
-          <entry key="kt" value="6" />
-          <entry key="xml" value="6" />
+          <entry key="gradle" value="10" />
+          <entry key="java" value="29" />
+          <entry key="kt" value="18" />
+          <entry key="xml" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="7" />
-          <entry key="JAVA" value="19" />
-          <entry key="Kotlin" value="6" />
-          <entry key="XML" value="6" />
+          <entry key="Groovy" value="10" />
+          <entry key="JAVA" value="29" />
+          <entry key="Kotlin" value="18" />
+          <entry key="XML" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="43" />
-          <entry key="kt" value="4039" />
-          <entry key="txt" value="105" />
-          <entry key="xml" value="277" />
+          <entry key="kt" value="6569" />
+          <entry key="txt" value="124" />
+          <entry key="xml" value="344" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="43" />
-          <entry key="Kotlin" value="4039" />
-          <entry key="PLAIN_TEXT" value="105" />
-          <entry key="XML" value="277" />
+          <entry key="Kotlin" value="6569" />
+          <entry key="PLAIN_TEXT" value="124" />
+          <entry key="XML" value="344" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -618,168 +143,107 @@
     <favorites_list name="ADBPlugin" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5770053">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="339">
-                  <caret line="71" selection-start-line="71" selection-end-line="71" />
-                  <folding>
-                    <element signature="e#652#1250#0" expanded="true" />
-                    <element signature="e#3806#3835#1" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1387">
-                  <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/com/tananaev/adblib/AdbStream.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="505">
-                  <caret line="205" column="19" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#2403#2404#0" expanded="true" />
-                    <element signature="e#2443#2444#0" expanded="true" />
-                    <element signature="e#2571#2572#0" expanded="true" />
-                    <element signature="e#2607#2608#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/com/tananaev/adblib/AdbConnection.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-162">
-                  <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1818">
-                  <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/Constants.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="703">
-                  <caret line="69" column="20" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="20" />
-                  <folding>
-                    <element signature="e#649#732#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-              <provider editor-type-id="android-manifest" />
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="181">
-                  <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="881">
-                  <caret line="90" selection-start-line="90" selection-end-line="90" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="287">
-                  <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#23#916#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app/build.gradle">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="396">
-                  <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/build.gradle">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/locale_api/build.gradle">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="90">
-                  <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/PluginApplication.kt">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="217">
-                  <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="148" column="91" selection-start-line="148" selection-start-column="91" selection-end-line="148" selection-end-column="91" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-112">
+              <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="144" column="43" selection-start-line="144" selection-start-column="43" selection-end-line="144" selection-end-column="43" />
+              <folding>
+                <element signature="e#4692#4709#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="android-designer2" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1736">
+              <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/InfoActivity.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="972">
+              <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/BundleScrubber.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+              <folding>
+                <element signature="e#24#805#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>context</find>
       <find>open</find>
+      <find>port</find>
+      <find>varia</find>
+      <find>Log.e</find>
+      <find>Log.e(Constants.LOG_TAG,</find>
+      <find>Log.i(Constants.LOG_TAG,</find>
+      <find>output</find>
     </findStrings>
+    <replaceStrings>
+      <replace>logE(</replace>
+      <replace>logD(</replace>
+      <replace>logI(</replace>
+    </replaceStrings>
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/../key.jks" />
@@ -4504,20 +3968,20 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/InfoActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/AbstractPluginActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/Constants.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt" />
         <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1280" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="y" value="25" />
+    <option name="width" value="960" />
+    <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -4593,7 +4057,21 @@
             <path>
               <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ADBPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
@@ -4951,14 +4429,28 @@
       <option name="project" value="LOCAL" />
       <updated>1509023187051</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="big update">
+      <created>1539187875346</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1539187875346</updated>
+    </task>
+    <task id="LOCAL-00008" summary="quick fix">
+      <created>1539190535941</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1539190535941</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1280" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5603917" visible="true" weight="0.15882353" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5603917" weight="0.25882354" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Captures" order="3" side_tool="true" weight="0.25" />
@@ -4966,7 +4458,6 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.43960828" side_tool="true" weight="0.08342246" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Build" sideWeight="0.49946523" visible="true" weight="0.32861805" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -4977,12 +4468,13 @@
       <window_info anchor="bottom" id="Gradle Console" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Android Profiler" order="8" />
       <window_info anchor="bottom" id="Android Monitor" order="9" weight="0.33975086" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.5005348" side_tool="true" visible="true" weight="0.32861805" />
-      <window_info anchor="bottom" x="0" y="640" width="1280" height="998" id="Logcat" order="11" type="WINDOWED" visible="true" weight="0.40914038" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50109893" side_tool="true" weight="0.32997763" />
+      <window_info anchor="bottom" x="0" y="78" width="1290" height="1002" id="Logcat" order="11" weight="0.4217002" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32850778" />
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32962137" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.22310306" />
       <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.32962137" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.4989011" weight="0.3277405" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -5067,7 +4559,9 @@
     <MESSAGE value="Changed closing the connection from stream.write(&quot; exit&quot; + '\n') to the simpler stream.close()&#10;Removed responses after exit&#10;Added a way to see if the adb connection couldn't close" />
     <MESSAGE value="Correctly added library for adb encryption" />
     <MESSAGE value="rebuilt sendsinglecommand to push a ctrl+c before each command" />
-    <option name="LAST_COMMIT_MESSAGE" value="rebuilt sendsinglecommand to push a ctrl+c before each command" />
+    <MESSAGE value="big update" />
+    <MESSAGE value="quick fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="quick fix" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/local.properties">
@@ -5102,13 +4596,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/InfoActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.core/core/1.0.0/a23a5f203e97d91666c374e408053b1878de3bff/core-1.0.0-sources.jar!/androidx/core/app/ActivityCompat.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2193">
@@ -5130,9 +4617,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/com/tananaev/adblib/AdbConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/Constants.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="703">
+        <state relative-caret-position="1026">
           <caret line="69" column="20" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="20" />
           <folding>
             <element signature="e#649#732#0" expanded="true" />
@@ -5140,108 +4634,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="128" column="12" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/PluginApplication.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/com/tananaev/adblib/AdbStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="205" column="19" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
-          <folding>
-            <element signature="e#2403#2404#0" expanded="true" />
-            <element signature="e#2443#2444#0" expanded="true" />
-            <element signature="e#2571#2572#0" expanded="true" />
-            <element signature="e#2607#2608#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/com/tananaev/adblib/AdbConnection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-162">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="78" column="35" selection-start-line="78" selection-start-column="35" selection-end-line="78" selection-end-column="35" />
-          <folding>
-            <element signature="e#23#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/BundleScrubber.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1387">
-          <caret line="63" column="36" selection-start-line="63" selection-start-column="36" selection-end-line="63" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="33" column="27" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#652#1250#0" expanded="true" />
-            <element signature="e#3806#3835#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="109" column="37" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
-          <folding>
-            <element signature="e#1678#1695#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
         </state>
       </provider>
+      <provider editor-type-id="android-manifest" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt">
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="90" selection-start-line="90" selection-end-line="90" />
+        <state relative-caret-position="396">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
         </state>
       </provider>
     </entry>
@@ -5252,6 +4656,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/com/tananaev/adblib/AdbStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="130" column="27" lean-forward="true" selection-start-line="130" selection-start-column="27" selection-end-line="130" selection-end-column="27" />
+          <folding>
+            <element signature="e#2403#2404#0" expanded="true" />
+            <element signature="e#2443#2444#0" expanded="true" />
+            <element signature="e#2571#2572#0" expanded="true" />
+            <element signature="e#2607#2608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/PluginApplication.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/locale_api/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -5259,10 +4683,103 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="33" lean-forward="true" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
+        <state relative-caret-position="612">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="144" column="43" selection-start-line="144" selection-start-column="43" selection-end-line="144" selection-end-column="43" />
+          <folding>
+            <element signature="e#4692#4709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/InfoActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="74" column="9" selection-start-line="74" selection-start-column="9" selection-end-line="74" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="148" column="91" selection-start-line="148" selection-start-column="91" selection-end-line="148" selection-end-column="91" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/BundleScrubber.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="45" column="11" selection-start-line="45" selection-start-column="11" selection-end-line="45" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../AndroidSDK/sources/android-28/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="638" column="17" selection-start-line="638" selection-start-column="17" selection-end-line="638" selection-end-column="17" />
+          <folding>
+            <element signature="e#26988#26989#0" expanded="true" />
+            <element signature="e#27031#27032#0" expanded="true" />
+            <element signature="e#27236#27237#0" expanded="true" />
+            <element signature="e#27294#27295#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../AndroidSDK/sources/android-28/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-522">
+          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/2e8041d08283cbbb58ad131617486fc6449f6c85/kotlin-stdlib-1.2.71-sources.jar!/kotlin/TypeAliases.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-112">
+          <caret line="203" column="44" selection-start-line="203" selection-start-column="44" selection-end-line="203" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1736">
+          <caret line="150" column="5" selection-start-line="150" selection-start-column="5" selection-end-line="150" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="127" lean-forward="true" selection-start-line="127" selection-end-line="127" />
+          <folding>
+            <element signature="e#24#805#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
