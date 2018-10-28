@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="Theme.Locale.Dark" parent="android:Theme.DeviceDefault"/>
-    <style name="Theme.Locale.Dialog" parent="android:Theme.DeviceDefault.Dialog"/>
-    <style name="Theme.Locale.Light" parent="android:Theme.DeviceDefault.Light"/>
-</resources>

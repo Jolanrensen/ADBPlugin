@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="com.tananaev:adblib:1.2@jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/1026920c6fb8a4b84da0151f5da1ccb58f151fe1/adblib-1.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.tananaev/adblib/1.2/3f2fe4ee1820bf9a089c87b9ea7b320dd73de022/adblib-1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

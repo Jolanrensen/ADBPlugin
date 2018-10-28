@@ -12,62 +12,168 @@
 ** limitations under the License.
 -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <EditText
-        android:id="@+id/text1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dip"
-        android:layout_marginRight="6dip"
-        android:layout_marginTop="8dip"
-        android:hint="@string/ip_address" />
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
 
     <TextView
-        android:text='Hint: For example "192.168.178.15" or "localhost" to connect to this device'
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dip"
-        android:layout_marginRight="6dip"
-        android:layout_marginTop="8dip"
-        android:id="@+id/textView" />
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="6dip"
+            android:gravity="center_horizontal"
+            android:text="@string/ip_address"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
-    <EditText
-        android:id="@+id/text2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dip"
-        android:layout_marginRight="6dip"
-        android:layout_marginTop="8dip"
-        android:hint="@string/port" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/input_ip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/ip_hint"/>
+
+        <Spinner
+                android:id="@+id/dropdown_ip"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:dropDownWidth="match_parent"/>
+
+    </LinearLayout>
 
     <TextView
-        android:text='Hint: By default android uses port "5555"'
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dip"
-        android:layout_marginRight="6dip"
-        android:layout_marginTop="8dip"
-        android:id="@+id/textView2" />
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="6dip"
+            android:gravity="center_horizontal"
+            android:text="@string/port"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
 
-    <EditText
-        android:id="@+id/text3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dip"
-        android:layout_marginRight="6dip"
-        android:layout_marginTop="8dip"
-        android:hint="@string/command" />
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/input_port"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/port_hint"/>
+
+        <Spinner
+                android:id="@+id/dropdown_port"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:dropDownWidth="match_parent"/>
+
+    </LinearLayout>
 
     <TextView
-        android:text='Hint: For example "input keyevent POWER", this will emulate a powerkey press'
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="6dip"
-        android:layout_marginRight="6dip"
-        android:layout_marginTop="8dip"
-        android:id="@+id/textView3" />
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="6dip"
+            android:gravity="center_horizontal"
+            android:text="@string/command"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/input_command"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/command_hint"/>
+
+        <Spinner
+                android:id="@+id/dropdown_command"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:dropDownWidth="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="6dip"
+            android:gravity="center_horizontal"
+            android:text="@string/timeout"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:orientation="horizontal">
+
+        <EditText
+                android:id="@+id/input_timeout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/timeout_hint"/>
+
+        <Spinner
+                android:id="@+id/dropdown_timeout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:dropDownWidth="match_parent"/>
+
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="8dip"
+            android:layout_marginRight="6dip"
+            android:gravity="center_horizontal"
+            android:text="@string/additional"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    <Switch
+            android:id="@+id/ctrl_c_switch"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="6dp"
+            android:switchTextAppearance="@style/TextAppearance.AppCompat.Menu"
+            android:text="@string/ctrl_c"
+            android:textSize="16sp"/>
+
 
 </LinearLayout>
