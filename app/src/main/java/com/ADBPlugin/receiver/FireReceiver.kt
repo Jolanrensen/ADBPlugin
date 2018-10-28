@@ -20,7 +20,6 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.core.os.bundleOf
-
 import com.ADBPlugin.Constants
 import com.ADBPlugin.Constants.jsonObjectOf
 import com.ADBPlugin.SendSingleCommand
@@ -28,10 +27,7 @@ import com.ADBPlugin.TaskerPlugin
 import com.ADBPlugin.bundle.BundleScrubber
 import com.ADBPlugin.bundle.PluginBundleManager
 import com.ADBPlugin.ui.EditActivity
-import org.json.JSONArray
 import org.json.JSONObject
-
-import java.io.IOException
 import java.io.PrintWriter
 import java.io.StringWriter
 import java.util.ArrayList
@@ -62,8 +58,10 @@ class FireReceiver : BroadcastReceiver() {
 
         if (com.twofortyfouram.locale.Intent.ACTION_FIRE_SETTING != intent.action) {
             if (Constants.IS_LOGGABLE) {
-                Log.e(Constants.LOG_TAG,
-                        String.format(Locale.US, "Received unexpected Intent action %s", intent.action)) //$NON-NLS-1$
+                Log.e(
+                    Constants.LOG_TAG,
+                    String.format(Locale.US, "Received unexpected Intent action %s", intent.action)
+                ) //$NON-NLS-1$
             }
             return
         }
@@ -77,29 +75,31 @@ class FireReceiver : BroadcastReceiver() {
             message = bundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE)
 
             val values =
-                    if (message!!.contains('§')) { //backwards compatibility
-                        val split = message!!.split("§".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-                        jsonObjectOf(
-                                "ip"        to split[0],
-                                "port"      to split[1],
-                                "command"   to split[2],
-                                "timeout"   to 50,
-                                "ctrl_c"    to false
-                        )
-                    } else JSONObject(message)
+                if (message!!.contains('§')) { //backwards compatibility
+                    val split = message!!.split("§".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                    jsonObjectOf(
+                        "ip" to split[0],
+                        "port" to split[1],
+                        "command" to split[2],
+                        "timeout" to 50,
+                        "ctrl_c" to false
+                    )
+                } else JSONObject(message)
 
 
             Thread(Runnable {
                 val logs = arrayListOf<String>()
                 try {
                     //Run the program with all the given variables
-                    SendSingleCommand(logs,
-                            context,
-                            values["ip"] as String,
-                            (values["port"] as String).toInt(),
-                            values["command"] as String,
-                            (values["timeout"] as String).toInt(),
-                            values["ctrl_c"] as Boolean) {
+                    SendSingleCommand(
+                        logs,
+                        context,
+                        values["ip"] as String,
+                        (values["port"] as String).toInt(),
+                        values["command"] as String,
+                        (values["timeout"] as String).toInt(),
+                        values["ctrl_c"] as Boolean
+                    ) {
                         //Log the result and signal Tasker
                         Log.d(Constants.LOG_TAG, "Executed single command")
 
@@ -111,9 +111,13 @@ class FireReceiver : BroadcastReceiver() {
                         }
 
                         // Tell Takser I'm done
-                        TaskerPlugin.Setting.signalFinish(context, intent, TaskerPlugin.Setting.RESULT_CODE_OK, responseBundle)
+                        TaskerPlugin.Setting.signalFinish(
+                            context,
+                            intent,
+                            TaskerPlugin.Setting.RESULT_CODE_OK,
+                            responseBundle
+                        )
                     }
-
                 } catch (e: Exception) { // if couldn't read/write key files
                     Log.e(Constants.LOG_TAG, "", e)
                     displayError(e, context, intent, logs)

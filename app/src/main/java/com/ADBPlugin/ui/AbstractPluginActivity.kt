@@ -20,10 +20,9 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-
-import com.twofortyfouram.locale.BreadCrumber
 import com.ADBPlugin.Constants
 import com.ADBPlugin.R
+import com.twofortyfouram.locale.BreadCrumber
 
 /**
  * Superclass for plug-in Activities. This class takes care of initializing aspects of the plug-in's UI to
@@ -55,8 +54,12 @@ abstract class AbstractPluginActivity : Activity() {
     private fun setupTitleApi11() {
         var callingApplicationLabel: CharSequence? = null
         try {
-            callingApplicationLabel = packageManager.getApplicationLabel(packageManager.getApplicationInfo(callingPackage,
-                    0))
+            callingApplicationLabel = packageManager.getApplicationLabel(
+                packageManager.getApplicationInfo(
+                    callingPackage,
+                    0
+                )
+            )
         } catch (e: NameNotFoundException) {
             if (Constants.IS_LOGGABLE) {
                 Log.e(Constants.LOG_TAG, "Calling package couldn't be found", e) //$NON-NLS-1$
@@ -80,8 +83,10 @@ abstract class AbstractPluginActivity : Activity() {
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     private fun setupActionBarApi11() {
-        actionBar!!.subtitle = BreadCrumber.generateBreadcrumb(applicationContext, intent,
-                getString(R.string.plugin_name))
+        actionBar!!.subtitle = BreadCrumber.generateBreadcrumb(
+            applicationContext, intent,
+            getString(R.string.plugin_name)
+        )
     }
 
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH)
@@ -103,7 +108,6 @@ abstract class AbstractPluginActivity : Activity() {
                 Log.w(Constants.LOG_TAG, "An error occurred loading the host's icon", e) //$NON-NLS-1$
             }
         }
-
     }
 
     override fun onMenuItemSelected(featureId: Int, item: MenuItem) = when (item.itemId) {
@@ -122,6 +126,4 @@ abstract class AbstractPluginActivity : Activity() {
         }
         else -> super.onOptionsItemSelected(item)
     }
-
-
 }

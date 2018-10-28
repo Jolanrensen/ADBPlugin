@@ -13,7 +13,6 @@
 package com.ADBPlugin
 
 import android.content.Context
-import org.json.JSONArray
 import org.json.JSONObject
 
 /**
@@ -65,12 +64,12 @@ object Constants {
         } catch (e: Exception) {
             throw RuntimeException(e)
         }
-
     }
+
     fun jsonObjectOf(vararg pair: Pair<String, Any>) = JSONObject()
-            .apply {
-                pair.forEach {
-                    put(it.first, it.second)
-                }
+        .apply {
+            pair.forEach {
+                put(it.first, it.second)
             }
+        }
 }

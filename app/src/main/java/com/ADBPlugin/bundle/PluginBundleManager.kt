@@ -75,15 +75,19 @@ private constructor() {
          */
             if (!bundle.containsKey(BUNDLE_EXTRA_STRING_MESSAGE)) {
                 if (Constants.IS_LOGGABLE) {
-                    Log.e(Constants.LOG_TAG,
-                            String.format("bundle must contain extra %s", BUNDLE_EXTRA_STRING_MESSAGE)) //$NON-NLS-1$
+                    Log.e(
+                        Constants.LOG_TAG,
+                        String.format("bundle must contain extra %s", BUNDLE_EXTRA_STRING_MESSAGE)
+                    ) //$NON-NLS-1$
                 }
                 return false
             }
             if (!bundle.containsKey(BUNDLE_EXTRA_INT_VERSION_CODE)) {
                 if (Constants.IS_LOGGABLE) {
-                    Log.e(Constants.LOG_TAG,
-                            String.format("bundle must contain extra %s", BUNDLE_EXTRA_INT_VERSION_CODE)) //$NON-NLS-1$
+                    Log.e(
+                        Constants.LOG_TAG,
+                        String.format("bundle must contain extra %s", BUNDLE_EXTRA_INT_VERSION_CODE)
+                    ) //$NON-NLS-1$
                 }
                 return false
             }
@@ -95,24 +99,40 @@ private constructor() {
          */
             if (!(2 == bundle.keySet().size || 3 == bundle.keySet().size)) {
                 if (Constants.IS_LOGGABLE) {
-                    Log.e(Constants.LOG_TAG,
-                            String.format("bundle must contain 2 or 3 keys, but currently contains %d keys: %s", bundle.keySet().size, bundle.keySet())) //$NON-NLS-1$
+                    Log.e(
+                        Constants.LOG_TAG,
+                        String.format(
+                            "bundle must contain 2 or 3 keys, but currently contains %d keys: %s",
+                            bundle.keySet().size,
+                            bundle.keySet()
+                        )
+                    ) //$NON-NLS-1$
                 }
                 return false
             }
 
             if (TextUtils.isEmpty(bundle.getString(BUNDLE_EXTRA_STRING_MESSAGE))) {
                 if (Constants.IS_LOGGABLE) {
-                    Log.e(Constants.LOG_TAG,
-                            String.format("bundle extra %s appears to be null or empty.  It must be a non-empty string", BUNDLE_EXTRA_STRING_MESSAGE)) //$NON-NLS-1$
+                    Log.e(
+                        Constants.LOG_TAG,
+                        String.format(
+                            "bundle extra %s appears to be null or empty.  It must be a non-empty string",
+                            BUNDLE_EXTRA_STRING_MESSAGE
+                        )
+                    ) //$NON-NLS-1$
                 }
                 return false
             }
 
             if (bundle.getInt(BUNDLE_EXTRA_INT_VERSION_CODE, 0) != bundle.getInt(BUNDLE_EXTRA_INT_VERSION_CODE, 1)) {
                 if (Constants.IS_LOGGABLE) {
-                    Log.e(Constants.LOG_TAG,
-                            String.format("bundle extra %s appears to be the wrong type.  It must be an int", BUNDLE_EXTRA_INT_VERSION_CODE)) //$NON-NLS-1$
+                    Log.e(
+                        Constants.LOG_TAG,
+                        String.format(
+                            "bundle extra %s appears to be the wrong type.  It must be an int",
+                            BUNDLE_EXTRA_INT_VERSION_CODE
+                        )
+                    ) //$NON-NLS-1$
                 }
 
                 return false

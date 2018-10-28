@@ -19,21 +19,21 @@ import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.util.Log
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-
+import com.ADBPlugin.Constants
+import com.ADBPlugin.Constants.jsonObjectOf
 import com.ADBPlugin.R
 import com.ADBPlugin.TaskerPlugin
 import com.ADBPlugin.bundle.BundleScrubber
 import com.ADBPlugin.bundle.PluginBundleManager
 import kotlinx.android.synthetic.main.main.*
-import com.ADBPlugin.Constants.jsonObjectOf
 import org.json.JSONObject
-import android.util.Log
-import android.view.View
-import android.widget.*
-import com.ADBPlugin.Constants
-
 
 /**
  * This is the "Edit" activity for a Locale Plug-in.
@@ -60,9 +60,12 @@ class EditActivity : AbstractPluginActivity() {
 
         // request permissions
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this,
-                    arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), 10)
+            != PackageManager.PERMISSION_GRANTED
+        ) {
+            ActivityCompat.requestPermissions(
+                this,
+                arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE), 10
+            )
         }
 
         BundleScrubber.scrub(intent)
@@ -103,8 +106,10 @@ class EditActivity : AbstractPluginActivity() {
             }
             passedNames.forEach { Log.d(Constants.LOG_TAG, "variable: $it") }
 
-            val arrayAdapter = ArrayAdapter<String>(this@EditActivity,
-                    android.R.layout.simple_spinner_dropdown_item, passedNames)
+            val arrayAdapter = ArrayAdapter<String>(
+                this@EditActivity,
+                android.R.layout.simple_spinner_dropdown_item, passedNames
+            )
 
             dropdown_ip.apply {
                 adapter = arrayAdapter
@@ -157,8 +162,6 @@ class EditActivity : AbstractPluginActivity() {
                     }
                 }
             }
-
-
         }
     }
 
@@ -171,11 +174,11 @@ class EditActivity : AbstractPluginActivity() {
             val ctrlC = ctrl_c_switch.isChecked
 
             val result = jsonObjectOf(
-                    "ip"        to ipAddress,
-                    "port"      to port,
-                    "command"   to command,
-                    "timeout"   to timeout,
-                    "ctrl_c"    to ctrlC
+                "ip" to ipAddress,
+                "port" to port,
+                "command" to command,
+                "timeout" to timeout,
+                "ctrl_c" to ctrlC
             )
 
             if (ipAddress.isNotEmpty() && port.isNotEmpty() && command.isNotEmpty() && timeout.isNotEmpty()) {
@@ -196,10 +199,14 @@ class EditActivity : AbstractPluginActivity() {
                 resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_BUNDLE, resultBundle)
 
                 if (TaskerPlugin.Setting.hostSupportsOnFireVariableReplacement(this))
-                    TaskerPlugin.Setting.setVariableReplaceKeys(resultBundle, arrayOf(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE))
+                    TaskerPlugin.Setting.setVariableReplaceKeys(
+                        resultBundle,
+                        arrayOf(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE)
+                    )
 
                 if (TaskerPlugin.hostSupportsRelevantVariables(intent.extras))
-                    TaskerPlugin.addRelevantVariableList(resultIntent, arrayOf(
+                    TaskerPlugin.addRelevantVariableList(
+                        resultIntent, arrayOf(
                             """%output()
                                 Raw terminal output.
                                 All the output given by the console after executing your command.
@@ -208,16 +215,20 @@ class EditActivity : AbstractPluginActivity() {
                             """%errors
                                 Stacktrace of errors if they occur.
                                 'Continue Task After Error' must be enabled to use this result.
-                                Comparable to logcat""".trimIndent()))
+                                Comparable to logcat""".trimIndent()
+                        )
+                    )
 
                 /*
                  * The blurb is concise status text to be displayed in the host's UI.
                  */
-                val blurb = generateBlurb(applicationContext,
-                        "$ipAddress:$port\n" +
-                                "$command\n"+
-                                "$timeout ms\n" +
-                                if (ctrlC) "Ctrl+c" else "".trimMargin())
+                val blurb = generateBlurb(
+                    applicationContext,
+                    "$ipAddress:$port\n" +
+                        "$command\n" +
+                        "$timeout ms\n" +
+                        if (ctrlC) "Ctrl+c" else "".trimMargin()
+                )
                 resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_STRING_BLURB, blurb)
                 setResult(Activity.RESULT_OK, resultIntent)
                 super.finish()
@@ -243,7 +254,6 @@ class EditActivity : AbstractPluginActivity() {
             return if (message.length > maxBlurbLength) {
                 message.substring(0, maxBlurbLength)
             } else message
-
         }
     }
 }

@@ -19,55 +19,55 @@
     specify "internalOnly" or omit the android:installLocation attribute entirely.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.ADBPlugin"
-    android:installLocation="internalOnly"
-    android:versionCode="5901"
-    android:versionName="6.0-b2">
+          xmlns:tools="http://schemas.android.com/tools"
+          package="com.ADBPlugin"
+          android:installLocation="internalOnly"
+          android:versionCode="5901"
+          android:versionName="6.0-b2">
 
     <!-- Locale 4.x supports API 8 or greater. -->
 
     <!-- This allows the plug-in to appear on non-touchscreen devices like Google TV.  Be sure to test that the app works without a touchscreen. -->
     <uses-feature
-        android:name="android.hardware.touchscreen"
-        android:required="false" />
+            android:name="android.hardware.touchscreen"
+            android:required="false"/>
 
     <!-- This gives the plugin the permission to access the Internet to connect to other devices and access your /sdcard/ storage to create the keys pub.key and priv.key and read them later. -->
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
 
     <!-- Although many of these default to true, some users with modified ROMs have trouble seeing apps unless these attributes are explicitly set. -->
     <supports-screens
-        android:anyDensity="true"
-        android:largeScreens="true"
-        android:normalScreens="true"
-        android:smallScreens="true"
-        android:xlargeScreens="true" />
+            android:anyDensity="true"
+            android:largeScreens="true"
+            android:normalScreens="true"
+            android:smallScreens="true"
+            android:xlargeScreens="true"/>
 
     <!-- When hardware acceleration is enabled, the RAM memory usage of the app is significantly increased as soon as any UI is displayed. To reduce the memory usage of a plug-in which is primarily a background app, either (1) hardware acceleration should be disabled or (2) the plug-in's BroadcastReceiver (and any applicable Service) should be put into a different process. This example plug-in creates two processes. -->
     <application
-        android:name="com.ADBPlugin.PluginApplication"
-        android:allowBackup="true"
-        android:hardwareAccelerated="true"
-        android:icon="@drawable/icon"
-        android:label="@string/app_name"
-        android:uiOptions="splitActionBarWhenNarrow">
+            android:name="com.ADBPlugin.PluginApplication"
+            android:allowBackup="true"
+            android:hardwareAccelerated="true"
+            android:icon="@drawable/icon"
+            android:label="@string/app_name"
+            android:uiOptions="splitActionBarWhenNarrow">
 
         <!--
              If this plug-in does not stand alone (e.g. it is only a plug-in for Locale and does not have a Launcher Activity), including this in the manifest 
             will help when users tap the "Open" button in the Google Play store.
         -->
         <activity
-            android:name="com.ADBPlugin.ui.InfoActivity"
-            android:exported="true"
-            tools:ignore="ExportedActivity">
+                android:name="com.ADBPlugin.ui.InfoActivity"
+                android:exported="true"
+                tools:ignore="ExportedActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.INFO" />
+                <category android:name="android.intent.category.INFO"/>
             </intent-filter>
         </activity>
         <!--
@@ -79,17 +79,17 @@
                  - The Activity requires permissions not available to Locale
         -->
         <activity
-            android:name="com.ADBPlugin.ui.EditActivity"
-            android:exported="true"
-            android:icon="@drawable/icon"
-            android:label="@string/plugin_name"
-            android:uiOptions="splitActionBarWhenNarrow"
-            android:windowSoftInputMode="adjustResize"
-            tools:ignore="ExportedActivity">
+                android:name="com.ADBPlugin.ui.EditActivity"
+                android:exported="true"
+                android:icon="@drawable/icon"
+                android:label="@string/plugin_name"
+                android:uiOptions="splitActionBarWhenNarrow"
+                android:windowSoftInputMode="adjustResize"
+                tools:ignore="ExportedActivity">
 
             <!-- this Intent filter allows the plug-in to be discovered by Locale -->
             <intent-filter>
-                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING" />
+                <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING"/>
             </intent-filter>
         </activity>
         <!--
@@ -100,13 +100,13 @@
                 - There are multiple BroadcastReceivers for com.twofortyfouram.locale.intent.action.FIRE_SETTING
         -->
         <receiver
-            android:name="com.ADBPlugin.receiver.FireReceiver"
-            android:exported="true"
-            tools:ignore="ExportedReceiver">
+                android:name="com.ADBPlugin.receiver.FireReceiver"
+                android:exported="true"
+                tools:ignore="ExportedReceiver">
 
             <!-- this Intent filter allows the plug-in to discovered by Locale -->
             <intent-filter>
-                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING" />
+                <action android:name="com.twofortyfouram.locale.intent.action.FIRE_SETTING"/>
             </intent-filter>
         </receiver>
     </application>

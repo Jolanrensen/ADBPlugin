@@ -14,14 +14,11 @@ package com.ADBPlugin.ui
 
 import android.app.Activity
 import android.content.Intent
-import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
-
-import com.twofortyfouram.locale.PackageUtilities
 import com.ADBPlugin.Constants
-
+import com.twofortyfouram.locale.PackageUtilities
 import java.util.Locale
 
 /**
@@ -44,8 +41,10 @@ class InfoActivity : Activity() {
 
         if (null != compatiblePackage) {
             // after this point, assume Locale-compatible package is installed
-            Log.v(Constants.LOG_TAG,
-                    String.format(Locale.US, "Locale-compatible package %s is installed", compatiblePackage)) //$NON-NLS-1$
+            Log.v(
+                Constants.LOG_TAG,
+                String.format(Locale.US, "Locale-compatible package %s is installed", compatiblePackage)
+            ) //$NON-NLS-1$
             try {
                 val i = manager.getLaunchIntentForPackage(compatiblePackage)
                 i!!.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
@@ -58,20 +57,25 @@ class InfoActivity : Activity() {
                  */
                 Log.e(Constants.LOG_TAG, "Error launching Activity", e) //$NON-NLS-1$
             }
-
         } else {
             Log.i(Constants.LOG_TAG, "Locale-compatible package is not installed") //$NON-NLS-1$
 
             try {
-                startActivity(Intent(
+                startActivity(
+                    Intent(
                         Intent.ACTION_VIEW,
-                        Uri.parse(String.format(Locale.US,
+                        Uri.parse(
+                            String.format(
+                                Locale.US,
                                 APP_STORE_URI,
-                                "com.twofortyfouram.locale", packageName))).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)) //$NON-NLS-1$
+                                "com.twofortyfouram.locale", packageName
+                            )
+                        )
+                    ).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                ) //$NON-NLS-1$
             } catch (e: Exception) {
                 Log.e(Constants.LOG_TAG, "Error launching Activity", e) //$NON-NLS-1$
             }
-
         }
         finish()
     }

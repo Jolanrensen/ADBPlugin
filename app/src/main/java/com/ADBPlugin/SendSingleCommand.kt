@@ -1,6 +1,5 @@
 package com.ADBPlugin
 
-
 import android.content.Context
 import android.org.apache.commons.codec.binary.Base64.encodeBase64String
 import android.util.Log
@@ -19,10 +18,7 @@ import java.net.Socket
 import java.net.UnknownHostException
 import java.security.NoSuchAlgorithmException
 import java.security.spec.InvalidKeySpecException
-import java.util.*
 import java.util.concurrent.TimeUnit
-import kotlin.collections.ArrayList
-
 
 /**
  * Created by Jolan Rensen on 21-2-2017.
@@ -40,14 +36,16 @@ class SendSingleCommand
  * @param command The command to be executed on `ip:port`
  */
 @Throws(IOException::class, Exception::class)
-constructor(private val logs: ArrayList<String>,
-            private val context: Context,
-            private val ip: String,
-            private val port: Int,
-            private val command: String,
-            private val timeout: Int,
-            ctrlC: Boolean,
-            private val callBack: (ArrayList<String>?) -> Unit) {
+constructor(
+    private val logs: ArrayList<String>,
+    private val context: Context,
+    private val ip: String,
+    private val port: Int,
+    private val command: String,
+    private val timeout: Int,
+    ctrlC: Boolean,
+    private val callBack: (ArrayList<String>?) -> Unit
+) {
 
     private var splitResponses: ArrayList<String>? = null
 
@@ -69,7 +67,10 @@ constructor(private val logs: ArrayList<String>,
         try {
             crypto = setupCrypto()
         } catch (e: IOException) {
-            throw IOException("Couldn't read/write keys from ${pub.path} and ${priv.path}, make sure you gave storage read/write permission.", e)
+            throw IOException(
+                "Couldn't read/write keys from ${pub.path} and ${priv.path}, make sure you gave storage read/write permission.",
+                e
+            )
         }
 
         // Connect the socket to the remote host
@@ -170,7 +171,8 @@ constructor(private val logs: ArrayList<String>,
                     throw Exception("Stream didn't close after 10 seconds waiting")
             }
             launch {
-                while (!stream.isClosed) {}
+                while (!stream.isClosed) {
+                }
                 logD("Stream closed, closing Adb...")
 
                 try {
@@ -184,7 +186,8 @@ constructor(private val logs: ArrayList<String>,
                         throw Exception("ADB connection socket didn't close after 10 seconds waiting")
                 }
                 launch {
-                    while (!sock.isClosed) {}
+                    while (!sock.isClosed) {
+                    }
                     logD("ADB connection socket closed")
                     callBack(splitResponses)
                 }

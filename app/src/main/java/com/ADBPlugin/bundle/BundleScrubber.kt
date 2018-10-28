@@ -35,7 +35,6 @@ object BundleScrubber {
         return if (null == intent) {
             false
         } else scrub(intent.extras)
-
     }
 
     /**
