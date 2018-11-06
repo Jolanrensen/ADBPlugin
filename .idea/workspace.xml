@@ -4,6 +4,7 @@
     <shared>
       <config>
         <device id="pixel_2_xl" />
+        <device id="Nexus 5X" />
       </config>
     </shared>
   </component>
@@ -13,11 +14,24 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7206059d-9188-4cb7-a7fd-6b94af8f4f68" name="Default" comment="added timeout and error logging for tasker">
+    <list default="true" id="7206059d-9188-4cb7-a7fd-6b94af8f4f68" name="Default" comment="updated version number">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_1_2_71_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_2_71_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_jdk7_1_2_71_jar.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/ADBPlugin/BuildConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/ADBPlugin/BuildConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugAssets/merger.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/compile-file-map.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/incremental/mergeDebugResources/merger.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/outputs/logs/manifest-merger-debug-report.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale_api/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/build/intermediates/incremental/packageDebugResources/compile-file-map.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/locale_api/locale_api.iml" beforeDir="false" afterPath="$PROJECT_DIR$/locale_api/locale_api.iml" afterDir="false" />
     </list>
     <ignored path="ADBPlugin.iws" />
@@ -83,43 +97,45 @@
     <session id="1823316673">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="6" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.50" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="16" />
-          <entry key="java" value="32" />
-          <entry key="kt" value="29" />
-          <entry key="xml" value="15" />
+          <entry key="gradle" value="23" />
+          <entry key="java" value="33" />
+          <entry key="kt" value="39" />
+          <entry key="xml" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="16" />
-          <entry key="JAVA" value="32" />
-          <entry key="Kotlin" value="29" />
-          <entry key="XML" value="15" />
+          <entry key="Groovy" value="23" />
+          <entry key="JAVA" value="33" />
+          <entry key="Kotlin" value="39" />
+          <entry key="XML" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gradle" value="53" />
-          <entry key="kt" value="6569" />
-          <entry key="txt" value="168" />
-          <entry key="xml" value="347" />
+          <entry key="gradle" value="102" />
+          <entry key="kt" value="6670" />
+          <entry key="txt" value="190" />
+          <entry key="xml" value="363" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="53" />
-          <entry key="Kotlin" value="6569" />
-          <entry key="PLAIN_TEXT" value="168" />
-          <entry key="XML" value="347" />
+          <entry key="Groovy" value="102" />
+          <entry key="Kotlin" value="6670" />
+          <entry key="PLAIN_TEXT" value="190" />
+          <entry key="XML" value="363" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -136,18 +152,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="774">
-              <caret line="57" column="50" selection-start-line="57" selection-start-column="50" selection-end-line="57" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/bundle/PluginBundleManager.kt">
           <provider selected="true" editor-type-id="text-editor">
@@ -166,29 +170,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="144">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+              <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+            <state relative-caret-position="342">
+              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
             </state>
           </provider>
+          <provider editor-type-id="android-designer2" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/locale_api/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state relative-caret-position="324">
+              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -202,14 +207,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+            <state relative-caret-position="288">
+              <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
             </state>
           </provider>
+          <provider editor-type-id="android-manifest" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -224,11 +229,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-432">
-              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+            <state relative-caret-position="36">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
               <folding>
-                <element signature="e#23#749#0" expanded="true" />
+                <element signature="e#23#724#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -2953,31 +2967,32 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha01/13955e9c4ccdf7dbf2393312f2a52773e7a9c847/gradle-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/6329582bb54b97bed5d2990a36feeffb44b6dedc/kotlin-gradle-plugin-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha01/614ffb9b626501b044fe0ca98cd92f415d2e6cad/builder-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha01/45aa4b3009dfc20f7936ab1bcb2a37e1defed4f9/crash-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha01/fe2e5f0a1f72e8a8b7dd9deb2a4f6b1198c4d454/lint-gradle-api-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha01/a6331720d1511dbc84c5480d91ec2b41d97f60e1/databinding-compiler-common-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha02/a884ca93a6517299c20227f533c66ca5f3f99496/gradle-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/b378dac6a689f1c74bca6dc0acd266af57c79748/kotlin-gradle-plugin-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha02/723a275d23307f72559ea6603de5fd4939db4392/builder-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha02/2b785f1ed6e8e7092147fef6083d484c014f42a3/crash-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha02/bf5405cb6a815aa2cf29b2e96f3f3f7b328d9ccf/lint-gradle-api-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha02/1be1b106d03df97f08fbf0632f6162cdcbb9deda/databinding-compiler-common-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/e4075c49e16e086140fe40eea56b2de7516874ee/transform-api-2.0.0-deprecated-use-gradle-api-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-analysis-6.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.0.3/1ebac416b8402b16e02a470f41e73af880d0db0f/proguard-gradle-6.0.3-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/3429dbf85159ee44a38a15902bc14bf2c9eebb12/kotlin-gradle-plugin-api-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/4fb59d2050abf87ee506ae7d8ed40ea422875d05/kotlin-gradle-plugin-model-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/61d1d84a4015d8c857ef9f656ddd54371fdaff22/kotlin-compiler-embeddable-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/79c7388ccc32ea656ad2ba0ad59648e805eae6f8/kotlin-annotation-processing-gradle-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/30b68b33daa4753641afb13c6c48c82e0997815d/kotlin-android-extensions-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/76fee90ed815716dbc48c29a4fa3e39a2790d35a/kotlin-compiler-runner-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha01/ddcc32698a95d2ce57822afc0ff11193f6fc9bf5/builder-model-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha01/abb826ee4c39d1e9afd7d6bd390e6bea2037ef37/builder-test-api-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha01/59477384faf028adc7aebd9b09deceded8bdbf5c/sdklib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha01/818db5492f2cb291100591498b14e5854fb0f47f/sdk-common-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha01/f1b601d23d11a0c3579c4174607497c30457caa2/manifest-merger-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha01/6f9c254262a924a9ac8887102a7a9e765e10126d/protos-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha01/20013b2390462bbe575adbd956f621584f5cb8f1/shared-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha01/9e27abcf26c03b9bfbb9018410ef223a7ef7601a/tracker-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha01/f1562726d76130cb8c97efc01592d69fe60d6391/apksig-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha01/93334c6b1627cd59181b2237b4cb532837a979b9/apkzlib-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/6da72eda558a132e46f4f4a8527dde32b8f32943/kotlin-gradle-plugin-api-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/b1c6ce3d2a8e715cec9847e98333ecbb2648d323/kotlin-gradle-plugin-model-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/c56ca8dafc29e93b3a216b62168e658e7bff657d/kotlin-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/eb75ce3fdf49a526de475d0ff6b397f0593f2893/kotlin-annotation-processing-gradle-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/de508fd043c780bb0b62d3271bffd85c08facf5a/kotlin-android-extensions-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/a39743e43de106b0e5b942c1030a452f64353fc9/kotlin-compiler-runner-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/d3ff8096e57851fffcf6851d4b7b0cc65c843734/kotlin-scripting-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha02/68854b6c51d63644f773904787de128cdfa5743f/builder-model-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha02/3b57486f537935852d57b33ca6bca0bdb6b56b65/builder-test-api-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha02/f830bc09618edadfbd300342d3424946ef960a0e/sdklib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha02/9ba9f0d740c952217eb94055a734209080654f6/sdk-common-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha02/8dcebc072c3441f6e0f5330b1475bcd42d88f052/manifest-merger-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha02/27945099712ea51f5ca40b8497c1971610ea803c/protos-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha02/f49595cab893e73a4ee7146fa9c3035940bbe86d/shared-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha02/a01514f513bc5baa0168c674857e4908a55235a7/tracker-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha02/162f4d41fb7869537332c77c74f7b6a222eb8158/apksig-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha02/4137e8c4caadbb51af47f4e6ab58c23dcde9338d/apkzlib-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/1b2a0925ff06220c0261b6fd468183cd9e9a9a47/javawriter-2.5.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-6.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-tree-6.0-sources.jar" />
@@ -2986,9 +3001,9 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/a1a8e178d7813bb9596ee4e3d5e07b90ebe660af/fastutil-7.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/d965219b87f79e81b07116d451e684ab2f3acc27/jopt-simple-4.9-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/19c6d8dee6803c520d855ff7e8a8c3d97f1271ec/json-simple-1.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha01/21582b5ee8cb2f9a772ae5fd07b0b230799dfd7a/gradle-api-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha01/1b83391e63123b4a63588227f1780538c92bfd3d/databinding-common-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha01/cd14cc369cace24b9e3bb4f90268e6cfb2c93013/baseLibrary-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha02/cfed95a255deeecfe26f3633d8898d275c705516/gradle-api-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha02/f68272b270b9356123a0bc7c124f0c83449087c7/databinding-common-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha02/d7ab2637990968f8ec75a4c2740fc490bb6ac514/baseLibrary-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/e836b2a7348320a86c3bbd91a032486798e6ab98/antlr4-4.5.3-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/77979eaa98f90806f984155f44f63cc1fb60ac25/juniversalchardet-1.0.3-sources.jar" />
@@ -2997,21 +3012,22 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.5.2/e96b1f4a9e6630a405434fca857c6b8f777163cf/auto-value-1.5.2-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/6d5f8e6d209c309d9ef3e30aa81135ee94cc7d49/protobuf-java-util-3.4.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/3dcf8ba7582eeac3b67ed5155ee3659e16c8dadc/jdom2-2.0.6-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/f9a05c916f3a40a1dfc740082116eb86a39ee9ab/kotlin-script-runtime-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/7b2052636fefadaacc5c63df26b23f51ad82deef/kotlin-build-common-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/2ed57a6cf733679eb22626be705c0fb96375fbb5/kotlin-daemon-client-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha01/6f0d5e5dae258cf8c66ba3cad91619a99b0a6a93/annotations-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha01/cfcbb9ddfc3d13ec10ed168acc9063bf1b4ceb7d/ddmlib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha01/c2239e2a1c84d75e46e478e8f98cf35efac015e4/layoutlib-api-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha01/8eb21bdf6c6b941688e604cce654e1082b803f01/dvlib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha01/65be34bb2abbedfb8745d5a404493613456c267d/repository-26.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/5584413479b93a0d5edeb37c0179e4abd805acd4/kotlin-native-utils-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/9f968a154aa662ae26a78396f56e46086eb0bef9/kotlin-script-runtime-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/312cc4787b4d17a71069dad2b1df71882c173ad3/kotlin-build-common-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/815fb5d9a0d09660cf13d065d40ed879fe600d03/kotlin-daemon-client-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha02/24f911740ddad3572d7043cbe39632e079fcef6/annotations-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha02/a0133751a99f912bcd932de7380934868572dcce/ddmlib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha02/b5eb112823b821316b9d4d0fe249709d9c50a745/layoutlib-api-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha02/ea63b0ebcd38f6d7d73c34e493af486268df1a10/dvlib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha02/81afd867c9e94347b82ced284c4b1a089fb821e6/repository-26.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/ca23fd61a082eab682fc0ffd29e37d09eab07180/httpmime-4.5.2-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/118b4633c59394749b2b2f278138beb31c930663/bcpkix-jdk15on-1.56-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/837bf519e19ab718239e01223104869a40eab8b6/kotlin-reflect-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/2c0e9afd8097b36a2288df59af219bfe2b78ab6d/kotlin-reflect-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.4.0/c57c9f6bcbdb783260d00b80c455d82a6a8b02db/protobuf-java-3.4.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha01/36d20fe62c33b16392bba8ef30ce437cc59a75c7/common-26.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha02/c2255298be5ba76df7778b06c4f576f60fc38754/common-26.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.activation/javax.activation/1.2.0/5b034823866d38f38f02bdad7ed8a14e650c61b6/javax.activation-1.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/1fdd1a2fed15cdf08780ed564279c0ddbff46419/commons-compress-1.12-sources.jar" />
@@ -3032,40 +3048,41 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/dcd31de68a90e41e336f6b7afce0d39285c433d7/j2objc-annotations-1.1-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/886474da3f761d39fcbb723d97ecc5089e731f42/animal-sniffer-annotations-1.14-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/2e8041d08283cbbb58ad131617486fc6449f6c85/kotlin-stdlib-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/98515ba3feb571f93b923e61f643bdaed59d14ac/kotlin-stdlib-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/1e054c1ef9afdfc7c79bc09dd5eed35791cef7a2/kotlin-stdlib-jdk7-1.2.71-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12-b140109.1041/d59f43002d3d07c6adaaeedd93e7944c273821d2/jaxb-api-2.2.12-b140109.1041-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/7745afc4dcc863b724f4a21fb3fc517cd5aaf891/txw2-2.2.11-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/5d42dda44aa68ff87756e93ae0042cd66d2daa78/istack-commons-runtime-2.21-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/8bee30ce9d075088b3d590488a270e2c3ea39b3a/kotlin-stdlib-common-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha01/8008757a7bc1ea705613097f9e701a5a844d64cf/gradle-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/a67c018fb6e117c08339fc4af53c58bcda3ea2fa/kotlin-gradle-plugin-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha01/36e4db053d13e8f4c436a81f543029c5d928a790/builder-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha01/30ca85b230ba8071f637407cdccfaea2e711fbd4/crash-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha01/5e5c99577e4fa23b0a661ecb590892be9c1b8e6e/lint-gradle-api-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha01/4c16c39c0df0074881819c31ccca8a3cc7cd8cef/databinding-compiler-common-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha02/28173adeafc3fe1e4a5215bc283a1c546dc10dd2/gradle-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/7e11e020c6d35f9f5aee917f0654e121ec93b3c6/kotlin-gradle-plugin-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha02/a0db53a3e7cc748364418cfd4e4f1e7a09660a5a/builder-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha02/63c712011eb4f8aced1d6096f384aa28bb488a26/crash-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha02/eb5afef772b066afeaede9cf2b7161f14d144c12/lint-gradle-api-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha02/60872236c5346ba12b5b272e14e13b9e9ce9dc86/databinding-compiler-common-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/85bee1acea9e27152b920746c68133b30b11431/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.0/dd1cc1381a970800268160203aae2d3784da779b/asm-analysis-6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.0.3/e5becf2356695a396b788110e386c38bad523bfc/proguard-gradle-6.0.3.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/bundletool/0.6.0/fb944be26f692e6ac937924ad5be7faa4093dd80/bundletool-0.6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-processor/1.0.0-alpha10/6d494a04e0af27ecd4ec7a35c93759dd9c7443bc/jetifier-processor-1.0.0-alpha10.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/85c2867b545ca6eca29c4ccc27ea8f53b24e1559/kotlin-gradle-plugin-api-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/7946fc6ced091d53733495c721136bca0797d38f/kotlin-gradle-plugin-model-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/a79f934bfbc1c7e16638da3474feab351735f1c0/kotlin-compiler-embeddable-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/9786b76a77080e76ced78e7c9165076b5eaa3467/kotlin-annotation-processing-gradle-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/bda3ee49317ef7a1e8058de61f91abe94c015538/kotlin-android-extensions-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/d0f582c6478ce8968c09993518d5be2becc3d96f/kotlin-compiler-runner-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha01/a6d78b86534a0cb386a7caba2ece1b5903594d5c/builder-model-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha01/342760561e466095adaea2f2eb40c82f7ddf6020/builder-test-api-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha01/527e6a817f642713825f08be4f037e6b537e84d0/sdklib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha01/9d5067ebf2d2367869ba17f16b8fea986101f5d/sdk-common-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha01/8b134ce167bbc62145af4aeafc90a336d0c63c34/manifest-merger-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha01/dff708e42c0cbf29a8fb0bdafaac8a89280b55da/protos-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha01/ebf53b37ef01d900fd912519392e5817542756b/shared-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha01/c2de08cdd6e7ec126910c6e81d88cb6270860d05/tracker-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha01/b95d8feb8bc094a8fe07bd03e76dae5ecf3087be/apksig-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha01/77fec1aa0671107535c9764b90c11b377c78a672/apkzlib-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/b166fab9f3ae23caa2f6c731803114cc39a6a70c/kotlin-gradle-plugin-api-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/7fdf2669ecfe739646e7307036bb3588e2047453/kotlin-gradle-plugin-model-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/6e8167f9aab0f6cfec309c2722f72dc26572a782/kotlin-compiler-embeddable-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/d348139d1750895f6081773c5ef6392cba7139ae/kotlin-annotation-processing-gradle-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/87970b36b9e1855d0d0e4942865f63a1015026c9/kotlin-android-extensions-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/aed39acd6a672619377e5a90d0d9aed7a37e1426/kotlin-compiler-runner-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/ac82572a3016d6fd4a3ab00edafb6604fb70aa0a/kotlin-scripting-compiler-embeddable-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha02/927f6e70fae9583aa3ed8f638e1b8bfa7b71fb84/builder-model-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha02/96bd1e7c013a22a4c85c330d7bf3b73386272ff0/builder-test-api-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha02/9a587fe3681aaa49a753894bff7f54472acb2932/sdklib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha02/963aa0a5f75b8b39a536e7550fa30ecafb8d2546/sdk-common-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha02/40e8a38aa34bd8869e9bd60c13c04780f9f3c4/manifest-merger-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha02/feaf85153038a36a8e14ee88fc2911fba5c09129/protos-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha02/b4c4ef7b9ebf571c5d92a6af7825a0454b299461/shared-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha02/6f6a9f6e7357c78c0be1571d59a0db5c0651325c/tracker-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha02/736b2460b19ecebcdb66c031ef08170f4ec3a913/apksig-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha02/27b03de6d03568b8caa6ce3a62d12dfe58fcc0fc/apkzlib-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.0/bc6fa6b19424bb9592fe43bbc20178f92d403105/asm-6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/6.0/a624f1a6e4e428dcd680a01bab2d4c56b35b18f0/asm-tree-6.0.jar" />
@@ -3074,9 +3091,9 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/5ad3a2bb04143f70aa0765fc29fc29571a7d6b34/fastutil-7.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/ee9e9eaa0a35360dcfeac129ff4923215fd65904/jopt-simple-4.9.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha01/f52668e9b089ec5ee7224e5f0e8d8bae2e71f60e/gradle-api-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha01/2864bdbbbad0556e13299bf47d84aad426576601/databinding-common-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha01/d312c4f93fe74d3257b89fd00256651ed8742bed/baseLibrary-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha02/fe044bc72ff2c5a7259be708c90b3fd703274b2c/gradle-api-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha02/2a4910122e10bc54ead6974cbaa65a7656d40fdb/databinding-common-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha02/ab4747a353bc122cf16fd794e7e4a46a400cc30c/baseLibrary-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/f35db7e4b2446e4174ba6a73db7bd6b3e6bb5da1/antlr4-4.5.3.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar" />
@@ -3087,21 +3104,22 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/aapt2-proto/0.3.1/8311800abb3dcd84426a0de834a6b884a173d864/aapt2-proto-0.3.1.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/96aba8ab71c16018c6adf66771ce15c6491bc0fe/protobuf-java-util-3.4.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/d5439926359caa899f41e1915b19d6d23e49750b/kotlin-script-runtime-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/af164d3ca4831e384830dae658351e63f8ba57d5/kotlin-build-common-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/fea0d20d599fdd494ba8c2b2a3676f16dccce92c/kotlin-daemon-client-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha01/2008c7893979fb9d1058f6253dcda502bcf4d655/annotations-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha01/d5fbe9d51cb1e2a8d41478759323dc1555d8e859/ddmlib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha01/f23053f46f9614f347e04869f479a88a75498b51/layoutlib-api-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha01/4ed0641cdefda4ef65f988f06559ae896ea7c699/dvlib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha01/69c55838fec26f305a031fd89b330d20ff3428ba/repository-26.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/a96fcab88b5546fca05ef7e4f3a87f5a84aa9541/kotlin-native-utils-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/c7173ea6208fa189fb56d679624fbc5e2026187f/kotlin-script-runtime-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/b4ac03101fd9e1b9aab001e62a3adc8e85ab7c43/kotlin-build-common-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/f1abc91057f86f98a661dd9d83ab90562f921e2a/kotlin-daemon-client-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha02/1c71db557e60404243385a73f071ecb7cf82ff28/annotations-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha02/1b2a7984e9d53ceb0d69bae965c45dfed5becf8f/ddmlib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha02/c24fd3278d1517adbfd206e48d213aabf8c5c1c4/layoutlib-api-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha02/3fdc4bd51815ff123b23ce4a238c209fbba9f833/dvlib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha02/ffd8c1855bb174c4916096f041238a6f2a44cbe9/repository-26.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/22b4c53dd9b6761024258de8f9240c3dce6ea368/httpmime-4.5.2.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/4648af70268b6fdb24674fb1fd7c1fcc73db1231/bcpkix-jdk15on-1.56.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/7512db3b3182753bd2e48ce8d345abbadc40fe6b/kotlin-reflect-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/6fd129fd9ba8581f2cb9c58bfd431dda4ee0457e/kotlin-reflect-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.4.0/b32aba0cbe737a4ca953f71688725972e3ee927c/protobuf-java-3.4.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha01/9a8735293ea3484dbcdd17813864f4b763e2797e/common-26.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha02/21632c34d6a9c18da90a80ab0ebc8c24a024e418/common-26.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/ccbc77a5fd907ef863c29f3596c6f54ffa4e9442/kxml2-2.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.activation/javax.activation/1.2.0/bf744c1e2776ed1de3c55c8dac1057ec331ef744/javax.activation-1.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/84caa68576e345eb5e7ae61a0e5a9229eb100d7b/commons-compress-1.12.jar" />
@@ -3122,12 +3140,12 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12-b140109.1041/7ed0e0d01198614194d56dfb03d9d95aa311824c/jaxb-api-2.2.12-b140109.1041.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/2df047d8c187a62f2177bf6013f1f9786cdfc8a2/txw2-2.2.11.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/c969d8f15c467f0ef7d7b04889afbe7b5d48e22f/istack-commons-runtime-2.21.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                           </list>
                         </option>
@@ -3140,31 +3158,32 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha01/13955e9c4ccdf7dbf2393312f2a52773e7a9c847/gradle-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/6329582bb54b97bed5d2990a36feeffb44b6dedc/kotlin-gradle-plugin-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha01/614ffb9b626501b044fe0ca98cd92f415d2e6cad/builder-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha01/45aa4b3009dfc20f7936ab1bcb2a37e1defed4f9/crash-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha01/fe2e5f0a1f72e8a8b7dd9deb2a4f6b1198c4d454/lint-gradle-api-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha01/a6331720d1511dbc84c5480d91ec2b41d97f60e1/databinding-compiler-common-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha02/a884ca93a6517299c20227f533c66ca5f3f99496/gradle-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/b378dac6a689f1c74bca6dc0acd266af57c79748/kotlin-gradle-plugin-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha02/723a275d23307f72559ea6603de5fd4939db4392/builder-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha02/2b785f1ed6e8e7092147fef6083d484c014f42a3/crash-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha02/bf5405cb6a815aa2cf29b2e96f3f3f7b328d9ccf/lint-gradle-api-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha02/1be1b106d03df97f08fbf0632f6162cdcbb9deda/databinding-compiler-common-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/e4075c49e16e086140fe40eea56b2de7516874ee/transform-api-2.0.0-deprecated-use-gradle-api-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-analysis-6.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.0.3/1ebac416b8402b16e02a470f41e73af880d0db0f/proguard-gradle-6.0.3-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/3429dbf85159ee44a38a15902bc14bf2c9eebb12/kotlin-gradle-plugin-api-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/4fb59d2050abf87ee506ae7d8ed40ea422875d05/kotlin-gradle-plugin-model-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/61d1d84a4015d8c857ef9f656ddd54371fdaff22/kotlin-compiler-embeddable-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/79c7388ccc32ea656ad2ba0ad59648e805eae6f8/kotlin-annotation-processing-gradle-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/30b68b33daa4753641afb13c6c48c82e0997815d/kotlin-android-extensions-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/76fee90ed815716dbc48c29a4fa3e39a2790d35a/kotlin-compiler-runner-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha01/ddcc32698a95d2ce57822afc0ff11193f6fc9bf5/builder-model-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha01/abb826ee4c39d1e9afd7d6bd390e6bea2037ef37/builder-test-api-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha01/59477384faf028adc7aebd9b09deceded8bdbf5c/sdklib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha01/818db5492f2cb291100591498b14e5854fb0f47f/sdk-common-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha01/f1b601d23d11a0c3579c4174607497c30457caa2/manifest-merger-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha01/6f9c254262a924a9ac8887102a7a9e765e10126d/protos-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha01/20013b2390462bbe575adbd956f621584f5cb8f1/shared-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha01/9e27abcf26c03b9bfbb9018410ef223a7ef7601a/tracker-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha01/f1562726d76130cb8c97efc01592d69fe60d6391/apksig-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha01/93334c6b1627cd59181b2237b4cb532837a979b9/apkzlib-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/6da72eda558a132e46f4f4a8527dde32b8f32943/kotlin-gradle-plugin-api-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/b1c6ce3d2a8e715cec9847e98333ecbb2648d323/kotlin-gradle-plugin-model-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/c56ca8dafc29e93b3a216b62168e658e7bff657d/kotlin-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/eb75ce3fdf49a526de475d0ff6b397f0593f2893/kotlin-annotation-processing-gradle-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/de508fd043c780bb0b62d3271bffd85c08facf5a/kotlin-android-extensions-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/a39743e43de106b0e5b942c1030a452f64353fc9/kotlin-compiler-runner-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/d3ff8096e57851fffcf6851d4b7b0cc65c843734/kotlin-scripting-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha02/68854b6c51d63644f773904787de128cdfa5743f/builder-model-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha02/3b57486f537935852d57b33ca6bca0bdb6b56b65/builder-test-api-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha02/f830bc09618edadfbd300342d3424946ef960a0e/sdklib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha02/9ba9f0d740c952217eb94055a734209080654f6/sdk-common-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha02/8dcebc072c3441f6e0f5330b1475bcd42d88f052/manifest-merger-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha02/27945099712ea51f5ca40b8497c1971610ea803c/protos-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha02/f49595cab893e73a4ee7146fa9c3035940bbe86d/shared-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha02/a01514f513bc5baa0168c674857e4908a55235a7/tracker-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha02/162f4d41fb7869537332c77c74f7b6a222eb8158/apksig-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha02/4137e8c4caadbb51af47f4e6ab58c23dcde9338d/apkzlib-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/1b2a0925ff06220c0261b6fd468183cd9e9a9a47/javawriter-2.5.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-6.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-tree-6.0-sources.jar" />
@@ -3173,9 +3192,9 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/a1a8e178d7813bb9596ee4e3d5e07b90ebe660af/fastutil-7.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/d965219b87f79e81b07116d451e684ab2f3acc27/jopt-simple-4.9-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/19c6d8dee6803c520d855ff7e8a8c3d97f1271ec/json-simple-1.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha01/21582b5ee8cb2f9a772ae5fd07b0b230799dfd7a/gradle-api-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha01/1b83391e63123b4a63588227f1780538c92bfd3d/databinding-common-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha01/cd14cc369cace24b9e3bb4f90268e6cfb2c93013/baseLibrary-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha02/cfed95a255deeecfe26f3633d8898d275c705516/gradle-api-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha02/f68272b270b9356123a0bc7c124f0c83449087c7/databinding-common-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha02/d7ab2637990968f8ec75a4c2740fc490bb6ac514/baseLibrary-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/e836b2a7348320a86c3bbd91a032486798e6ab98/antlr4-4.5.3-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/77979eaa98f90806f984155f44f63cc1fb60ac25/juniversalchardet-1.0.3-sources.jar" />
@@ -3184,21 +3203,22 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.5.2/e96b1f4a9e6630a405434fca857c6b8f777163cf/auto-value-1.5.2-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/6d5f8e6d209c309d9ef3e30aa81135ee94cc7d49/protobuf-java-util-3.4.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/3dcf8ba7582eeac3b67ed5155ee3659e16c8dadc/jdom2-2.0.6-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/f9a05c916f3a40a1dfc740082116eb86a39ee9ab/kotlin-script-runtime-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/7b2052636fefadaacc5c63df26b23f51ad82deef/kotlin-build-common-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/2ed57a6cf733679eb22626be705c0fb96375fbb5/kotlin-daemon-client-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha01/6f0d5e5dae258cf8c66ba3cad91619a99b0a6a93/annotations-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha01/cfcbb9ddfc3d13ec10ed168acc9063bf1b4ceb7d/ddmlib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha01/c2239e2a1c84d75e46e478e8f98cf35efac015e4/layoutlib-api-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha01/8eb21bdf6c6b941688e604cce654e1082b803f01/dvlib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha01/65be34bb2abbedfb8745d5a404493613456c267d/repository-26.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/5584413479b93a0d5edeb37c0179e4abd805acd4/kotlin-native-utils-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/9f968a154aa662ae26a78396f56e46086eb0bef9/kotlin-script-runtime-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/312cc4787b4d17a71069dad2b1df71882c173ad3/kotlin-build-common-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/815fb5d9a0d09660cf13d065d40ed879fe600d03/kotlin-daemon-client-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha02/24f911740ddad3572d7043cbe39632e079fcef6/annotations-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha02/a0133751a99f912bcd932de7380934868572dcce/ddmlib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha02/b5eb112823b821316b9d4d0fe249709d9c50a745/layoutlib-api-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha02/ea63b0ebcd38f6d7d73c34e493af486268df1a10/dvlib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha02/81afd867c9e94347b82ced284c4b1a089fb821e6/repository-26.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/ca23fd61a082eab682fc0ffd29e37d09eab07180/httpmime-4.5.2-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/118b4633c59394749b2b2f278138beb31c930663/bcpkix-jdk15on-1.56-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/837bf519e19ab718239e01223104869a40eab8b6/kotlin-reflect-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/2c0e9afd8097b36a2288df59af219bfe2b78ab6d/kotlin-reflect-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.4.0/c57c9f6bcbdb783260d00b80c455d82a6a8b02db/protobuf-java-3.4.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha01/36d20fe62c33b16392bba8ef30ce437cc59a75c7/common-26.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha02/c2255298be5ba76df7778b06c4f576f60fc38754/common-26.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.activation/javax.activation/1.2.0/5b034823866d38f38f02bdad7ed8a14e650c61b6/javax.activation-1.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/1fdd1a2fed15cdf08780ed564279c0ddbff46419/commons-compress-1.12-sources.jar" />
@@ -3219,40 +3239,41 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/dcd31de68a90e41e336f6b7afce0d39285c433d7/j2objc-annotations-1.1-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/886474da3f761d39fcbb723d97ecc5089e731f42/animal-sniffer-annotations-1.14-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/2e8041d08283cbbb58ad131617486fc6449f6c85/kotlin-stdlib-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/98515ba3feb571f93b923e61f643bdaed59d14ac/kotlin-stdlib-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/1e054c1ef9afdfc7c79bc09dd5eed35791cef7a2/kotlin-stdlib-jdk7-1.2.71-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12-b140109.1041/d59f43002d3d07c6adaaeedd93e7944c273821d2/jaxb-api-2.2.12-b140109.1041-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/7745afc4dcc863b724f4a21fb3fc517cd5aaf891/txw2-2.2.11-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/5d42dda44aa68ff87756e93ae0042cd66d2daa78/istack-commons-runtime-2.21-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/8bee30ce9d075088b3d590488a270e2c3ea39b3a/kotlin-stdlib-common-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha01/8008757a7bc1ea705613097f9e701a5a844d64cf/gradle-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/a67c018fb6e117c08339fc4af53c58bcda3ea2fa/kotlin-gradle-plugin-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha01/36e4db053d13e8f4c436a81f543029c5d928a790/builder-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha01/30ca85b230ba8071f637407cdccfaea2e711fbd4/crash-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha01/5e5c99577e4fa23b0a661ecb590892be9c1b8e6e/lint-gradle-api-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha01/4c16c39c0df0074881819c31ccca8a3cc7cd8cef/databinding-compiler-common-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha02/28173adeafc3fe1e4a5215bc283a1c546dc10dd2/gradle-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/7e11e020c6d35f9f5aee917f0654e121ec93b3c6/kotlin-gradle-plugin-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha02/a0db53a3e7cc748364418cfd4e4f1e7a09660a5a/builder-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha02/63c712011eb4f8aced1d6096f384aa28bb488a26/crash-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha02/eb5afef772b066afeaede9cf2b7161f14d144c12/lint-gradle-api-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha02/60872236c5346ba12b5b272e14e13b9e9ce9dc86/databinding-compiler-common-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/85bee1acea9e27152b920746c68133b30b11431/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.0/dd1cc1381a970800268160203aae2d3784da779b/asm-analysis-6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.0.3/e5becf2356695a396b788110e386c38bad523bfc/proguard-gradle-6.0.3.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/bundletool/0.6.0/fb944be26f692e6ac937924ad5be7faa4093dd80/bundletool-0.6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-processor/1.0.0-alpha10/6d494a04e0af27ecd4ec7a35c93759dd9c7443bc/jetifier-processor-1.0.0-alpha10.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/85c2867b545ca6eca29c4ccc27ea8f53b24e1559/kotlin-gradle-plugin-api-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/7946fc6ced091d53733495c721136bca0797d38f/kotlin-gradle-plugin-model-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/a79f934bfbc1c7e16638da3474feab351735f1c0/kotlin-compiler-embeddable-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/9786b76a77080e76ced78e7c9165076b5eaa3467/kotlin-annotation-processing-gradle-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/bda3ee49317ef7a1e8058de61f91abe94c015538/kotlin-android-extensions-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/d0f582c6478ce8968c09993518d5be2becc3d96f/kotlin-compiler-runner-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha01/a6d78b86534a0cb386a7caba2ece1b5903594d5c/builder-model-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha01/342760561e466095adaea2f2eb40c82f7ddf6020/builder-test-api-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha01/527e6a817f642713825f08be4f037e6b537e84d0/sdklib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha01/9d5067ebf2d2367869ba17f16b8fea986101f5d/sdk-common-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha01/8b134ce167bbc62145af4aeafc90a336d0c63c34/manifest-merger-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha01/dff708e42c0cbf29a8fb0bdafaac8a89280b55da/protos-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha01/ebf53b37ef01d900fd912519392e5817542756b/shared-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha01/c2de08cdd6e7ec126910c6e81d88cb6270860d05/tracker-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha01/b95d8feb8bc094a8fe07bd03e76dae5ecf3087be/apksig-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha01/77fec1aa0671107535c9764b90c11b377c78a672/apkzlib-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/b166fab9f3ae23caa2f6c731803114cc39a6a70c/kotlin-gradle-plugin-api-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/7fdf2669ecfe739646e7307036bb3588e2047453/kotlin-gradle-plugin-model-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/6e8167f9aab0f6cfec309c2722f72dc26572a782/kotlin-compiler-embeddable-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/d348139d1750895f6081773c5ef6392cba7139ae/kotlin-annotation-processing-gradle-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/87970b36b9e1855d0d0e4942865f63a1015026c9/kotlin-android-extensions-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/aed39acd6a672619377e5a90d0d9aed7a37e1426/kotlin-compiler-runner-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/ac82572a3016d6fd4a3ab00edafb6604fb70aa0a/kotlin-scripting-compiler-embeddable-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha02/927f6e70fae9583aa3ed8f638e1b8bfa7b71fb84/builder-model-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha02/96bd1e7c013a22a4c85c330d7bf3b73386272ff0/builder-test-api-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha02/9a587fe3681aaa49a753894bff7f54472acb2932/sdklib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha02/963aa0a5f75b8b39a536e7550fa30ecafb8d2546/sdk-common-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha02/40e8a38aa34bd8869e9bd60c13c04780f9f3c4/manifest-merger-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha02/feaf85153038a36a8e14ee88fc2911fba5c09129/protos-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha02/b4c4ef7b9ebf571c5d92a6af7825a0454b299461/shared-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha02/6f6a9f6e7357c78c0be1571d59a0db5c0651325c/tracker-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha02/736b2460b19ecebcdb66c031ef08170f4ec3a913/apksig-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha02/27b03de6d03568b8caa6ce3a62d12dfe58fcc0fc/apkzlib-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.0/bc6fa6b19424bb9592fe43bbc20178f92d403105/asm-6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/6.0/a624f1a6e4e428dcd680a01bab2d4c56b35b18f0/asm-tree-6.0.jar" />
@@ -3261,9 +3282,9 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/5ad3a2bb04143f70aa0765fc29fc29571a7d6b34/fastutil-7.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/ee9e9eaa0a35360dcfeac129ff4923215fd65904/jopt-simple-4.9.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha01/f52668e9b089ec5ee7224e5f0e8d8bae2e71f60e/gradle-api-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha01/2864bdbbbad0556e13299bf47d84aad426576601/databinding-common-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha01/d312c4f93fe74d3257b89fd00256651ed8742bed/baseLibrary-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha02/fe044bc72ff2c5a7259be708c90b3fd703274b2c/gradle-api-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha02/2a4910122e10bc54ead6974cbaa65a7656d40fdb/databinding-common-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha02/ab4747a353bc122cf16fd794e7e4a46a400cc30c/baseLibrary-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/f35db7e4b2446e4174ba6a73db7bd6b3e6bb5da1/antlr4-4.5.3.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar" />
@@ -3274,21 +3295,22 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/aapt2-proto/0.3.1/8311800abb3dcd84426a0de834a6b884a173d864/aapt2-proto-0.3.1.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/96aba8ab71c16018c6adf66771ce15c6491bc0fe/protobuf-java-util-3.4.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/d5439926359caa899f41e1915b19d6d23e49750b/kotlin-script-runtime-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/af164d3ca4831e384830dae658351e63f8ba57d5/kotlin-build-common-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/fea0d20d599fdd494ba8c2b2a3676f16dccce92c/kotlin-daemon-client-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha01/2008c7893979fb9d1058f6253dcda502bcf4d655/annotations-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha01/d5fbe9d51cb1e2a8d41478759323dc1555d8e859/ddmlib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha01/f23053f46f9614f347e04869f479a88a75498b51/layoutlib-api-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha01/4ed0641cdefda4ef65f988f06559ae896ea7c699/dvlib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha01/69c55838fec26f305a031fd89b330d20ff3428ba/repository-26.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/a96fcab88b5546fca05ef7e4f3a87f5a84aa9541/kotlin-native-utils-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/c7173ea6208fa189fb56d679624fbc5e2026187f/kotlin-script-runtime-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/b4ac03101fd9e1b9aab001e62a3adc8e85ab7c43/kotlin-build-common-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/f1abc91057f86f98a661dd9d83ab90562f921e2a/kotlin-daemon-client-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha02/1c71db557e60404243385a73f071ecb7cf82ff28/annotations-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha02/1b2a7984e9d53ceb0d69bae965c45dfed5becf8f/ddmlib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha02/c24fd3278d1517adbfd206e48d213aabf8c5c1c4/layoutlib-api-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha02/3fdc4bd51815ff123b23ce4a238c209fbba9f833/dvlib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha02/ffd8c1855bb174c4916096f041238a6f2a44cbe9/repository-26.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/22b4c53dd9b6761024258de8f9240c3dce6ea368/httpmime-4.5.2.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/4648af70268b6fdb24674fb1fd7c1fcc73db1231/bcpkix-jdk15on-1.56.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/7512db3b3182753bd2e48ce8d345abbadc40fe6b/kotlin-reflect-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/6fd129fd9ba8581f2cb9c58bfd431dda4ee0457e/kotlin-reflect-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.4.0/b32aba0cbe737a4ca953f71688725972e3ee927c/protobuf-java-3.4.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha01/9a8735293ea3484dbcdd17813864f4b763e2797e/common-26.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha02/21632c34d6a9c18da90a80ab0ebc8c24a024e418/common-26.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/ccbc77a5fd907ef863c29f3596c6f54ffa4e9442/kxml2-2.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.activation/javax.activation/1.2.0/bf744c1e2776ed1de3c55c8dac1057ec331ef744/javax.activation-1.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/84caa68576e345eb5e7ae61a0e5a9229eb100d7b/commons-compress-1.12.jar" />
@@ -3309,12 +3331,12 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12-b140109.1041/7ed0e0d01198614194d56dfb03d9d95aa311824c/jaxb-api-2.2.12-b140109.1041.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/2df047d8c187a62f2177bf6013f1f9786cdfc8a2/txw2-2.2.11.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/c969d8f15c467f0ef7d7b04889afbe7b5d48e22f/istack-commons-runtime-2.21.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                           </list>
                         </option>
@@ -3513,31 +3535,32 @@
                       <ExternalModuleBuildClasspathPojo>
                         <option name="entries">
                           <list>
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha01/13955e9c4ccdf7dbf2393312f2a52773e7a9c847/gradle-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/6329582bb54b97bed5d2990a36feeffb44b6dedc/kotlin-gradle-plugin-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha01/614ffb9b626501b044fe0ca98cd92f415d2e6cad/builder-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha01/45aa4b3009dfc20f7936ab1bcb2a37e1defed4f9/crash-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha01/fe2e5f0a1f72e8a8b7dd9deb2a4f6b1198c4d454/lint-gradle-api-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha01/a6331720d1511dbc84c5480d91ec2b41d97f60e1/databinding-compiler-common-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha02/a884ca93a6517299c20227f533c66ca5f3f99496/gradle-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/b378dac6a689f1c74bca6dc0acd266af57c79748/kotlin-gradle-plugin-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha02/723a275d23307f72559ea6603de5fd4939db4392/builder-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha02/2b785f1ed6e8e7092147fef6083d484c014f42a3/crash-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha02/bf5405cb6a815aa2cf29b2e96f3f3f7b328d9ccf/lint-gradle-api-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha02/1be1b106d03df97f08fbf0632f6162cdcbb9deda/databinding-compiler-common-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/e4075c49e16e086140fe40eea56b2de7516874ee/transform-api-2.0.0-deprecated-use-gradle-api-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-analysis-6.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.0.3/1ebac416b8402b16e02a470f41e73af880d0db0f/proguard-gradle-6.0.3-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/3429dbf85159ee44a38a15902bc14bf2c9eebb12/kotlin-gradle-plugin-api-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/4fb59d2050abf87ee506ae7d8ed40ea422875d05/kotlin-gradle-plugin-model-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/61d1d84a4015d8c857ef9f656ddd54371fdaff22/kotlin-compiler-embeddable-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/79c7388ccc32ea656ad2ba0ad59648e805eae6f8/kotlin-annotation-processing-gradle-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/30b68b33daa4753641afb13c6c48c82e0997815d/kotlin-android-extensions-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/76fee90ed815716dbc48c29a4fa3e39a2790d35a/kotlin-compiler-runner-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha01/ddcc32698a95d2ce57822afc0ff11193f6fc9bf5/builder-model-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha01/abb826ee4c39d1e9afd7d6bd390e6bea2037ef37/builder-test-api-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha01/59477384faf028adc7aebd9b09deceded8bdbf5c/sdklib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha01/818db5492f2cb291100591498b14e5854fb0f47f/sdk-common-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha01/f1b601d23d11a0c3579c4174607497c30457caa2/manifest-merger-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha01/6f9c254262a924a9ac8887102a7a9e765e10126d/protos-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha01/20013b2390462bbe575adbd956f621584f5cb8f1/shared-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha01/9e27abcf26c03b9bfbb9018410ef223a7ef7601a/tracker-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha01/f1562726d76130cb8c97efc01592d69fe60d6391/apksig-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha01/93334c6b1627cd59181b2237b4cb532837a979b9/apkzlib-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/6da72eda558a132e46f4f4a8527dde32b8f32943/kotlin-gradle-plugin-api-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/b1c6ce3d2a8e715cec9847e98333ecbb2648d323/kotlin-gradle-plugin-model-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/c56ca8dafc29e93b3a216b62168e658e7bff657d/kotlin-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/eb75ce3fdf49a526de475d0ff6b397f0593f2893/kotlin-annotation-processing-gradle-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/de508fd043c780bb0b62d3271bffd85c08facf5a/kotlin-android-extensions-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/a39743e43de106b0e5b942c1030a452f64353fc9/kotlin-compiler-runner-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/d3ff8096e57851fffcf6851d4b7b0cc65c843734/kotlin-scripting-compiler-embeddable-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha02/68854b6c51d63644f773904787de128cdfa5743f/builder-model-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha02/3b57486f537935852d57b33ca6bca0bdb6b56b65/builder-test-api-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha02/f830bc09618edadfbd300342d3424946ef960a0e/sdklib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha02/9ba9f0d740c952217eb94055a734209080654f6/sdk-common-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha02/8dcebc072c3441f6e0f5330b1475bcd42d88f052/manifest-merger-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha02/27945099712ea51f5ca40b8497c1971610ea803c/protos-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha02/f49595cab893e73a4ee7146fa9c3035940bbe86d/shared-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha02/a01514f513bc5baa0168c674857e4908a55235a7/tracker-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha02/162f4d41fb7869537332c77c74f7b6a222eb8158/apksig-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha02/4137e8c4caadbb51af47f4e6ab58c23dcde9338d/apkzlib-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/1b2a0925ff06220c0261b6fd468183cd9e9a9a47/javawriter-2.5.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-6.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/6.0/66e3ec9f4ff0d70713868456142040111cc201c/asm-tree-6.0-sources.jar" />
@@ -3546,9 +3569,9 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/a1a8e178d7813bb9596ee4e3d5e07b90ebe660af/fastutil-7.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/d965219b87f79e81b07116d451e684ab2f3acc27/jopt-simple-4.9-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/19c6d8dee6803c520d855ff7e8a8c3d97f1271ec/json-simple-1.1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha01/21582b5ee8cb2f9a772ae5fd07b0b230799dfd7a/gradle-api-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha01/1b83391e63123b4a63588227f1780538c92bfd3d/databinding-common-3.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha01/cd14cc369cace24b9e3bb4f90268e6cfb2c93013/baseLibrary-3.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha02/cfed95a255deeecfe26f3633d8898d275c705516/gradle-api-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha02/f68272b270b9356123a0bc7c124f0c83449087c7/databinding-common-3.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha02/d7ab2637990968f8ec75a4c2740fc490bb6ac514/baseLibrary-3.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/e836b2a7348320a86c3bbd91a032486798e6ab98/antlr4-4.5.3-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/f2d8698c46d1167ff24b06a840a87d91a02db891/commons-io-2.4-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/77979eaa98f90806f984155f44f63cc1fb60ac25/juniversalchardet-1.0.3-sources.jar" />
@@ -3557,21 +3580,22 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.auto.value/auto-value/1.5.2/e96b1f4a9e6630a405434fca857c6b8f777163cf/auto-value-1.5.2-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/6d5f8e6d209c309d9ef3e30aa81135ee94cc7d49/protobuf-java-util-3.4.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/3dcf8ba7582eeac3b67ed5155ee3659e16c8dadc/jdom2-2.0.6-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/f9a05c916f3a40a1dfc740082116eb86a39ee9ab/kotlin-script-runtime-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/7b2052636fefadaacc5c63df26b23f51ad82deef/kotlin-build-common-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/2ed57a6cf733679eb22626be705c0fb96375fbb5/kotlin-daemon-client-1.2.71-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha01/6f0d5e5dae258cf8c66ba3cad91619a99b0a6a93/annotations-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha01/cfcbb9ddfc3d13ec10ed168acc9063bf1b4ceb7d/ddmlib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha01/c2239e2a1c84d75e46e478e8f98cf35efac015e4/layoutlib-api-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha01/8eb21bdf6c6b941688e604cce654e1082b803f01/dvlib-26.4.0-alpha01-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha01/65be34bb2abbedfb8745d5a404493613456c267d/repository-26.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/5584413479b93a0d5edeb37c0179e4abd805acd4/kotlin-native-utils-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/9f968a154aa662ae26a78396f56e46086eb0bef9/kotlin-script-runtime-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/312cc4787b4d17a71069dad2b1df71882c173ad3/kotlin-build-common-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/815fb5d9a0d09660cf13d065d40ed879fe600d03/kotlin-daemon-client-1.3.0-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha02/24f911740ddad3572d7043cbe39632e079fcef6/annotations-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha02/a0133751a99f912bcd932de7380934868572dcce/ddmlib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha02/b5eb112823b821316b9d4d0fe249709d9c50a745/layoutlib-api-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha02/ea63b0ebcd38f6d7d73c34e493af486268df1a10/dvlib-26.4.0-alpha02-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha02/81afd867c9e94347b82ced284c4b1a089fb821e6/repository-26.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/baf95d8519fc1a11d388f8543cb40cd2bb9d66dc/gson-2.8.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/ca23fd61a082eab682fc0ffd29e37d09eab07180/httpmime-4.5.2-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/118b4633c59394749b2b2f278138beb31c930663/bcpkix-jdk15on-1.56-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/837bf519e19ab718239e01223104869a40eab8b6/kotlin-reflect-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/2c0e9afd8097b36a2288df59af219bfe2b78ab6d/kotlin-reflect-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.4.0/c57c9f6bcbdb783260d00b80c455d82a6a8b02db/protobuf-java-3.4.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha01/36d20fe62c33b16392bba8ef30ce437cc59a75c7/common-26.4.0-alpha01-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha02/c2255298be5ba76df7778b06c4f576f60fc38754/common-26.4.0-alpha02-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/309cd2cff7260e465792fda3dcbb063b730d8050/kxml2-2.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.activation/javax.activation/1.2.0/5b034823866d38f38f02bdad7ed8a14e650c61b6/javax.activation-1.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/1fdd1a2fed15cdf08780ed564279c0ddbff46419/commons-compress-1.12-sources.jar" />
@@ -3592,40 +3616,41 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/a8cd7823aa1dcd2fd6677c0c5988fdde9d1fb0a3/error_prone_annotations-2.2.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/dcd31de68a90e41e336f6b7afce0d39285c433d7/j2objc-annotations-1.1-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/886474da3f761d39fcbb723d97ecc5089e731f42/animal-sniffer-annotations-1.14-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/2e8041d08283cbbb58ad131617486fc6449f6c85/kotlin-stdlib-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/98515ba3feb571f93b923e61f643bdaed59d14ac/kotlin-stdlib-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/1e054c1ef9afdfc7c79bc09dd5eed35791cef7a2/kotlin-stdlib-jdk7-1.2.71-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12-b140109.1041/d59f43002d3d07c6adaaeedd93e7944c273821d2/jaxb-api-2.2.12-b140109.1041-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/7745afc4dcc863b724f4a21fb3fc517cd5aaf891/txw2-2.2.11-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/5d42dda44aa68ff87756e93ae0042cd66d2daa78/istack-commons-runtime-2.21-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ff62b6a76e3200cac3d7df0859d7665fe6d54955/kotlin-stdlib-common-1.2.71-sources.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/8bee30ce9d075088b3d590488a270e2c3ea39b3a/kotlin-stdlib-common-1.3.0-sources.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/5991ca87ef1fb5544943d9abc5a9a37583fabe03/annotations-13.0-sources.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha01/8008757a7bc1ea705613097f9e701a5a844d64cf/gradle-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.2.71/a67c018fb6e117c08339fc4af53c58bcda3ea2fa/kotlin-gradle-plugin-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha01/36e4db053d13e8f4c436a81f543029c5d928a790/builder-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha01/30ca85b230ba8071f637407cdccfaea2e711fbd4/crash-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha01/5e5c99577e4fa23b0a661ecb590892be9c1b8e6e/lint-gradle-api-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha01/4c16c39c0df0074881819c31ccca8a3cc7cd8cef/databinding-compiler-common-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle/3.4.0-alpha02/28173adeafc3fe1e4a5215bc283a1c546dc10dd2/gradle-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin/1.3.0/7e11e020c6d35f9f5aee917f0654e121ec93b3c6/kotlin-gradle-plugin-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder/3.4.0-alpha02/a0db53a3e7cc748364418cfd4e4f1e7a09660a5a/builder-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/crash/26.4.0-alpha02/63c712011eb4f8aced1d6096f384aa28bb488a26/crash-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.lint/lint-gradle-api/26.4.0-alpha02/eb5afef772b066afeaede9cf2b7161f14d144c12/lint-gradle-api-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-compiler-common/3.4.0-alpha02/60872236c5346ba12b5b272e14e13b9e9ce9dc86/databinding-compiler-common-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/transform-api/2.0.0-deprecated-use-gradle-api/85bee1acea9e27152b920746c68133b30b11431/transform-api-2.0.0-deprecated-use-gradle-api.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-analysis/6.0/dd1cc1381a970800268160203aae2d3784da779b/asm-analysis-6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.proguard/proguard-gradle/6.0.3/e5becf2356695a396b788110e386c38bad523bfc/proguard-gradle-6.0.3.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/bundletool/0.6.0/fb944be26f692e6ac937924ad5be7faa4093dd80/bundletool-0.6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build.jetifier/jetifier-processor/1.0.0-alpha10/6d494a04e0af27ecd4ec7a35c93759dd9c7443bc/jetifier-processor-1.0.0-alpha10.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.2.71/85c2867b545ca6eca29c4ccc27ea8f53b24e1559/kotlin-gradle-plugin-api-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.2.71/7946fc6ced091d53733495c721136bca0797d38f/kotlin-gradle-plugin-model-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.2.71/a79f934bfbc1c7e16638da3474feab351735f1c0/kotlin-compiler-embeddable-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.2.71/9786b76a77080e76ced78e7c9165076b5eaa3467/kotlin-annotation-processing-gradle-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.2.71/bda3ee49317ef7a1e8058de61f91abe94c015538/kotlin-android-extensions-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.2.71/d0f582c6478ce8968c09993518d5be2becc3d96f/kotlin-compiler-runner-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha01/a6d78b86534a0cb386a7caba2ece1b5903594d5c/builder-model-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha01/342760561e466095adaea2f2eb40c82f7ddf6020/builder-test-api-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha01/527e6a817f642713825f08be4f037e6b537e84d0/sdklib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha01/9d5067ebf2d2367869ba17f16b8fea986101f5d/sdk-common-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha01/8b134ce167bbc62145af4aeafc90a336d0c63c34/manifest-merger-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha01/dff708e42c0cbf29a8fb0bdafaac8a89280b55da/protos-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha01/ebf53b37ef01d900fd912519392e5817542756b/shared-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha01/c2de08cdd6e7ec126910c6e81d88cb6270860d05/tracker-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha01/b95d8feb8bc094a8fe07bd03e76dae5ecf3087be/apksig-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha01/77fec1aa0671107535c9764b90c11b377c78a672/apkzlib-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-api/1.3.0/b166fab9f3ae23caa2f6c731803114cc39a6a70c/kotlin-gradle-plugin-api-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-gradle-plugin-model/1.3.0/7fdf2669ecfe739646e7307036bb3588e2047453/kotlin-gradle-plugin-model-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-embeddable/1.3.0/6e8167f9aab0f6cfec309c2722f72dc26572a782/kotlin-compiler-embeddable-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-annotation-processing-gradle/1.3.0/d348139d1750895f6081773c5ef6392cba7139ae/kotlin-annotation-processing-gradle-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-android-extensions/1.3.0/87970b36b9e1855d0d0e4942865f63a1015026c9/kotlin-android-extensions-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-compiler-runner/1.3.0/aed39acd6a672619377e5a90d0d9aed7a37e1426/kotlin-compiler-runner-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-scripting-compiler-embeddable/1.3.0/ac82572a3016d6fd4a3ab00edafb6604fb70aa0a/kotlin-scripting-compiler-embeddable-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-model/3.4.0-alpha02/927f6e70fae9583aa3ed8f638e1b8bfa7b71fb84/builder-model-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/builder-test-api/3.4.0-alpha02/96bd1e7c013a22a4c85c330d7bf3b73386272ff0/builder-test-api-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdklib/26.4.0-alpha02/9a587fe3681aaa49a753894bff7f54472acb2932/sdklib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/sdk-common/26.4.0-alpha02/963aa0a5f75b8b39a536e7550fa30ecafb8d2546/sdk-common-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/manifest-merger/26.4.0-alpha02/40e8a38aa34bd8869e9bd60c13c04780f9f3c4/manifest-merger-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/protos/26.4.0-alpha02/feaf85153038a36a8e14ee88fc2911fba5c09129/protos-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/shared/26.4.0-alpha02/b4c4ef7b9ebf571c5d92a6af7825a0454b299461/shared-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.analytics-library/tracker/26.4.0-alpha02/6f6a9f6e7357c78c0be1571d59a0db5c0651325c/tracker-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apksig/3.4.0-alpha02/736b2460b19ecebcdb66c031ef08170f4ec3a913/apksig-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/apkzlib/3.4.0-alpha02/27b03de6d03568b8caa6ce3a62d12dfe58fcc0fc/apkzlib-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/6.0/bc6fa6b19424bb9592fe43bbc20178f92d403105/asm-6.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm-tree/6.0/a624f1a6e4e428dcd680a01bab2d4c56b35b18f0/asm-tree-6.0.jar" />
@@ -3634,9 +3659,9 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/7.2.0/5ad3a2bb04143f70aa0765fc29fc29571a7d6b34/fastutil-7.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/4.9/ee9e9eaa0a35360dcfeac129ff4923215fd65904/jopt-simple-4.9.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1/5e303a03d04e6788dddfa3655272580ae0fc13bb/json-simple-1.1.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha01/f52668e9b089ec5ee7224e5f0e8d8bae2e71f60e/gradle-api-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha01/2864bdbbbad0556e13299bf47d84aad426576601/databinding-common-3.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha01/d312c4f93fe74d3257b89fd00256651ed8742bed/baseLibrary-3.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/gradle-api/3.4.0-alpha02/fe044bc72ff2c5a7259be708c90b3fd703274b2c/gradle-api-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/androidx.databinding/databinding-common/3.4.0-alpha02/2a4910122e10bc54ead6974cbaa65a7656d40fdb/databinding-common-3.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.databinding/baseLibrary/3.4.0-alpha02/ab4747a353bc122cf16fd794e7e4a46a400cc30c/baseLibrary-3.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.antlr/antlr4/4.5.3/f35db7e4b2446e4174ba6a73db7bd6b3e6bb5da1/antlr4-4.5.3.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.googlecode.juniversalchardet/juniversalchardet/1.0.3/cd49678784c46aa8789c060538e0154013bb421b/juniversalchardet-1.0.3.jar" />
@@ -3647,21 +3672,22 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.build/aapt2-proto/0.3.1/8311800abb3dcd84426a0de834a6b884a173d864/aapt2-proto-0.3.1.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java-util/3.4.0/96aba8ab71c16018c6adf66771ce15c6491bc0fe/protobuf-java-util-3.4.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jdom/jdom2/2.0.6/6f14738ec2e9dd0011e343717fa624a10f8aab64/jdom2-2.0.6.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.2.71/d5439926359caa899f41e1915b19d6d23e49750b/kotlin-script-runtime-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.2.71/af164d3ca4831e384830dae658351e63f8ba57d5/kotlin-build-common-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.2.71/fea0d20d599fdd494ba8c2b2a3676f16dccce92c/kotlin-daemon-client-1.2.71.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha01/2008c7893979fb9d1058f6253dcda502bcf4d655/annotations-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha01/d5fbe9d51cb1e2a8d41478759323dc1555d8e859/ddmlib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha01/f23053f46f9614f347e04869f479a88a75498b51/layoutlib-api-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha01/4ed0641cdefda4ef65f988f06559ae896ea7c699/dvlib-26.4.0-alpha01.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha01/69c55838fec26f305a031fd89b330d20ff3428ba/repository-26.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-native-utils/1.3.0/a96fcab88b5546fca05ef7e4f3a87f5a84aa9541/kotlin-native-utils-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-script-runtime/1.3.0/c7173ea6208fa189fb56d679624fbc5e2026187f/kotlin-script-runtime-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-build-common/1.3.0/b4ac03101fd9e1b9aab001e62a3adc8e85ab7c43/kotlin-build-common-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-daemon-client/1.3.0/f1abc91057f86f98a661dd9d83ab90562f921e2a/kotlin-daemon-client-1.3.0.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/annotations/26.4.0-alpha02/1c71db557e60404243385a73f071ecb7cf82ff28/annotations-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.ddms/ddmlib/26.4.0-alpha02/1b2a7984e9d53ceb0d69bae965c45dfed5becf8f/ddmlib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools.layoutlib/layoutlib-api/26.4.0-alpha02/c24fd3278d1517adbfd206e48d213aabf8c5c1c4/layoutlib-api-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/dvlib/26.4.0-alpha02/3fdc4bd51815ff123b23ce4a238c209fbba9f833/dvlib-26.4.0-alpha02.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/repository/26.4.0-alpha02/ffd8c1855bb174c4916096f041238a6f2a44cbe9/repository-26.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.0/c4ba5371a29ac9b2ad6129b1d39ea38750043eff/gson-2.8.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.httpcomponents/httpmime/4.5.2/22b4c53dd9b6761024258de8f9240c3dce6ea368/httpmime-4.5.2.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.bouncycastle/bcpkix-jdk15on/1.56/4648af70268b6fdb24674fb1fd7c1fcc73db1231/bcpkix-jdk15on-1.56.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.2.71/7512db3b3182753bd2e48ce8d345abbadc40fe6b/kotlin-reflect-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-reflect/1.3.0/6fd129fd9ba8581f2cb9c58bfd431dda4ee0457e/kotlin-reflect-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.protobuf/protobuf-java/3.4.0/b32aba0cbe737a4ca953f71688725972e3ee927c/protobuf-java-3.4.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha01/9a8735293ea3484dbcdd17813864f4b763e2797e/common-26.4.0-alpha01.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.android.tools/common/26.4.0-alpha02/21632c34d6a9c18da90a80ab0ebc8c24a024e418/common-26.4.0-alpha02.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/net.sf.kxml/kxml2/2.3.0/ccbc77a5fd907ef863c29f3596c6f54ffa4e9442/kxml2-2.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.activation/javax.activation/1.2.0/bf744c1e2776ed1de3c55c8dac1057ec331ef744/javax.activation-1.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-compress/1.12/84caa68576e345eb5e7ae61a0e5a9229eb100d7b/commons-compress-1.12.jar" />
@@ -3682,12 +3708,12 @@
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.2.0/88e3c593e9b3586e1c6177f89267da6fc6986f0c/error_prone_annotations-2.2.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/1.1/976d8d30bebc251db406f2bdb3eb01962b5685b3/j2objc-annotations-1.1.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.codehaus.mojo/animal-sniffer-annotations/1.14/775b7e22fb10026eed3f86e8dc556dfafe35f2d5/animal-sniffer-annotations-1.14.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.2.71/d9717625bb3c731561251f8dd2c67a1011d6764c/kotlin-stdlib-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.3.0/a134b0cfe9bb44f98b0b3e889cda07923eea9428/kotlin-stdlib-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.2.71/4ce93f539e2133f172f1167291a911f83400a5d0/kotlin-stdlib-jdk7-1.2.71.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/javax.xml.bind/jaxb-api/2.2.12-b140109.1041/7ed0e0d01198614194d56dfb03d9d95aa311824c/jaxb-api-2.2.12-b140109.1041.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.glassfish.jaxb/txw2/2.2.11/2df047d8c187a62f2177bf6013f1f9786cdfc8a2/txw2-2.2.11.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/com.sun.istack/istack-commons-runtime/2.21/c969d8f15c467f0ef7d7b04889afbe7b5d48e22f/istack-commons-runtime-2.21.jar" />
-                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.2.71/ba18ca1aa0e40eb6f1865b324af2f4cbb691c1ec/kotlin-stdlib-common-1.2.71.jar" />
+                            <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.3.0/84a2e0288dc17cd64d692eb1e5e0de8cd5ff0846/kotlin-stdlib-common-1.3.0.jar" />
                             <option value="$PROJECT_DIR$/../../Linux/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar" />
                           </list>
                         </option>
@@ -3973,22 +3999,22 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/AbstractPluginActivity.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/Constants.kt" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/ui/EditActivity.kt" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/receiver/FireReceiver.kt" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/locale_api/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/locale_api/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/main.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="y" value="25" />
-    <option name="width" value="960" />
+    <option name="width" value="950" />
     <option name="height" value="1055" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -4015,10 +4041,26 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ADBPlugin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADBPlugin1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="ADBPlugin1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ADBPlugin1" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -4029,38 +4071,13 @@
             <path>
               <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
               <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ADBPlugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-            </path>
-            <path>
-              <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="generatedJava" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="com" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ADBPlugin" type="462c0819:PsiDirectoryNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
               <item name="ADBPlugin1" type="1abcf292:AndroidViewProjectNode" />
@@ -4071,7 +4088,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="ProjectPane" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -4087,6 +4103,7 @@
     <property name="do.not.display.dialog.enable.single.variant.sync" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/localeapi/build/generated/source/r/debug/com/twofortyfouram/locale" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../key.jks" />
+    <property name="not.eligible.for.single.variant.sync" value="true" />
     <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="sync.plugin.last.upgrade.timestamp" value="1508506811168" />
@@ -4110,7 +4127,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" name="&lt;template&gt;" selected="false" type="Applet">
       <option name="MAIN_CLASS_NAME" />
       <option name="HTML_FILE_NAME" />
@@ -4318,6 +4335,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ADBPlugin1 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencies" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <option name="filePath" />
       <option name="vmParameters" />
@@ -4360,6 +4395,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Android App.app" />
+      <item itemvalue="Gradle.ADBPlugin1 [dependencies]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.ADBPlugin1 [dependencies]" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -4442,24 +4486,30 @@
       <option name="project" value="LOCAL" />
       <updated>1539291595995</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated version number">
+      <created>1540727889339</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1540727889339</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
+    <frame x="1280" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.66331095" visible="true" weight="0.1855615" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.65960914" visible="true" weight="0.18342246" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Captures" order="3" side_tool="true" weight="0.25" />
-      <window_info id="Build Variants" order="4" sideWeight="0.33668903" side_tool="true" weight="0.1855615" />
+      <window_info active="true" id="Build Variants" order="4" sideWeight="0.3403909" side_tool="true" visible="true" weight="0.18342246" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Favorites" order="6" sideWeight="0.43960828" side_tool="true" weight="0.08342246" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295964" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3297062" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -4473,7 +4523,7 @@
       <window_info anchor="bottom" id="Terminal" order="13" weight="0.32885906" />
       <window_info anchor="bottom" id="Messages" order="14" weight="0.22310306" />
       <window_info anchor="bottom" id="Dependency Viewer" order="15" weight="0.32962137" />
-      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.4989011" weight="0.32997763" />
+      <window_info anchor="bottom" id="Build" order="16" sideWeight="0.4989011" visible="true" weight="0.33188248" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -4483,7 +4533,7 @@
       <window_info anchor="right" id="Gradle" order="6" weight="0.32994652" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Preview" order="9" weight="0.32994652" />
+      <window_info anchor="right" id="Preview" order="9" weight="0.28609625" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6394102" visible="true" weight="0.20403588" />
@@ -4561,7 +4611,8 @@
     <MESSAGE value="big update" />
     <MESSAGE value="quick fix" />
     <MESSAGE value="added timeout and error logging for tasker" />
-    <option name="LAST_COMMIT_MESSAGE" value="added timeout and error logging for tasker" />
+    <MESSAGE value="updated version number" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated version number" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/local.properties">
@@ -4692,14 +4743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="2592">
-          <caret line="144" column="47" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/TaskerPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
@@ -4740,40 +4783,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ADBPlugin/SendSingleCommand.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-432">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        <state relative-caret-position="36">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
           <folding>
-            <element signature="e#23#749#0" expanded="true" />
+            <element signature="e#23#724#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/locale_api/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="27" column="18" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+        <state relative-caret-position="630">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
+    <entry file="file://$PROJECT_DIR$/locale_api/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="35" selection-start-line="24" selection-start-column="35" selection-end-line="24" selection-end-column="35" />
+        <state relative-caret-position="324">
+          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="34" selection-end-line="25" selection-end-column="34" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
         </state>
       </provider>
     </entry>

@@ -7,8 +7,9 @@ import com.tananaev.adblib.AdbBase64
 import com.tananaev.adblib.AdbConnection
 import com.tananaev.adblib.AdbCrypto
 import com.tananaev.adblib.AdbStream
-import kotlinx.coroutines.experimental.delay
-import kotlinx.coroutines.experimental.launch
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import java.io.File
 import java.io.IOException
 import java.io.UnsupportedEncodingException
@@ -18,7 +19,6 @@ import java.net.Socket
 import java.net.UnknownHostException
 import java.security.NoSuchAlgorithmException
 import java.security.spec.InvalidKeySpecException
-import java.util.concurrent.TimeUnit
 
 /**
  * Created by Jolan Rensen on 21-2-2017.
@@ -132,7 +132,7 @@ constructor(
         var timer = 0
 
         logD("Getting responses...")
-        launch {
+        GlobalScope.launch {
             while (!done) {
                 try {
                     timer = 0
@@ -147,10 +147,10 @@ constructor(
             }
         }
 
-        launch {
+        GlobalScope.launch {
             // the timer resets on each response and when it reached the limit, it stops reading and continues with the rest
             while (!done) {
-                delay(1, TimeUnit.MILLISECONDS)
+                delay(1)
                 timer++
                 if (timer == timeout) done = true
             }
@@ -165,12 +165,12 @@ constructor(
 
             logD("Sending close command and waiting for stream to close")
             stream.close()
-            launch {
-                delay(10, TimeUnit.SECONDS)
+            GlobalScope.launch {
+                delay(10000)
                 if (!stream.isClosed)
                     throw Exception("Stream didn't close after 10 seconds waiting")
             }
-            launch {
+            GlobalScope.launch {
                 while (!stream.isClosed) {
                 }
                 logD("Stream closed, closing Adb...")
@@ -180,12 +180,12 @@ constructor(
                 } catch (e: IOException) {
                     throw IOException("Couldn't close ADB connection socket", e)
                 }
-                launch {
-                    delay(10, TimeUnit.SECONDS)
+                GlobalScope.launch {
+                    delay(10000)
                     if (!sock.isClosed)
                         throw Exception("ADB connection socket didn't close after 10 seconds waiting")
                 }
-                launch {
+                GlobalScope.launch {
                     while (!sock.isClosed) {
                     }
                     logD("ADB connection socket closed")

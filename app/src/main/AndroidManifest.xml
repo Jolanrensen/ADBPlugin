@@ -22,8 +22,8 @@
           xmlns:tools="http://schemas.android.com/tools"
           package="com.ADBPlugin"
           android:installLocation="internalOnly"
-          android:versionCode="5902"
-          android:versionName="6.0">
+          android:versionCode="5903"
+          android:versionName="6.1">
 
     <!-- Locale 4.x supports API 8 or greater. -->
 
