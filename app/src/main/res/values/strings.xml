@@ -34,4 +34,14 @@
     <string name="variables">variables</string>
     <string name="timeout">ADB timeout in ms</string>
     <string name="timeout_hint">For example: \"50\". Lower numbers make it faster but less reliable.</string>
+    <string name="dialog_message">Hi! Welcome to %1$s.\nThis is a Tasker (or other Locale based apps) plugin, so to use this app, you will need an app like Tasker. You can also use the app without Tasker to test if it works in your situation, however I do encourage you to try Tasker, as it\'s an amazing app and it really brings this plugin to life.</string>
+    <string name="test">Test</string>
+    <string name="execute">Execute</string>
+    <string name="open_tasker">Open Tasker</string>
+    <string name="before_start">Before we start…</string>
+    <string name="executing">Executing...</string>
+    <string name="error">Error!</string>
+    <string name="success">Success!</string>
+    <string name="logs">Logs:</string>
+    <string name="output">Output:</string>
 </resources>

@@ -15,25 +15,35 @@ package com.ADBPlugin.ui
 import android.Manifest
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
+import android.view.Menu
+import android.view.MenuItem
+import android.view.MenuItem.SHOW_AS_ACTION_ALWAYS
+import android.view.MenuItem.SHOW_AS_ACTION_WITH_TEXT
 import android.view.View
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.core.view.isVisible
 import com.ADBPlugin.Constants
 import com.ADBPlugin.Constants.jsonObjectOf
+import com.ADBPlugin.Constants.launchTasker
 import com.ADBPlugin.R
+import com.ADBPlugin.SendSingleCommand
 import com.ADBPlugin.TaskerPlugin
 import com.ADBPlugin.bundle.BundleScrubber
 import com.ADBPlugin.bundle.PluginBundleManager
 import kotlinx.android.synthetic.main.main.*
+import kotlinx.android.synthetic.main.testing_dialog.view.*
 import org.json.JSONObject
+import kotlin.concurrent.thread
 
 /**
  * This is the "Edit" activity for a Locale Plug-in.
@@ -53,6 +63,8 @@ import org.json.JSONObject
  * @see com.twofortyfouram.locale.Intent.EXTRA_BUNDLE
  */
 class EditActivity : AbstractPluginActivity() {
+
+    var isLaunchedFromTasker = true
 
     @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -75,12 +87,31 @@ class EditActivity : AbstractPluginActivity() {
 
         setContentView(R.layout.main)
 
-        if (null == savedInstanceState) {
+        // Opened from launcher
+        if (intent?.action == Intent.ACTION_MAIN) {
+            isLaunchedFromTasker = false
+
+            AlertDialog.Builder(this)
+                .setMessage(getString(R.string.dialog_message, getString(R.string.app_name)))
+                .setTitle(R.string.before_start)
+                .setPositiveButton(R.string.test) { dialog, _ ->
+                    dialog.cancel()
+                }
+                .setNegativeButton(R.string.open_tasker) { _, _ ->
+                    launchTasker()
+                }
+                .create()
+                .show()
+        }
+
+        if (savedInstanceState == null) {
             if (PluginBundleManager.isBundleValid(localeBundle)) {
-                val message = localeBundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE)
+                val message =
+                    localeBundle?.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE)
                 message?.apply {
                     if (contains('§')) { // backwards compatibility
-                        val splitMessage = split("§".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
+                        val splitMessage =
+                            split("§".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
                         input_ip.setText(splitMessage[0])
                         input_port.setText(splitMessage[1])
                         input_command.setText(splitMessage[2])
@@ -97,6 +128,11 @@ class EditActivity : AbstractPluginActivity() {
                 }
             }
         }
+
+        dropdown_command.isVisible = isLaunchedFromTasker
+        dropdown_ip.isVisible = isLaunchedFromTasker
+        dropdown_port.isVisible = isLaunchedFromTasker
+        dropdown_timeout.isVisible = isLaunchedFromTasker
 
         // load tasker variables
         if (TaskerPlugin.hostSupportsRelevantVariables(intent.extras)) {
@@ -115,7 +151,12 @@ class EditActivity : AbstractPluginActivity() {
                 adapter = arrayAdapter
                 onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onNothingSelected(parent: AdapterView<*>?) {}
-                    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    override fun onItemSelected(
+                        parent: AdapterView<*>?,
+                        view: View?,
+                        position: Int,
+                        id: Long
+                    ) {
                         if (position != 0) {
                             input_ip.text.append(passedNames[position])
                             setSelection(0)
@@ -128,7 +169,12 @@ class EditActivity : AbstractPluginActivity() {
                 adapter = arrayAdapter
                 onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onNothingSelected(parent: AdapterView<*>?) {}
-                    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    override fun onItemSelected(
+                        parent: AdapterView<*>?,
+                        view: View?,
+                        position: Int,
+                        id: Long
+                    ) {
                         if (position != 0) {
                             input_port.text.append(passedNames[position])
                             setSelection(0)
@@ -141,7 +187,12 @@ class EditActivity : AbstractPluginActivity() {
                 adapter = arrayAdapter
                 onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
                     override fun onNothingSelected(parent: AdapterView<*>?) {}
-                    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    override fun onItemSelected(
+                        parent: AdapterView<*>?,
+                        view: View?,
+                        position: Int,
+                        id: Long
+                    ) {
                         if (position != 0) {
                             input_command.text.append(passedNames[position])
                             setSelection(0)
@@ -153,8 +204,13 @@ class EditActivity : AbstractPluginActivity() {
             dropdown_timeout.apply {
                 adapter = arrayAdapter
                 onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
-                    override fun onNothingSelected(parent: AdapterView<*>?) {}
-                    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+                    override fun onNothingSelected(parent: AdapterView<*>?) = Unit
+                    override fun onItemSelected(
+                        parent: AdapterView<*>?,
+                        view: View?,
+                        position: Int,
+                        id: Long
+                    ) {
                         if (position != 0) {
                             input_timeout.text.append(passedNames[position])
                             setSelection(0)
@@ -165,8 +221,89 @@ class EditActivity : AbstractPluginActivity() {
         }
     }
 
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        if (isLaunchedFromTasker) {
+            return super.onCreateOptionsMenu(menu)
+        }
+        menuInflater.inflate(R.menu.testing_menu, menu)
+        menu.findItem(R.id.test)?.setShowAsAction(SHOW_AS_ACTION_ALWAYS or SHOW_AS_ACTION_WITH_TEXT)
+        return true
+    }
+
+    override fun onMenuItemSelected(featureId: Int, item: MenuItem) =
+        if (!isLaunchedFromTasker)
+            when (item.itemId) {
+                R.id.test -> {
+                    val ipAddress = input_ip.text.toString()
+                    val port = input_port.text.toString()
+                    val command = input_command.text.toString()
+                    val timeout = input_timeout.text.toString()
+                    val ctrlC = ctrl_c_switch.isChecked
+
+                    if (ipAddress.isBlank() || port.isBlank() || command.isBlank() || timeout.isBlank()) {
+                        Toast.makeText(
+                            applicationContext,
+                            "Fill in all the fields!",
+                            Toast.LENGTH_SHORT
+                        )
+                            .show()
+                    } else {
+                        val dialogView = layoutInflater.inflate(R.layout.testing_dialog, null)
+                        val dialog = AlertDialog.Builder(this)
+                            .setView(dialogView)
+                            .setView(dialogView)
+                            .setTitle(R.string.executing)
+                            .setPositiveButton(android.R.string.ok) { dialog, _ ->
+                                dialog.cancel()
+                            }
+                            .create()
+                        dialog.show()
+
+                        thread(start = true) {
+                            val logs = arrayListOf<String>()
+                            try {
+                                SendSingleCommand(
+                                    logs = logs,
+                                    context = this,
+                                    ip = ipAddress,
+                                    port = port.toInt(),
+                                    command = command,
+                                    timeout = timeout.toInt(),
+                                    ctrlC = ctrlC
+                                ) { _ ->
+                                    var logcat = "${getString(R.string.logs)}\n"
+                                    logs.forEach {
+                                        logcat += it + "\n"
+                                    }
+                                    runOnUiThread {
+                                        dialog.setTitle(R.string.success)
+                                        dialogView.loading.isVisible = false
+                                        dialogView.results_wrapper.isVisible = true
+                                        dialogView.results.text = logcat
+                                    }
+                                }
+                            } catch (e: Exception) {
+                                var logcat = "${getString(R.string.logs)}\n"
+                                logs.forEach {
+                                    logcat += it + "\n"
+                                }
+                                runOnUiThread {
+                                    dialog.setTitle(R.string.error)
+                                    dialogView.loading.isVisible = false
+                                    dialogView.results_wrapper.isVisible = true
+                                    dialogView.results.text = "$logcat\n$e"
+                                }
+                            }
+                        }
+                    }
+                    true
+                }
+                else -> super.onMenuItemSelected(featureId, item)
+            }
+        else super.onMenuItemSelected(featureId, item)
+
     override fun finish() {
-        if (!isCanceled) {
+        if (!isCanceled && isLaunchedFromTasker) {
             val ipAddress = input_ip.text.toString()
             val port = input_port.text.toString()
             val command = input_command.text.toString()
@@ -195,7 +332,8 @@ class EditActivity : AbstractPluginActivity() {
                  * Android platform objects (A Serializable class private to this plug-in's APK cannot be
                  * stored in the Bundle, as Locale's classloader will not recognize it).
                  */
-                val resultBundle = PluginBundleManager.generateBundle(applicationContext, result.toString())
+                val resultBundle =
+                    PluginBundleManager.generateBundle(applicationContext, result.toString())
                 resultIntent.putExtra(com.twofortyfouram.locale.Intent.EXTRA_BUNDLE, resultBundle)
 
                 if (TaskerPlugin.Setting.hostSupportsOnFireVariableReplacement(this))
@@ -233,7 +371,8 @@ class EditActivity : AbstractPluginActivity() {
                 setResult(Activity.RESULT_OK, resultIntent)
                 super.finish()
             } else {
-                Toast.makeText(applicationContext, "Fill in all the fields!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(applicationContext, "Fill in all the fields!", Toast.LENGTH_SHORT)
+                    .show()
             }
         } else {
             super.finish()
@@ -249,7 +388,8 @@ class EditActivity : AbstractPluginActivity() {
          */
         /* package */
         internal fun generateBlurb(context: Context, message: String): String {
-            val maxBlurbLength = context.resources.getInteger(R.integer.twofortyfouram_locale_maximum_blurb_length)
+            val maxBlurbLength =
+                context.resources.getInteger(R.integer.twofortyfouram_locale_maximum_blurb_length)
 
             return if (message.length > maxBlurbLength) {
                 message.substring(0, maxBlurbLength)

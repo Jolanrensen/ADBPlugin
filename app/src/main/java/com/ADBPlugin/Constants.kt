@@ -12,8 +12,14 @@
 
 package com.ADBPlugin
 
+import android.app.Activity
 import android.content.Context
+import android.content.Intent
+import android.net.Uri
+import android.util.Log
+import com.twofortyfouram.locale.PackageUtilities
 import org.json.JSONObject
+import java.util.Locale
 
 /**
  * Class of constants used by this Locale plug-in.
@@ -72,4 +78,52 @@ object Constants {
                 put(it.first, it.second)
             }
         }
+
+    private val APP_STORE_URI = "https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm"
+
+    fun Activity.launchTasker() {
+        val manager = packageManager
+
+        val compatiblePackage = PackageUtilities.getCompatiblePackage(manager, null)
+
+        if (null != compatiblePackage) {
+            // after this point, assume Locale-compatible package is installed
+            Log.v(
+                Constants.LOG_TAG,
+                String.format(Locale.US, "Locale-compatible package %s is installed", compatiblePackage)
+            ) //$NON-NLS-1$
+            try {
+                val i = manager.getLaunchIntentForPackage(compatiblePackage)
+                i!!.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(i)
+            } catch (e: Exception) {
+                /*
+                 * Under normal circumstances, this shouldn't happen. Potential causes would be a TOCTOU error
+                 * where the application is uninstalled or the application enforcing permissions that it
+                 * shouldn't be.
+                 */
+                Log.e(Constants.LOG_TAG, "Error launching Activity", e) //$NON-NLS-1$
+            }
+        } else {
+            Log.i(Constants.LOG_TAG, "Locale-compatible package is not installed") //$NON-NLS-1$
+
+            try {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse(
+                            String.format(
+                                Locale.US,
+                                APP_STORE_URI,
+                                "com.twofortyfouram.locale", packageName
+                            )
+                        )
+                    ).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                ) //$NON-NLS-1$
+            } catch (e: Exception) {
+                Log.e(Constants.LOG_TAG, "Error launching Activity", e) //$NON-NLS-1$
+            }
+        }
+        //finish()
+    }
 }

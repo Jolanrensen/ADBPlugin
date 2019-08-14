@@ -55,21 +55,6 @@
             android:icon="@drawable/icon"
             android:label="@string/app_name"
             android:uiOptions="splitActionBarWhenNarrow">
-
-        <!--
-             If this plug-in does not stand alone (e.g. it is only a plug-in for Locale and does not have a Launcher Activity), including this in the manifest 
-            will help when users tap the "Open" button in the Google Play store.
-        -->
-        <activity
-                android:name="com.ADBPlugin.ui.InfoActivity"
-                android:exported="true"
-                tools:ignore="ExportedActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-
-                <category android:name="android.intent.category.INFO"/>
-            </intent-filter>
-        </activity>
         <!--
              This is the "edit" Activity. Note that Locale will reject plug-in Activities for the following reasons: 
                  - Missing "android:label=[...]"
@@ -81,7 +66,7 @@
         <activity
                 android:name="com.ADBPlugin.ui.EditActivity"
                 android:exported="true"
-                android:icon="@drawable/icon"
+                android:icon="@mipmap/ic_launcher"
                 android:label="@string/plugin_name"
                 android:uiOptions="splitActionBarWhenNarrow"
                 android:windowSoftInputMode="adjustResize"
@@ -90,6 +75,13 @@
             <!-- this Intent filter allows the plug-in to be discovered by Locale -->
             <intent-filter>
                 <action android:name="com.twofortyfouram.locale.intent.action.EDIT_SETTING"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
             </intent-filter>
         </activity>
         <!--

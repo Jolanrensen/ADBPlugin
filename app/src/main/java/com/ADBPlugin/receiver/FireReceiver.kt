@@ -32,6 +32,7 @@ import java.io.PrintWriter
 import java.io.StringWriter
 import java.util.ArrayList
 import java.util.Locale
+import kotlin.concurrent.thread
 
 /**
  * This is the "fire" BroadcastReceiver for a Locale Plug-in setting.
@@ -87,18 +88,18 @@ class FireReceiver : BroadcastReceiver() {
                 } else JSONObject(message)
 
 
-            Thread(Runnable {
+            thread(start = true) {
                 val logs = arrayListOf<String>()
                 try {
                     //Run the program with all the given variables
                     SendSingleCommand(
-                        logs,
-                        context,
-                        values["ip"] as String,
-                        (values["port"] as String).toInt(),
-                        values["command"] as String,
-                        (values["timeout"] as String).toInt(),
-                        values["ctrl_c"] as Boolean
+                        logs = logs,
+                        context = context,
+                        ip = values["ip"] as String,
+                        port = (values["port"] as String).toInt(),
+                        command = values["command"] as String,
+                        timeout = (values["timeout"] as String).toInt(),
+                        ctrlC = values["ctrl_c"] as Boolean
                     ) {
                         //Log the result and signal Tasker
                         Log.d(Constants.LOG_TAG, "Executed single command")
@@ -122,7 +123,7 @@ class FireReceiver : BroadcastReceiver() {
                     Log.e(Constants.LOG_TAG, "", e)
                     displayError(e, context, intent, logs)
                 }
-            }).start()
+            }
 
             // Tell Tasker I'm not done yet, since the thread is still running
             if (isOrderedBroadcast) {

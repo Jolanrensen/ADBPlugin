@@ -7,7 +7,8 @@ android {
     defaultConfig {
         applicationId "com.ADBPlugin"
         minSdkVersion 19
-        targetSdkVersion 28
+        targetSdkVersion 29
+        signingConfig signingConfigs.release
     }
 
     buildTypes {
@@ -16,19 +17,28 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
         }
     }
+    buildToolsVersion = '29.0.2'
+    compileOptions {
+        targetCompatibility = 1.8
+        sourceCompatibility = 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
     //compile files('C:/android apps/ADBPlugin1/libraries/AdbLib.jar')
-    implementation "androidx.appcompat:appcompat:1.0.0"
+    implementation "androidx.appcompat:appcompat:1.1.0-rc01"
     implementation 'com.tananaev:adblib:1.2'
     implementation project(':locale_api')
     //compile files('./libraries/commons-codec-1.10-rep.jar')
     implementation files('../libraries/commons-codec-1.10-rep.jar')
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0'
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0'
-    implementation "androidx.core:core-ktx:1.0.0"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.0'
+    implementation "androidx.core:core-ktx:1.2.0-alpha02"
+    implementation 'androidx.core:core:1.2.0-alpha02'
 }
 repositories {
     mavenCentral()
