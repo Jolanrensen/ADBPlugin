@@ -16,9 +16,18 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.util.Log
+import androidx.core.os.bundleOf
+import com.ADBPlugin.bundle.BundleScrubber
+import com.ADBPlugin.bundle.PluginBundleManager
 import com.twofortyfouram.locale.PackageUtilities
 import org.json.JSONObject
+import java.io.PrintWriter
+import java.io.StringWriter
+import java.util.ArrayList
 import java.util.Locale
 
 /**
@@ -79,7 +88,8 @@ object Constants {
             }
         }
 
-    private val APP_STORE_URI = "https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm"
+    private val APP_STORE_URI =
+        "https://play.google.com/store/apps/details?id=net.dinglisch.android.taskerm"
 
     fun Activity.launchTasker() {
         val manager = packageManager
@@ -90,7 +100,11 @@ object Constants {
             // after this point, assume Locale-compatible package is installed
             Log.v(
                 Constants.LOG_TAG,
-                String.format(Locale.US, "Locale-compatible package %s is installed", compatiblePackage)
+                String.format(
+                    Locale.US,
+                    "Locale-compatible package %s is installed",
+                    compatiblePackage
+                )
             ) //$NON-NLS-1$
             try {
                 val i = manager.getLaunchIntentForPackage(compatiblePackage)
@@ -125,5 +139,119 @@ object Constants {
             }
         }
         //finish()
+    }
+
+    fun runOnMainThread(post: () -> Unit) = Handler(Looper.getMainLooper()).post(post)
+
+    fun handleFireMessage(context: Context, intent: Intent) {
+        /*
+         * Always be strict on input parameters! A malicious third-party app could send a malformed Intent.
+         */
+
+        if (com.twofortyfouram.locale.Intent.ACTION_FIRE_SETTING != intent.action) {
+            if (IS_LOGGABLE) {
+                Log.e(
+                    LOG_TAG,
+                    String.format(
+                        Locale.US,
+                        "Received unexpected Intent action %s",
+                        intent.action
+                    )
+                ) //$NON-NLS-1$
+            }
+            return
+        }
+
+        BundleScrubber.scrub(intent)
+
+        val bundle = intent.getBundleExtra(com.twofortyfouram.locale.Intent.EXTRA_BUNDLE)
+        BundleScrubber.scrub(bundle)
+
+        if (PluginBundleManager.isBundleValid(bundle)) {
+            val message = bundle?.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE)
+
+            val values =
+                if (message!!.contains('§')) { //backwards compatibility
+                    val split = message.split("§".toRegex()).dropLastWhile { it.isEmpty() }
+                        .toTypedArray()
+                    jsonObjectOf(
+                        "ip" to split[0],
+                        "port" to split[1],
+                        "command" to split[2],
+                        "timeout" to 50,
+                        "ctrl_c" to false
+                    )
+                } else JSONObject(message)
+
+            val logs = arrayListOf<String>()
+            try {
+                //Run the program with all the given variables
+                SendSingleCommand(
+                    logs = logs,
+                    context = context,
+                    ip = values["ip"] as String,
+                    port = (values["port"] as String).toInt(),
+                    command = values["command"] as String,
+                    timeout = (values["timeout"] as String).toInt(),
+                    ctrlC = values["ctrl_c"] as Boolean
+                ) {
+                    //Log the result and signal Tasker
+                    Log.d(LOG_TAG, "Executed single command")
+
+                    // add result if it exists
+                    val responseBundle = bundleOf()
+                    it?.apply {
+                        responseBundle.putStringArrayList("%output", this)
+
+                        TaskerPlugin.addVariableBundle(
+                            responseBundle,
+                            bundleOf()
+                        )
+                    }
+
+                    // Tell Takser I'm done
+                    TaskerPlugin.Setting.signalFinish(
+                        context,
+                        intent,
+                        TaskerPlugin.Setting.RESULT_CODE_OK,
+                        responseBundle
+                    )
+                }
+            } catch (e: Exception) { // if couldn't read/write key files
+                Log.e(LOG_TAG, "", e)
+                displayError(e, context, intent, logs)
+            }
+        }
+    }
+
+    /**
+     * Simple method to inform Tasker and the system of the error that has occurred.
+     *
+     * @param e
+     * @param context
+     * @param intent
+     */
+    fun displayError(e: Exception, context: Context, intent: Intent, logs: ArrayList<String>) {
+        Log.e(LOG_TAG, e.message)
+        val errors = Bundle()
+        errors.putString(TaskerPlugin.Setting.VARNAME_ERROR_MESSAGE, e.message)
+
+        var logcat = ""
+        logs.forEach {
+            logcat += it + "\n"
+        }
+        val sw = StringWriter()
+        e.printStackTrace(PrintWriter(sw))
+        errors.putString("%errors", logcat + sw.toString())
+        TaskerPlugin.addVariableBundle(
+            errors,
+            bundleOf()
+        )
+        TaskerPlugin.Setting.signalFinish(
+            context,
+            intent,
+            TaskerPlugin.Setting.RESULT_CODE_FAILED_PLUGIN_FIRST,
+            errors
+        )
     }
 }

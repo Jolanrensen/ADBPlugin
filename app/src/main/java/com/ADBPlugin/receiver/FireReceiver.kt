@@ -17,21 +17,11 @@ package com.ADBPlugin.receiver
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
 import android.util.Log
-import androidx.core.os.bundleOf
 import com.ADBPlugin.Constants
-import com.ADBPlugin.Constants.jsonObjectOf
-import com.ADBPlugin.SendSingleCommand
+import com.ADBPlugin.Constants.handleFireMessage
 import com.ADBPlugin.TaskerPlugin
-import com.ADBPlugin.bundle.BundleScrubber
-import com.ADBPlugin.bundle.PluginBundleManager
 import com.ADBPlugin.ui.EditActivity
-import org.json.JSONObject
-import java.io.PrintWriter
-import java.io.StringWriter
-import java.util.ArrayList
-import java.util.Locale
 import kotlin.concurrent.thread
 
 /**
@@ -43,8 +33,6 @@ import kotlin.concurrent.thread
  */
 class FireReceiver : BroadcastReceiver() {
 
-    var message: String? = null
-
     /**
      * @param context {@inheritDoc}.
      * @param intent  the incoming [com.twofortyfouram.locale.Intent.ACTION_FIRE_SETTING] Intent. This
@@ -52,106 +40,14 @@ class FireReceiver : BroadcastReceiver() {
      * [EditActivity] and later broadcast by Locale.
      */
     override fun onReceive(context: Context, intent: Intent) {
-
-        /*
-         * Always be strict on input parameters! A malicious third-party app could send a malformed Intent.
-         */
-
-        if (com.twofortyfouram.locale.Intent.ACTION_FIRE_SETTING != intent.action) {
-            if (Constants.IS_LOGGABLE) {
-                Log.e(
-                    Constants.LOG_TAG,
-                    String.format(Locale.US, "Received unexpected Intent action %s", intent.action)
-                ) //$NON-NLS-1$
-            }
-            return
+        Log.d(Constants.LOG_TAG, "running from broadcastreceiver")
+        thread(start = true) {
+            handleFireMessage(context, intent)
         }
 
-        BundleScrubber.scrub(intent)
-
-        val bundle = intent.getBundleExtra(com.twofortyfouram.locale.Intent.EXTRA_BUNDLE)
-        BundleScrubber.scrub(bundle)
-
-        if (PluginBundleManager.isBundleValid(bundle)) {
-            message = bundle.getString(PluginBundleManager.BUNDLE_EXTRA_STRING_MESSAGE)
-
-            val values =
-                if (message!!.contains('§')) { //backwards compatibility
-                    val split = message!!.split("§".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()
-                    jsonObjectOf(
-                        "ip" to split[0],
-                        "port" to split[1],
-                        "command" to split[2],
-                        "timeout" to 50,
-                        "ctrl_c" to false
-                    )
-                } else JSONObject(message)
-
-
-            thread(start = true) {
-                val logs = arrayListOf<String>()
-                try {
-                    //Run the program with all the given variables
-                    SendSingleCommand(
-                        logs = logs,
-                        context = context,
-                        ip = values["ip"] as String,
-                        port = (values["port"] as String).toInt(),
-                        command = values["command"] as String,
-                        timeout = (values["timeout"] as String).toInt(),
-                        ctrlC = values["ctrl_c"] as Boolean
-                    ) {
-                        //Log the result and signal Tasker
-                        Log.d(Constants.LOG_TAG, "Executed single command")
-
-                        // add result if it exists
-                        val responseBundle = bundleOf()
-                        it?.apply {
-                            responseBundle.putStringArrayList("%output", this)
-                            TaskerPlugin.addVariableBundle(getResultExtras(true), responseBundle)
-                        }
-
-                        // Tell Takser I'm done
-                        TaskerPlugin.Setting.signalFinish(
-                            context,
-                            intent,
-                            TaskerPlugin.Setting.RESULT_CODE_OK,
-                            responseBundle
-                        )
-                    }
-                } catch (e: Exception) { // if couldn't read/write key files
-                    Log.e(Constants.LOG_TAG, "", e)
-                    displayError(e, context, intent, logs)
-                }
-            }
-
-            // Tell Tasker I'm not done yet, since the thread is still running
-            if (isOrderedBroadcast) {
-                resultCode = TaskerPlugin.Setting.RESULT_CODE_PENDING
-            }
+        // Tell Tasker I'm not done yet, since the thread is still running
+        if (isOrderedBroadcast) {
+            resultCode = TaskerPlugin.Setting.RESULT_CODE_PENDING
         }
-    }
-
-    /**
-     * Simple method to inform Tasker and the system of the error that has occurred.
-     *
-     * @param e
-     * @param context
-     * @param intent
-     */
-    fun displayError(e: Exception, context: Context, intent: Intent, logs: ArrayList<String>) {
-        Log.e(Constants.LOG_TAG, e.message)
-        val errors = Bundle()
-        errors.putString(TaskerPlugin.Setting.VARNAME_ERROR_MESSAGE, e.message)
-
-        var logcat = ""
-        logs.forEach {
-            logcat += it + "\n"
-        }
-        val sw = StringWriter()
-        e.printStackTrace(PrintWriter(sw))
-        errors.putString("%errors", logcat + sw.toString())
-        TaskerPlugin.addVariableBundle(getResultExtras(true), errors)
-        TaskerPlugin.Setting.signalFinish(context, intent, TaskerPlugin.Setting.RESULT_CODE_FAILED_PLUGIN_FIRST, errors)
     }
 }

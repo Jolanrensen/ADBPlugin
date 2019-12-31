@@ -44,4 +44,7 @@
     <string name="success">Success!</string>
     <string name="logs">Logs:</string>
     <string name="output">Output:</string>
+    <string name="channel_name">ADBPlugin Action</string>
+    <string name="channel_description">Shows a notification when an action is executed on a foreground service.</string>
+    <string name="action_running">ADBPlugin action is running...</string>
 </resources>
