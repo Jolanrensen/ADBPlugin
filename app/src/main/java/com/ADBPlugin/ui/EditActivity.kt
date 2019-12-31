@@ -21,6 +21,7 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
 import android.util.Log
+import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.view.MenuItem.SHOW_AS_ACTION_ALWAYS
@@ -40,8 +41,17 @@ import com.ADBPlugin.SendSingleCommand
 import com.ADBPlugin.TaskerPlugin
 import com.ADBPlugin.bundle.BundleScrubber
 import com.ADBPlugin.bundle.PluginBundleManager
+import com.android.billingclient.api.BillingClient
+import com.android.billingclient.api.BillingClient.BillingResponse.*
+import com.android.billingclient.api.BillingClientStateListener
+import com.android.billingclient.api.BillingFlowParams
+import com.android.billingclient.api.SkuDetailsParams
+import kotlinx.android.synthetic.main.donation_dialog.*
 import kotlinx.android.synthetic.main.main.*
 import kotlinx.android.synthetic.main.testing_dialog.view.*
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
 import org.json.JSONObject
 import kotlin.concurrent.thread
 
@@ -218,6 +228,145 @@ class EditActivity : AbstractPluginActivity() {
                     }
                 }
             }
+        }
+
+        donate_button.setOnClickListener {
+            val dialog = AlertDialog.Builder(this)
+                .setTitle(R.string.donate)
+                .setNegativeButton(android.R.string.cancel) { dialog, _ -> dialog.dismiss() }
+                .setIcon(R.drawable.money_black)
+                .setView(
+                    LayoutInflater
+                        .from(this)
+                        .inflate(R.layout.donation_dialog, null)
+                )
+                .create()
+
+            dialog.show()
+
+            var billingClient: BillingClient? = null
+            billingClient = BillingClient.newBuilder(this)
+                .setListener { responseCode, purchases ->
+                    Log.d(
+                        Constants.LOG_TAG,
+                        "on purchases updated response: $responseCode, purchases: $purchases"
+                    )
+                    when (responseCode) {
+                        FEATURE_NOT_SUPPORTED -> Unit
+                        SERVICE_DISCONNECTED -> Unit
+                        OK -> {
+                            if (purchases != null) {
+                                dialog.dismiss()
+                                Toast.makeText(
+                                    this,
+                                    getString(R.string.donation_successful),
+                                    Toast.LENGTH_LONG
+                                ).show()
+                                for (purchase in purchases) { // should only be 1
+                                    billingClient!!.consumeAsync(purchase.purchaseToken) { responseCode, _ ->
+                                        if (responseCode == OK)
+                                            Log.d(Constants.LOG_TAG, "purchase consumed")
+                                    }
+                                }
+                            }
+                        }
+                        USER_CANCELED -> Unit
+                        SERVICE_UNAVAILABLE -> Unit
+                        BILLING_UNAVAILABLE -> Unit
+                        ITEM_UNAVAILABLE -> Unit
+                        DEVELOPER_ERROR -> Unit
+                        ERROR -> Unit
+                        ITEM_ALREADY_OWNED -> Unit
+                        ITEM_NOT_OWNED -> Unit
+                    }
+                }
+                .build()
+
+            var tries = 0
+            val billingClientStateListener = object : BillingClientStateListener {
+                override fun onBillingServiceDisconnected() {
+                    Log.e(Constants.LOG_TAG, "Billing service disconnected")
+                    if (tries == 10) {
+                        runOnUiThread {
+                            Toast.makeText(
+                                this@EditActivity,
+                                getString(R.string.couldnt_connect_to_play),
+                                Toast.LENGTH_LONG
+                            ).show()
+                        }
+                    }
+                    val listener = this
+                    GlobalScope.launch {
+                        delay(100)
+                        billingClient.startConnection(listener)
+                        tries++
+                    }
+                }
+
+                override fun onBillingSetupFinished(@BillingClient.BillingResponse responseCode: Int) {
+                    Log.d(Constants.LOG_TAG, "Billing setup finished")
+                    // get purchases
+                    val skuList = arrayListOf(
+                        "thank_you",
+                        "big_thank_you",
+                        "bigger_thank_you",
+                        "biggest_thank_you"
+                    )
+                    billingClient.querySkuDetailsAsync(
+                        SkuDetailsParams.newBuilder()
+                            .setSkusList(skuList)
+                            .setType(BillingClient.SkuType.INAPP)
+                            .build()
+                    ) { responseCode, skuDetailsList ->
+                        Log.d(
+                            Constants.LOG_TAG,
+                            "Billing sku details received, $responseCode, $skuDetailsList"
+                        )
+                        if (responseCode == OK && skuDetailsList != null) {
+                            for (skuDetails in skuDetailsList) {
+                                val sku = skuDetails.sku
+                                val price = skuDetails.price
+                                when (sku) {
+                                    "thank_you" -> dialog.thank_you_price.text = price
+                                    "big_thank_you" -> dialog.big_thank_you_price.text = price
+                                    "bigger_thank_you" -> dialog.bigger_thank_you_price.text = price
+                                    "biggest_thank_you" -> dialog.biggest_thank_you_price.text =
+                                        price
+                                }
+                            }
+                        } else {
+                            billing_not_working.isVisible = true
+                            billing_not_working2.isVisible = true
+                        }
+                    }
+
+                    val doPurchase = View.OnClickListener {
+                        Log.d(Constants.LOG_TAG, "Billing onclick $it")
+                        billingClient!!.launchBillingFlow(
+                            this@EditActivity,
+                            BillingFlowParams.newBuilder()
+                                .setSku(
+                                    when (it.id) {
+                                        dialog.thank_you_card.id -> "thank_you"
+                                        dialog.big_thank_you_card.id -> "big_thank_you"
+                                        dialog.bigger_thank_you_card.id -> "bigger_thank_you"
+                                        dialog.biggest_thank_you_card.id -> "biggest_thank_you"
+                                        else -> null
+                                    }
+                                )
+                                .setType(BillingClient.SkuType.INAPP)
+                                .build()
+                        )
+                    }
+                    dialog.apply {
+                        thank_you_card.setOnClickListener(doPurchase)
+                        big_thank_you_card.setOnClickListener(doPurchase)
+                        bigger_thank_you_card.setOnClickListener(doPurchase)
+                        biggest_thank_you_card.setOnClickListener(doPurchase)
+                    }
+                }
+            }
+            billingClient.startConnection(billingClientStateListener)
         }
     }
 

@@ -39,12 +39,29 @@
     <string name="execute">Execute</string>
     <string name="open_tasker">Open Tasker</string>
     <string name="before_start">Before we start…</string>
-    <string name="executing">Executing...</string>
+    <string name="executing">Executing…</string>
     <string name="error">Error!</string>
     <string name="success">Success!</string>
     <string name="logs">Logs:</string>
     <string name="output">Output:</string>
     <string name="channel_name">ADBPlugin Action</string>
     <string name="channel_description">Shows a notification when an action is executed on a foreground service.</string>
-    <string name="action_running">ADBPlugin action is running...</string>
+    <string name="action_running">ADBPlugin action is running…</string>
+    <string name="donate">Donate</string>
+    <string name="thank_you">Thank you!</string>
+    <string name="big_thank_you">Big thank you!</string>
+    <string name="bigger_thank_you">Bigger thank you!</string>
+    <string name="couldnt_connect_to_play">Couldn\'t connect to Google Play</string>
+    <string name="loading">Loading…</string>
+    <string name="biggest_thank_you">Biggest thank you!</string>
+    <string name="thank_you_desc">A small token of gratitude, enough for me to buy a coffee at uni</string>
+    <string name="big_thank_you_desc">A bigger token of gratitude, enough for me to buy two cups of coffee</string>
+    <string name="bigger_thank_you_desc">Even greater token of gratitude, enough for me to buy a large special coffee</string>
+    <string name="biggest_thank_you_desc">Greatest token of gratitude! If you\'ve got money to spend and don\'t know how</string>
+    <string name="donating">Donating won\'t give you extra features, however, it will considerably support me, the developer, to continue
+        making awesome apps like this one!</string>
+    <string name="donation_successful">Thank you very much for donating! It is much appreciated :)</string>
+    <string name="billing_unavailable">It seems I\'m unable to connect to Google Play at the moment. Retry later or, if you don\'t have Google Play, you can always use PayPal to donate:</string>
+    <string name="paypal">https://www.paypal.me/jolanrensen</string>
+    <string name="something_wrong">Something went wrong, please try again</string>
 </resources>
