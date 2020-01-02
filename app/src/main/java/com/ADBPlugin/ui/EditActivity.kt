@@ -318,25 +318,32 @@ class EditActivity : AbstractPluginActivity() {
                             .setType(BillingClient.SkuType.INAPP)
                             .build()
                     ) { responseCode, skuDetailsList ->
-                        Log.d(
-                            Constants.LOG_TAG,
-                            "Billing sku details received, $responseCode, $skuDetailsList"
-                        )
-                        if (responseCode == OK && skuDetailsList != null) {
-                            for (skuDetails in skuDetailsList) {
-                                val sku = skuDetails.sku
-                                val price = skuDetails.price
-                                when (sku) {
-                                    "thank_you" -> dialog.thank_you_price.text = price
-                                    "big_thank_you" -> dialog.big_thank_you_price.text = price
-                                    "bigger_thank_you" -> dialog.bigger_thank_you_price.text = price
-                                    "biggest_thank_you" -> dialog.biggest_thank_you_price.text =
-                                        price
+                        try {
+                            Log.d(
+                                Constants.LOG_TAG,
+                                "Billing sku details received, $responseCode, $skuDetailsList"
+                            )
+                            if (responseCode == OK && skuDetailsList != null) {
+                                for (skuDetails in skuDetailsList) {
+                                    val sku = skuDetails.sku
+                                    val price = skuDetails.price
+                                    when (sku) {
+                                        "thank_you" -> dialog.thank_you_price.text = price
+                                        "big_thank_you" -> dialog.big_thank_you_price.text = price
+                                        "bigger_thank_you" -> dialog.bigger_thank_you_price.text =
+                                            price
+                                        "biggest_thank_you" -> dialog.biggest_thank_you_price.text =
+                                            price
+                                    }
                                 }
+                            } else {
+                                billing_not_working.isVisible = true
+                                billing_not_working2.isVisible = true
                             }
-                        } else {
-                            billing_not_working.isVisible = true
-                            billing_not_working2.isVisible = true
+                        } catch (e: Exception) {
+                            Log.e(Constants.LOG_TAG, e.toString())
+                            Toast.makeText(this@EditActivity, getString(R.string.something_wrong), Toast.LENGTH_LONG).show()
+
                         }
                     }
 

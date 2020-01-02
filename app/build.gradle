@@ -19,8 +19,8 @@ android {
         targetSdkVersion 29
         signingConfig signingConfigs.release
 
-        versionCode 6300
-        versionName "6.3"
+        versionCode 6301
+        versionName "6.3a"
     }
 
     buildTypes {
